@@ -39,6 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 .font-body {
   font-family: var(--font-open-sans), "Open Sans", sans-serif;
 }
+@media (min-width: 96rem) {
+    .container {
+        max-width: 90%;
+    }
+}
 @media (max-width: 64rem) {
     nav ul.md\:flex {
         display: none;
@@ -48,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .container {
         max-width: 90%;
+      
     }
 }
  .logoSlider {

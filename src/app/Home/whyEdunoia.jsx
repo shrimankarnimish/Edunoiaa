@@ -62,11 +62,9 @@ const WhyEdunoia = () => {
                                     </div>
                                 </div>
                             </div>
-
                             {/* Bottom Line */}
                             <div className="w-full h-0.5 mb-6 lg:mb-8 bg-[#1B51FF]"></div>
                         </div>
-
                         {/* Know More Button */}
                         <div className="pt-2 lg:pt-4">
                             <button className="py-2 text-lg lg:text-xl font-bold cursor-pointer hover:opacity-80 transition-opacity text-[#1B51FF]">
