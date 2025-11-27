@@ -1,26 +1,123 @@
 @import "tailwindcss";
 
+/* Light mode variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --max-width: 90%;
+  --max-width70p: 70%;
+  --max-width80p: 80%;
+  --max-width1200: 120rem;
+  --max-width900: 96rem;
+  --max-width700: 76rem;
+  --max-width500: 56rem;
+
+  --container-right: 93%;
+  --container-left: 93%;
+  --container-padding: 3rem;
+
+  --font-header: "Merriweather", serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Body font (Open Sans) */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
+
+/* Heading font (Merriweather) */
+h1, h2, h3, h4, h5, h6 {
+  font-family:"Merriweather", serif;
+  /* font-weight: 300;  Default light weight  */
+}
+
+/* Utility classes for Tailwind */
+.font-heading {
+  font-family: var(--font-merriweather), "Merriweather", serif;
+}
+
+.font-body {
+  font-family: var(--font-open-sans), "Open Sans", sans-serif;
+}
+@media (max-width: 64rem) {
+    nav ul.md\:flex {
+        display: none;
+    }
+    nav button.md\:hidden {
+        display: block;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+ .logoSlider {
+  display: flex;
+  width: max-content;
+  animation: scroll 18s linear infinite;
+}
+
+.logoTrack {
+  display: flex;
+  gap: 2rem;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+  width: max-content;
+}
+/* .what-we-do-conatiner .cust-padding-left{
+  padding-left: 200px;
+} */
+
+.what-we-do-conatiner .cust-padding-left {
+  padding-left: 200px;
+  padding-right: 100px;
+}
+
+
+@media (max-width: 1024px) {
+  .what-we-do-conatiner .cust-padding-left {
+    padding-left: 40px; /* mobile/tablet */
+    padding-right: 40px;
+  }
+}
+.border-line {
+  width: 100%;   
+  height: 2.5px;
+  background-color: #1B51FF;
+  margin-bottom: 1rem; 
+}
+.heading-blue {
+  margin-bottom: 0.5rem; /* same as mb-2 */
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1B51FF;
+}
+.p-blue {
+  color: #002855;
+  font-size: 16px;
+  font-weight: 600;
+}
+.title {
+  margin-bottom: 0.5rem; /* mb-2 */
+  font-style: italic;
+  font-size: 20px;
+  color: #002855;
+  font-weight: 600;
+}
+

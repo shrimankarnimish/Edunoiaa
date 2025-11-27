@@ -1,14 +1,22 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Merriweather, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+// Heading font (h1–h6)
+const merriweather = Merriweather({
+  weight: ["300", "400", "700", "900"],
+  subsets: ["latin"],   // ← FIXED
+  variable: "--font-merriweather",
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Body font (p, span, li, etc.)
+const openSans = Open_Sans({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
+  variable: "--font-open-sans",
+  display: 'swap',
 });
 
 export const metadata = {
@@ -18,11 +26,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${merriweather.variable} ${openSans.variable}`}>
+      <body className="antialiased">
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

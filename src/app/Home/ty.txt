@@ -1,0 +1,74 @@
+ <section className="what-we-do-conatiner">
+                <div className="mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
+
+
+                        {/* Left Column - Text Content */}
+                        <div className="space-y-8 cust-padding-left pb-40 pt-36">
+
+
+                            {/* Heading */}
+                            <div className="space-y-4">
+                                <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">
+                                    WHAT WE DO
+                                </p>
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-medium leading-tight tracking-light"
+                                    style={{ color: '#1B51FF' }}>
+                                    Our expertise<br /> your transformation
+                                </h2>
+                            </div>
+
+                            {/* Description */}
+                            <div className="space-y-6">
+                                <h4 className="sm:text-2xl lg:text-3xl text-[24px] leading-relaxed"
+                                    style={{ color: '#B7B3B3' }}>
+                                    We offer bespoke brand consulting as well as tailored modules specifically developed for the education sector
+                                </h4>
+                            </div>
+                            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 text-lg transition duration-200 cursor-pointer">
+                                VIEW DETAILS
+                            </button>
+                        </div>
+
+                        {/* Right Column - Image/Visual Content */}
+                        <div className="relative text-white pt-36 cust-padding-leftt pr-8 lg:pr-12 xl:pr-16 h-full overflow-hidden">
+
+
+                            <Image
+                                src={bluebg}
+                                alt="Background"
+                                fill
+                                className="object-cover object-[top_right]"
+                                priority
+                            />
+
+                            <div className="absolute inset-0 bg-black/30"></div>
+
+                            {/* Content */}
+                            <div className="relative z-10 w-full space-y-6 pr-4 lg:pr-8 pb-5">
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-medium leading-tight tracking-light mt-10">
+                                    Bespoke Brand Consulting
+                                </h2>
+
+
+                                <h4 className="text-[24px] italic leading-relaxed"
+                                    style={{ color: '#FF0C0C' }}>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                </h4>
+                                <div className="h-0.5 w-full" style={{ backgroundColor: "#1B51FF" }}></div>
+
+                                <ul className="space-y-2 text-2xl sm:text-[24px] italic font-normal leading-snug">
+                                    <li>Research, Analysis & Insights</li>
+                                    <li>Brand Purpose, Positioning & Strategy</li>
+                                    <li>Brand & Portfolio Architecture</li>
+                                    <li>Naming & Verbal Identity</li>
+                                    <li>Visual Identity</li>
+                                    <li>Brand Communication</li>
+                                    <li>Brand Experiences</li>
+                                    <li>Brand Guidelines & Toolkits</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
