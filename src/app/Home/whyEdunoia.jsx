@@ -20,22 +20,24 @@ const WhyEdunoia = () => {
                         </p>
 
                         {/* Sub Heading */}
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-medium leading-tight tracking-tight"
-                            style={{ color: '#1B51FF' }}>
-                            Because education deserves its own brand language.
+                        <h2 className="h-blue">
+                            Because education deserves<br/> its own brand language.
                         </h2>
                     </div>
 
                     {/* Right Column */}
                     <div className="space-y-6 lg:space-y-8">
                         {/* Description Text */}
-                        <h4 className="text-xl sm:text-2xl lg:text-3xl leading-relaxed"
-                            style={{ color: '#B7B3B3' }}>
+                        <p
+                            className="p-grey"
+                           
+                        >
                             For 15+ years, ABND has built some of India's most respected educational brands.
                             Edunoia is the next step, designed to help schools, universities, and EdTech
                             players find their voice, sharpen their identity, and stand out with clarity
                             and purpose.
-                        </h4>
+                        </p>
+
 
                         {/* Logos Section with Lines */}
                         <div className="pt-6 lg:pt-8 w-full overflow-hidden">

@@ -5,7 +5,7 @@ const TailoredModules = () => {
         <div className="bg-[#1B51FF] py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 min-h-screen">
             {/* Header Section */}
             <div className="text-white mb-8 sm:mb-10 md:mb-12 flex flex-col lg:flex-row lg:items-center lg:justify-center lg:px-8 mt-4 sm:mt-6 md:mt-8 gap-4 sm:gap-6 lg:gap-[4rem] mx-auto max-w-7xl">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center lg:text-center">
+                <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-center lg:text-center">
                     Tailored<br />Modules
                 </h2>
                 <p className="text-lg sm:text-xl md:text-2xl italic opacity-90 max-w-xs sm:max-w-2xl md:max-w-3xl lg:mt-0 text-center lg:text-center px-2 sm:px-4">
@@ -35,7 +35,7 @@ const TailoredModules = () => {
                             </p>
 
                         </div>
-                        <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-white-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide ">
+                        <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-white-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide ">
                             View Details
                         </button>
 
@@ -56,7 +56,7 @@ const TailoredModules = () => {
                                 For established institutions losing relevance. We refresh delivers a modern identity, sharper messaging, and renewed impact.
                             </p>
                         </div>
-                        <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
+                        <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                             View Details
                             <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -69,7 +69,7 @@ const TailoredModules = () => {
                         <div>
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-blue">
-                                    Edunoia AdmitEdge™ Admissions Accelerator <span style={{ visibility: 'hidden' }}>sprint</span>
+                                    Edunoia AdmitEdge™ Admissions Accelerator <span style={{ visibility: 'hidden' }}>sprint acclerator</span>
                                 </h4>
                                 <div className="border-line"></div>
                             </div>
@@ -80,7 +80,7 @@ const TailoredModules = () => {
                                 We align your messaging and campaigns with what truly motivates students and parents.
                             </p>
                         </div>
-                        <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
+                        <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                             View Details
                             <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -93,7 +93,7 @@ const TailoredModules = () => {
                         <div>
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-blue">
-                                    Edunoia Connect™ | Alumni & Donor Branding <span style={{ visibility: "hidden" }}>Branding</span>
+                                    Edunoia Connect™ | Alumni & Donor Branding <span style={{ visibility: "hidden" }}>Branding branding</span>
                                 </h4>
 
                                 <div className="border-line"></div>
@@ -105,9 +105,9 @@ const TailoredModules = () => {
                                 We design campaigns, engagement kits, and visual identities to strengthen emotional ties and drive giving.
                             </p>
                         </div>
-                        <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
+                        <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                             View Details
-                            <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg className=" w-3 h-3 sm:w-4 sm:h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                             </svg>
                         </button>
@@ -129,7 +129,7 @@ const TailoredModules = () => {
                                 Our proprietary tracking tool benchmarks your institution across reputation, perception, and brand satisfaction, year after year.
                             </p>
                         </div>
-                        <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
+                        <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                             View Details
                             <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -166,7 +166,7 @@ const TailoredModules = () => {
                         <div>
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-blue">
-                                    Edunoia FacultyFirst™ | Faculty Engagement Program
+                                    Edunoia FacultyFirst™ | Faculty Engagement Program <span style={{visibility:"hidden"}}>program</span>
                                 </h4>
                                 <div className="border-line "></div>
                             </div>
@@ -190,7 +190,7 @@ const TailoredModules = () => {
                         <div>
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-blue">
-                                    Edunoia Wear™ | Merchandise & Pride Program
+                                    Edunoia Wear™ | Merchandise & Pride Program <span style={{visibility:"hidden"}}>& Pride Program</span>
                                 </h4>
                                 <div className="border-line"></div>
                             </div>
@@ -258,13 +258,15 @@ const TailoredModules = () => {
                     </div>
 
                     {/* CTA Card */}
-                    <div className="p-6 sm:p-8 flex flex-col items-start justify-center min-h-[280px] sm:min-h-[300px] md:min-h-[320px] col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-2">
-                        <h5 className="text-[30px] text-white font-normal mb-4">
-                            Explore all our<br /> Branding services
-                        </h5>
-                        <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 rounded font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide">
-                            View Details
-                        </button>
+                    <div className="p-6 sm:p-8 flex flex-col-2 items-center justify-center flex-col min-h-[280px] sm:min-h-[300px] md:min-h-[320px] col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-2">
+                        <div>
+                            <h5 className="text-[30px] text-white font-normal mb-4">
+                                Explore all our<br /> Branding services
+                            </h5>
+                            <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 rounded font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide">
+                                View Details
+                            </button>
+                        </div>
                     </div>
 
 

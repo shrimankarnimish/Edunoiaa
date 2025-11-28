@@ -13,7 +13,9 @@ import Slider from './slider';
 
 const HeroSection = () => {
     return (
-        <><section className="relative min-h-screen flex items-center justify-start">
+        <>
+        
+            <section className="relative min-h-screen flex items-center justify-start">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -78,20 +80,18 @@ const HeroSection = () => {
                                 <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">
                                     WHAT WE DO
                                 </p>
-                                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-medium leading-tight tracking-light"
-                                    style={{ color: '#1B51FF' }}>
-                                   Branding that builds  credible, relevant, and inspiring institutions
+                                <h2 className="h-blue">
+                                   Branding that builds<br/> credible, relevant, and<br/> inspiring institutions
                                 </h2>
                             </div>
 
                             {/* Description */}
                             <div className="space-y-6">
-                                <h4 className="sm:text-2xl lg:text-3xl text-[24px] leading-relaxed"
-                                    style={{ color: '#B7B3B3' }}>
+                                <p className="p-grey">
                                     We offer end-to-end branding services ats well as proprietary tailored modules specifically developed for the education sector.
-                                </h4>
+                                </p>
                             </div>
-                            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 text-lg transition duration-200 cursor-pointer">
+                            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-8 text-lg transition duration-200 cursor-pointer">
                                 VIEW DETAILS
                             </button>
                         </div>
