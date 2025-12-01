@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TailoredModules = () => {
+const ServicesModules2 = () => {
     return (
         <section className="bg-[#1B51FF] py-8 sm:py-12 md:py-16 min-h-screen">
             {/* Header Section */}
@@ -277,4 +277,4 @@ const TailoredModules = () => {
     );
 };
 
-export default TailoredModules;
+export default ServicesModules2;
