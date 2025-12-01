@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TailoredModules = () => {
+const ServicesModules = () => {
     return (
-        <section className="bg-[#1B51FF] py-8 sm:py-12 md:py-16 min-h-screen">
+        <section className="bg-[#002855] py-8 sm:py-12 md:py-16 min-h-screen">
             {/* Header Section */}
             <div className="text-white mb-8 sm:mb-10 md:mb-12 flex flex-col lg:flex-row lg:items-center lg:justify-center lg:px-8 mt-4 sm:mt-6 md:mt-8 gap-4 sm:gap-6 lg:gap-[4rem] mx-auto max-w-7xl">
                 <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-center lg:text-center">
@@ -277,4 +277,4 @@ const TailoredModules = () => {
     );
 };
 
-export default TailoredModules;
+export default ServicesModules;
