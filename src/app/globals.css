@@ -108,35 +108,36 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 200px;
 } */
 
-.what-we-do-conatiner .cust-padding-left {
+.cust-padding-left {
   padding-left: 11%;
   padding-right: 100px;
 }
 
 
 /* Base / Desktop */
-.what-we-do-container .cust-padding-left {
+.what-we-do-container .cust-padding-left,.contact-us-form-container .cust-left-padding{
   padding-left: 10%;
   padding-right: 40px;
 }
 
+
 /* 1400 - 1280px */
 @media (max-width: 1399px) and (min-width: 1280px) {
-  .what-we-do-container .cust-padding-left {
+  .what-we-do-container .cust-padding-left,.contact-us-form-container .cust-left-padding{
     padding-left: 8%;
   }
 }
 
 /* Tablets: 1024px ↓ */
 @media (max-width: 1024px) {
-  .what-we-do-container .cust-padding-left {
+  .what-we-do-container .cust-padding-left,.contact-us-form-container .cust-left-padding {
     padding-left: 8%;
   }
 }
 
 /* Mobile: 768px ↓ */
 @media (max-width: 768px) {
-  .what-we-do-container .cust-padding-left {
+  .what-we-do-container .cust-padding-left,.contact-us-form-container .cust-left-padding {
     padding-left: 5%;
     padding-right: 20px;
   }

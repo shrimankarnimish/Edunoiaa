@@ -37,7 +37,7 @@ const WhyEdunoia = () => {
                         <div className="pt-6 lg:pt-8 w-full overflow-hidden">
 
                             {/* Top Line */}
-                            <div className="w-full h-0.5 mt-6 lg:mt-8 bg-[#1B51FF]"></div>
+                           <div className="w-full h-[1px] bg-[#1B51FF]"></div>
 
                             {/* Infinite Carousel */}
                             <div className="overflow-hidden w-full py-4 lg:py-6">
@@ -59,7 +59,7 @@ const WhyEdunoia = () => {
                                 </div>
                             </div>
                             {/* Bottom Line */}
-                            <div className="w-full h-0.5 mb-6 lg:mb-8 bg-[#1B51FF]"></div>
+                           <div className="w-full h-[1px] bg-[#1B51FF]"></div>
                         </div>
                         {/* Know More Button */}
                         <div className="pt-2 lg:pt-4">
