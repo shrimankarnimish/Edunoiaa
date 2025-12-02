@@ -55,7 +55,7 @@ const HeroSection = () => {
             {/* WHY EDUNOIA END */}
 
             <section style={{ background: "#66AEF1" }} className="py-10">
-                <div className="container mx-auto">
+                <div className="container mx-auto w-full py-12 md:py-16 lg:py-20">
                     <Image
                         src={counter2}
                         alt="Counter image" />

@@ -3,7 +3,7 @@ import React from 'react';
 
 const WhyEdunoia = () => {
     return (
-        <section className="w-full py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="w-full py-12 md:py-16 lg:py-20 ">
             <div className="mx-auto container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
 

@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 96rem) {
     .container {
-        max-width: 90%;
+        max-width: 80%;
     }
 }
 @media (max-width: 64rem) {
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* 💡 FONT RESPONSIVENESS */
+/*  FONT RESPONSIVENESS */
 
 /* h2 heading */
 .responsive-hblue {
