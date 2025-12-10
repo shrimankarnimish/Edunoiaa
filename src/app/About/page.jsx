@@ -9,7 +9,6 @@ const About = () => {
     return (
         <>
             <div>
-
                 <section className="relative min-h-screen flex items-center justify-start">
                     {/* Background Image */}
                     <div className="absolute inset-0 z-0">
@@ -28,9 +27,7 @@ const About = () => {
                                 <span className="font-bold block">
                                     We understand </span>
                                 <span className="font-bold block">the education sector inside out</span>
-
                             </h1>
-
                             {/* CTA Buttons - Exact styling from first image */}
                             <div className="flex flex-col sm:flex-row gap-4 mt-12">
                                 <button className="font-body bg-white text-[#1B51FF] hover:bg-gray-50 font-semibold py-3 px-8 transition duration-200 ease-in-out text-base tracking-wide uppercase cursor-pointer">
@@ -53,15 +50,13 @@ const About = () => {
                             alt="Counter image" />
                     </div>
                 </section>
-
             </div>
-
             {/* What we do */}
             <section className="what-we-do-conatiner">
                 <div className="mx-auto">
                     <div className="grid grid-cols-1 v-border lg:grid-cols-2 items-start">
                         {/* Left Column - Text Content */}
-                        <div className="space-y-8 cust-padding-left pb-40 pt-36">
+                        <div className="space-y-8 cust-padding-left md:pb-40 sm:pb-10 pt-36">
 
 
                             {/* Heading */}
@@ -85,27 +80,30 @@ const About = () => {
                             </button>
                         </div>
                         {/* Right Column - Image/Visual Content */}
-                        <div className="space-y-8 cust-padding-left pb-20 pt-30">
+                        <div className="space-y-8 second-padding-right pb-25 pt-25">
                             {/* Heading */}
                             <div className="space-y-4">
                                 <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900" style={{ visibility: "hidden" }}>
                                     WHAT WE DO
                                 </p>
-                                <p className="p-italic mb-4">
-                                    We Work With:
-                                </p>
-                                <p className="p-italic mb-4">
+                                <h3 className="p-italic ">
+                                    We work With:
+                                </h3>
+                                <h3 className="p-italic ">
                                     New schools, universities, and EdTech startups building from scratch
-                                </p>
-                                <p className="p-italic mb-4">
+                                </h3>
+
+                                <h3 className="p-italic " >
                                     Established institutions looking to refresh or reposition
-                                </p>
-                                <p className="p-italic mb-4">
+                                </h3>
+
+                                <h3 className="p-italic" >
                                     Groups expanding into new territories or verticals.
-                                </p>
-                                <p className="p-italic mb-2">
+                                </h3>
+
+                                <h3 className="p-italic">
                                     Corporate learning units building internal academies.
-                                </p>
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -122,8 +120,7 @@ const About = () => {
                             backgroundImage: `url("/Assets/images/Group.jpg")`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
-                        }}
-                    ></div>
+                        }}></div>
 
                     {/* RIGHT BLUE SECTION */}
                     <div
@@ -134,12 +131,10 @@ const About = () => {
                             backgroundPosition: "center",
                         }}
                     >
-                        <div className="flex flex-col justify-top  px-8 sm:px-12 lg:px-20 py-20 text-white space-y-8">
-
+                        <div className="flex flex-col justify-top  px-8 sm:px-12 lg:px-20 py-20 text-white space-y-8 second-padding-right">
                             <p className="text-[20px] font-semibold tracking-wider opacity-80 font-bold" style={{ color: "#002855" }}>
                                 CORE TEAM
                             </p>
-
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug max-w-xl">
                                 Our team includes brand strategists, designers, and industry experts who teach at reputed institutions.
                             </h2>

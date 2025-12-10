@@ -16,7 +16,7 @@ const WhyEdunoia = () => {
 
                         {/* Sub Heading */}
                         <h2 className="h-blue">
-                            Because education deserves<br/> its own brand language.
+                            We blend brand thinking <br/> with educational insight.
                         </h2>
                     </div>
 

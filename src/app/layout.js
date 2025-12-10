@@ -2,14 +2,24 @@ import { Merriweather, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import { Merriweather_Sans } from "next/font/google";
+
 
 // Heading font (h1–h6)
-const merriweather = Merriweather({
-  weight: ["300", "400", "700", "900"],
-  subsets: ["latin"],   // ← FIXED
-  variable: "--font-merriweather",
-  display: 'swap',
+// const merriweather = Merriweather({
+//   weight: ["300", "400", "700", "900"],
+//   subsets: ["latin"],   // ← FIXED
+//   variable: "--font-merriweather",
+//   display: 'swap',
+// });
+
+
+const merriweatherSans = Merriweather_Sans({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  display: "swap",
 });
+
 
 // Body font (p, span, li, etc.)
 const openSans = Open_Sans({
@@ -26,11 +36,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${merriweather.variable} ${openSans.variable}`}>
+    // <html lang="en" className={`${merriweather.variable} ${openSans.variable}`}>
+    <html lang="en" className={merriweatherSans.variable}>
       <body className="antialiased">
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

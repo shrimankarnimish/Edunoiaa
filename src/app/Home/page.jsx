@@ -95,7 +95,7 @@ const HeroSection = () => {
                         </div>
                         {/* RIGHT CONTENT */}
                         <div
-                            className="space-y-8 cust-padding-left pt-24 pb-24 lg:pt-36 lg:pb-40"
+                            className="space-y-8 second-padding-right pt-24 pb-24 lg:pt-36 lg:pb-40"
                             style={{
                                 backgroundImage: `url("/Assets/images/blurBG.jpg")`,
                                 backgroundSize: "cover",
@@ -112,7 +112,7 @@ const HeroSection = () => {
                                 </h3>
                             </div>
 
-                            <h4 className="text-[18px] sm:text-[20px] lg:text-[24px] text-white italic leading-relaxed">
+                            <h4 className="text-[18px] sm:text-[20px] lg:text-[30px] text-white italic leading-relaxed">
                                 End-to-end branding solutions, covering everything from research and brand
                                 strategy to verbal and visual identity.
                             </h4>

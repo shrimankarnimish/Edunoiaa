@@ -24,7 +24,7 @@ export default function Navbar() {
     ${scrolled ? "bg-black/60 backdrop-blur-md" : "bg-black/40 backdrop-blur-md"}`}
 >
 <div className="relative z-5 container mx-auto">
-                <nav className="flex items-center justify-between py-4 mt-5">
+                <nav className="flex items-center justify-between py-4 mt-1">
 
                     {/* LOGO */}
                     <div className="flex items-center">

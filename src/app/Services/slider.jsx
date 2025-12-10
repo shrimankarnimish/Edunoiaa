@@ -39,7 +39,7 @@ export default function CaseStudyCarousel() {
     ];
 
     return (
-        <div className="w-full max-w-7xl mx-auto py-10 px-4">
+        <div className="w-full container mx-auto py-10 ">
             <Swiper
                 spaceBetween={20}
                 slidesPerView={1}
