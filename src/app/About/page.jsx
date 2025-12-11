@@ -117,7 +117,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            {/* What we do end*/}
+            {/* What we do endddd*/}
             <section className="what-we-do-container">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
 
