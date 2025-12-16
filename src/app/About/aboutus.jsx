@@ -38,7 +38,7 @@ const WhyEdunoia = () => {
                             players find their voice, sharpen their identity, and stand out with clarity
                             and purpose.
                         </p>
-                        <p className='p-grey'>Edunoia exists to ensure that the excellence you build is recognised, valued, and trusted.</p>
+                        <h6 className='p-italic-dblue'>Edunoia exists to ensure that the excellence you build is recognised, valued, and trusted.</h6>
                     </div>
 
                 </div>

@@ -103,9 +103,9 @@ const TeamSection = () => {
                                     <p className="text-xl lg:text-2xl font-bold text-gray-900">
                                         Kunal Vora
                                     </p>
-                                    <p className="p-italic-dblue">
+                                    <h6 className="p-italic-dblue">
                                         Co-founder & Partner
-                                    </p>
+                                    </h6>
                                 </div>
                                 <p className="p-blue">
                                     A brand thinker who understands education from the inside, as a strategist, advisor, and long-time educator.
@@ -128,9 +128,9 @@ const TeamSection = () => {
                                     <p className="text-xl lg:text-2xl font-bold text-gray-900">
                                         Maghan Varkey
                                     </p>
-                                    <p className="p-italic-dblue">
+                                    <h6 className="p-italic-dblue">
                                         Co-founder & Strategy Director
-                                    </p>
+                                    </h6>
                                 </div>
                                 <p className="p-blue">
                                     Branding expert with deep experience across education and gas sectors, backed by a strong foundation in business administration, marketing strategy, and human resource management.
@@ -151,12 +151,12 @@ const TeamSection = () => {
 
                             <div className="space-y-4 lg:space-y-6">
                                 <div>
-                                    <p className="text-xl lg:text-2xl font-bold text-gray-900">
+                                    <h6 className="text-xl lg:text-2xl font-bold text-gray-900">
                                         Ekta Banodkar
-                                    </p>
-                                    <p className="p-italic-dblue">
+                                    </h6>
+                                    <h6 className="p-italic-dblue">
                                         Creative Director
-                                    </p>
+                                    </h6>
                                 </div>
                                 <p className="p-blue">
                                     Brand practitioner with 15+ years of experience across education and diverse industries, backed by a strong foundation in identity systems, design leadership, and creative strategy.

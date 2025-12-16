@@ -1,6 +1,10 @@
+"use client";
 import React from 'react';
+import { motion } from "framer-motion";
+
+
 import Image from 'next/image';
-import backgroundImage from "../../../public/Assets/images/image 1.jpg";
+import backgroundImage from "../../../public/Assets/images/About_banner.jpg";
 import Aboutus from "./aboutus"
 import counter2 from "../../../public/Assets/images/counter2.jpg"
 import Slider from './slider'
@@ -54,13 +58,14 @@ const About = () => {
             {/* What we do */}
             <section className="what-we-do-conatiner">
                 <div className="mx-auto">
-                    <div className="grid grid-cols-1 v-border lg:grid-cols-2 items-start">
+                {/* v-border  */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 items-start"> 
                         {/* Left Column - Text Content */}
                         <div className="space-y-8 cust-padding-left md:pb-40 sm:pb-10 pt-36">
 
 
                             {/* Heading */}
-                            <div className="space-y-4">
+                            <div className="space-y-6">
                                 <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">
                                     WHAT WE DO
                                 </p>
@@ -86,30 +91,33 @@ const About = () => {
                                 <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900" style={{ visibility: "hidden" }}>
                                     WHAT WE DO
                                 </p>
-                                <h3 className="p-italic ">
-                                    We work With:
-                                </h3>
-                                <h3 className="p-italic ">
-                                    New schools, universities, and EdTech startups building from scratch
-                                </h3>
 
-                                <h3 className="p-italic " >
-                                    Established institutions looking to refresh or reposition
-                                </h3>
-
-                                <h3 className="p-italic" >
-                                    Groups expanding into new territories or verticals.
-                                </h3>
-
-                                <h3 className="p-italic">
-                                    Corporate learning units building internal academies.
-                                </h3>
+                                <h3 className="p3-italic">We work with</h3>
+                                {[
+                                   
+                                    "New schools, universities, and EdTech startups building from scratch",
+                                    "Established institutions looking to refresh or reposition",
+                                    "Groups expanding into new territories or verticals.",
+                                    "Corporate learning units building internal academies."
+                                ].map((text, index) => (
+                                    <motion.h3
+                                        key={index}
+                                        className="p3-italic"
+                                        initial={{ opacity: 0, x: -50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.6, delay: index * 0.2 }}
+                                        viewport={{ once: true, amount: 0.5 }}
+                                    >
+                                        {text}
+                                    </motion.h3>
+                                ))}
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
-            {/* What we do end*/}
+            {/* What we do endddd*/}
             <section className="what-we-do-container">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
 

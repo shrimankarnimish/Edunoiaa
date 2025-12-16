@@ -27,7 +27,7 @@ const WhyEdunoia = () => {
                     {/* Right Column */}
                     <div className="space-y-6 lg:space-y-8">
                         {/* Description Text */}
-                        <p   className="p-grey"  >
+                        <p className="p-grey"  >
                             For 15+ years, ABND has built some of India's most respected educational brands.
                             Edunoia is the next step, designed to help schools, universities, and EdTech
                             players find their voice, sharpen their identity, and stand out with clarity
@@ -37,29 +37,33 @@ const WhyEdunoia = () => {
                         <div className="pt-6 lg:pt-8 w-full overflow-hidden">
 
                             {/* Top Line */}
-                           <div className="w-full h-[1px] bg-[#1B51FF]">    </div>
+                            <div className="w-full h-[2px] bg-[#1B51FF]">    </div>
 
                             {/* Infinite Carousel */}
                             <div className="overflow-hidden w-full py-4 lg:py-6">
-                                <div className="flex animate-slide">
-                                    {/* First set of logos */}
-                                    <div className="flex gap-8 sm:gap-12 lg:gap-16 px-4 sm:px-8">
-                                        <Image src={Flame} alt="FLAME" width={120} height={50} className="object-contain h-12 lg:h-16 w-auto" />
-                                        <Image src={londonschool} alt="LBS" width={120} height={50} className="object-contain h-12 lg:h-16 w-auto" />
-                                        <Image src={isbr} alt="ISBR" width={120} height={50} className="object-contain h-12 lg:h-16 w-auto" />
-                                        <Image src={yashbirla} alt="YASH BIRLA" width={120} height={50} className="object-contain h-12 lg:h-16 w-auto" />
+                                <div className="animate-slide flex w-max">
+
+                                    {/* Slide 1 */}
+                                    <div className="flex gap-16 px-8">
+                                        <Image src={Flame} className="object-contain" />
+                                        <Image src={londonschool} className="object-contain" />
+                                        <Image src={isbr} className="object-contain" />
+                                        <Image src={yashbirla} className="object-contain" />
                                     </div>
-                                    {/* Duplicate for seamless loop */}
-                                    <div className="flex gap-8 sm:gap-12 lg:gap-16 px-4 sm:px-8">
-                                        <Image src={Flame} alt="FLAME" width={120} height={50} className="object-contain h-12 lg:h-16 w-auto" />
-                                        <Image src={londonschool} alt="LBS" width={120} height={50} className="object-contain h-12 lg:h-16 w-auto" />
-                                        <Image src={isbr} alt="ISBR" width={120} height={50} className="object-contain h-12 lg:h-16 w-auto" />
-                                        <Image src={yashbirla} alt="YASH BIRLA" width={120} height={50} className="object-contain h-12 lg:h-16 w-auto" />
+
+                                    {/* Slide 2 (duplicate for infinite loop) */}
+                                    <div className="flex gap-16 px-8">
+                                        <Image src={Flame} className="object-contain" />
+                                        <Image src={londonschool} className="object-contain" />
+                                        <Image src={isbr} className="object-contain" />
+                                        <Image src={yashbirla} className="object-contain" />
                                     </div>
+
                                 </div>
                             </div>
+
                             {/* Bottom Line */}
-                           <div className="w-full h-[1px] bg-[#1B51FF]"></div>
+                            <div className="w-full h-[2px] bg-[#1B51FF]"></div>
                         </div>
                         {/* Know More Button */}
                         <div className="pt-2 lg:pt-4">

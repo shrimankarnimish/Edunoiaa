@@ -60,6 +60,7 @@ h6 {
 @media (min-width: 96rem) {
   .container {
     max-width: 80%;
+    margin-inline: auto;
   }
 }
 
@@ -289,7 +290,7 @@ h6 {
 }
 
 .heading-bluee {
-  font-size: 40px;
+  font-size:2.2rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.015em;
@@ -308,7 +309,7 @@ h6 {
 
 .h-blue {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 900;
   line-height: 1.2;
   letter-spacing: -0.015em;
   color: #1B51FF;
@@ -316,6 +317,13 @@ h6 {
 
 h3.p-italic {
   font-size: 30px ; 
+  font-style: italic;
+  color: #1B51FF;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+.p3-italic {
+  font-size: 24px ; 
   font-style: italic;
   color: #1B51FF;
   font-weight: 800;
@@ -520,3 +528,4 @@ h3.p-italic {
     padding-right: 30px;
   }
 }
+
