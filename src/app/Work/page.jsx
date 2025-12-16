@@ -1,15 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import emversity from "../../../public/Assets/images/emversity.jpg"
-import emversityhover from "../../../public/Assets/images/emversityt.jpg"
-import vidyashilp from "../../../public/Assets/images/vidyashilp.jpg"
-import vidyashilphover from "../../../public/Assets/images/vidyashilpt.jpg"
-import flame from "../../../public/Assets/images/flame.jpg"
-import flamehover from "../../../public/Assets/images/flamet.jpg"
-import atoot from "../../../public/Assets/images/atoot.jpg"
-import atoothover from "../../../public/Assets/images/atoott.jpg"
-
+import emversity from "../../../public/Assets/images/emversity.jpg";
+import emversityhover from "../../../public/Assets/images/emversityt.jpg";
+import vidyashilp from "../../../public/Assets/images/vidyashilp.jpg";
+import vidyashilphover from "../../../public/Assets/images/vidyashilpt.jpg";
+import flame from "../../../public/Assets/images/flame.jpg";
+import flamehover from "../../../public/Assets/images/flamet.jpg";
+import atoot from "../../../public/Assets/images/atoot.jpg";
+import atoothover from "../../../public/Assets/images/atoott.jpg";
 
 // Add more imports...
 
@@ -19,28 +18,28 @@ export default function WorkPage() {
       Title: "Emversity",
       image: emversity,
       imageHover: emversityhover,
-      link: "https://abnd.in/work/emversity",
+      link: "/growgether",
     },
 
     {
       Title: "Vidyashilp",
       image: vidyashilp,
       imageHover: vidyashilphover,
-      link: "/work/vidyashilp",
+      link: "/Vidyashilp",
     },
-        {
+    {
       Title: "Flame University",
       image: flame,
       imageHover: flamehover,
       link: "/work/growgether",
     },
-        {
+    {
       Title: "Atoot",
       image: atoot,
       imageHover: emversityhover,
       link: "/work/growgether",
     },
-        {
+    {
       Title: "Emversity",
       image: emversity,
       imageHover: atoothover,
@@ -49,12 +48,8 @@ export default function WorkPage() {
   ];
 
   return (
-    <div
-  className="w-full text-white py-18"
-  style={{ backgroundColor: "#002855" }} 
->
+    <div className="w-full bg-[#002855] text-white py-18">
       <div className="container mx-auto">
-
         {/* Heading */}
         <div className="mb-10">
           <div className="h-1 w-6 bg-white mb-20"></div>
@@ -67,7 +62,6 @@ export default function WorkPage() {
             <div key={index}>
               <Link href={item.link}>
                 <div className="relative w-full aspect-[4/3] overflow-hidden group">
-
                   {/* Normal Image */}
                   <Image
                     src={item.image}
@@ -81,7 +75,6 @@ export default function WorkPage() {
                     alt={`${item.Title} Hover`}
                     className="object-contain w-full h-full absolute top-0 left-0 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
                   />
-
                 </div>
               </Link>
 
@@ -90,7 +83,6 @@ export default function WorkPage() {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );

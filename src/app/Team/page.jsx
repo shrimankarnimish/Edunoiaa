@@ -151,9 +151,9 @@ const TeamSection = () => {
 
                             <div className="space-y-4 lg:space-y-6">
                                 <div>
-                                    <p className="text-xl lg:text-2xl font-bold text-gray-900">
+                                    <h6 className="text-xl lg:text-2xl font-bold text-gray-900">
                                         Ekta Banodkar
-                                    </p>
+                                    </h6>
                                     <h6 className="p-italic-dblue">
                                         Creative Director
                                     </h6>

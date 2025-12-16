@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 
 import Image from 'next/image';
-import backgroundImage from "../../../public/Assets/images/image 1.jpg";
+import backgroundImage from "../../../public/Assets/images/About_banner.jpg";
 import Aboutus from "./aboutus"
 import counter2 from "../../../public/Assets/images/counter2.jpg"
 import Slider from './slider'
@@ -92,7 +92,7 @@ const About = () => {
                                     WHAT WE DO
                                 </p>
 
-                                <h3 className="p-italic">We work with</h3>
+                                <h3 className="p3-italic">We work with</h3>
                                 {[
                                    
                                     "New schools, universities, and EdTech startups building from scratch",
@@ -102,7 +102,7 @@ const About = () => {
                                 ].map((text, index) => (
                                     <motion.h3
                                         key={index}
-                                        className="p-italic"
+                                        className="p3-italic"
                                         initial={{ opacity: 0, x: -50 }}
                                         whileInView={{ opacity: 1, x: 0 }}
                                         transition={{ duration: 0.6, delay: index * 0.2 }}

@@ -2,12 +2,15 @@
   "name": "edunoia",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start -H  192.168.1.69 -p 3000",
+  "lint": "eslint",
+  "host": "next dev -H  192.168.1.69 -p 3000"
+
+},
+
   "dependencies": {
     "@fontsource/merriweather-sans": "^5.2.7",
     "framer-motion": "^12.23.26",

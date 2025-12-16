@@ -1,0 +1,276 @@
+.banner {
+  /* height: calc(100vh - 5rem); */
+  height: 75vh;
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow-x: clip;
+}
+
+.banner video {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  z-index: -1;
+}
+
+.MarketSec {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.MarketSec li {
+  color: #ba1f34;
+  font-family: var(--font-header);
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.transformationSec {
+  position: relative;
+}
+
+.transformationSec .bgimg {
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.transformationSec .desc {
+  position: absolute;
+  bottom: 20%;
+  max-width: 70rem;
+}
+
+.transformationSec .ve {
+  position: absolute;
+  bottom: -25%;
+  left: 30%;
+}
+
+.borderRight {
+  border-right: 2px solid #dedede;
+}
+
+/* New classes added from global.css that are used in page.jsx */
+
+.white {
+  color: var(--whitecolor);
+}
+
+.ltdbg {
+  color: var(--whitecolor);
+}
+
+.ltdbg a {
+  color: var(--whitecolor);
+}
+
+.center {
+  text-align: center;
+}
+
+.container700 {
+  width: 100%;
+  max-width: var(--max-width700);
+  margin: 0 auto;
+  padding-inline: var(--container-padding);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-inline: var(--container-padding);
+}
+
+.container1200 {
+  width: 100%;
+  max-width: var(--max-width1200);
+  margin: 0 auto;
+  padding-inline: var(--container-padding);
+}
+
+.containerRight {
+  width: 100%;
+  max-width: var(--container-right);
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.mb5 {
+  margin-bottom: 0.5rem;
+}
+
+.mb0 {
+  margin-bottom: 0px;
+}
+
+.ptb8 {
+  padding-block: 8rem;
+}
+
+.pt4 {
+  padding-top: 4rem;
+}
+
+.pb8 {
+  padding-bottom: 8rem;
+}
+
+.p4 {
+  padding: 4rem;
+}
+
+.g {
+  display: grid;
+}
+
+.g2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap3 {
+  gap: 3rem;
+}
+
+.gap8 {
+  gap: 8rem;
+}
+
+.vCenter {
+  align-items: center;
+}
+
+.h2 {
+  font-family: var(--font-header);
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.h5 {
+  font-family: var(--font-header);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.7em;
+  margin-bottom: 1.5rem;
+}
+
+.h6 {
+  font-family: var(--font-header);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.7em;
+  margin-bottom: 1.5rem;
+}
+
+.fontMerriSans {
+  font-family: var(--font-body);
+}
+
+.fontMerri {
+  font-family: var(--font-header);
+}
+
+.sbold {
+  font-weight: 600;
+}
+
+.springboard {
+  aspect-ratio: 100/22;
+  background-color: var(--blackcolor);
+  margin-block: 1.5rem;
+}
+
+.springboard.white {
+  background-color: var(--whitecolor);
+}
+
+.d80 {
+  height: 8rem;
+}
+
+.d30 {
+  height: 3rem;
+}
+
+.d60 {
+  height: 6rem;
+}
+
+.d100 {
+  height: 10rem;
+}
+
+.d10 {
+  height: 1rem;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img100p {
+  width: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.big {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+}
+
+.displayNoneMob {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .transformationSec .ve {
+    display: none;
+  }
+  .MarketSec {
+    grid-template-columns: 1fr;
+  }
+  .borderRight {
+    border-right: 2px solid transparent;
+  }
+  .transformationSec .bgimg {
+    aspect-ratio: 16/9;
+    height: auto;
+  }
+  .transformationSec .desc {
+    bottom: 5%;
+  }
+  
+  /* Mobile overrides for grid classes */
+  .g2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .displayNoneMob {
+    display: none;
+  }
+}

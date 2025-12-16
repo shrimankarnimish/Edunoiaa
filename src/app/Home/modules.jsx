@@ -110,7 +110,7 @@ const TailoredModules = () => {
                             </h6>
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-bluee">
-                                    Alumni & Donor Branding
+                                    Alumni & Donor<br/> Branding
                                 </h4>
                                 <div className="border-linee"></div>
                             </div>
@@ -165,7 +165,7 @@ const TailoredModules = () => {
 
                             <div className="mb-3 sm:mb-4 ">
                                 <h4 className="heading-bluee">
-                                    Edunoia Recognition<br /> Index (ERI™)
+                                    Edunoia Recognition<br/> Index (ERI™)
                                 </h4>
                                 <div className="border-line "></div>
                             </div>
@@ -193,7 +193,7 @@ const TailoredModules = () => {
 
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-bluee">
-                                    Faculty Engagement Program
+                                    Faculty Engagement<br/> Program
 
                                 </h4>
                                 <div className="border-line"></div>
@@ -222,7 +222,7 @@ const TailoredModules = () => {
 
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-bluee">
-                                    Merchandise <br />& Pride<br /> Program
+                                    Merchandise & Pride <br/> Program
                                 </h4>
                                 <div className="border-linee"></div>
                             </div>
@@ -250,7 +250,7 @@ const TailoredModules = () => {
 
                             <div className="mb-3 sm:mb-4 ">
                                 <h4 className="heading-bluee">
-                                    IP Development for Events & Summits
+                                    IP Development for Events<br/> & Summits
                                 </h4>
                                 <div className="border-linee"></div>
                             </div>
@@ -276,7 +276,7 @@ const TailoredModules = () => {
                             </h6>
                             <div className="mb-3 sm:mb-4 ">
                                 <h4 className="heading-bluee">
-                                    Event <br />Experience<br /> Branding
+                                    Event Experience<br/> Branding
                                 </h4>
                                 <div className="border-linee"></div>
                             </div>
