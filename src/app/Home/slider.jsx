@@ -54,8 +54,8 @@ export default function CaseStudyCarousel() {
             >
                 {cards.map((card, index) => (
                     <SwiperSlide key={index}>
-                        <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-[460px] overflow-hidden group cursor-pointer">
-
+                        <div className="relative w-full h-[420px] sm:h-[380px] md:h-[420px] lg:h-[460px] overflow-hidden group cursor-pointer">
+                    
                             {/* Image */}
                             <Image
                                 src={card.img}

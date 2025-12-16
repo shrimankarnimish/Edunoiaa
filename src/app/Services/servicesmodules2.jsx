@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ServiceModules = () => {
+const TailoredModules = () => {
     return (
         <section className="bg-[#1B51FF] py-8 sm:py-12 md:py-16 min-h-screen">
             {/* Grid Section */}
@@ -32,10 +32,10 @@ const ServiceModules = () => {
                                 <div className="border-linee"></div>
                             </div>
                             <h6 className="title">
-                             Launch like a top-tier institution in under 90 days.
+                                Launch like a top-tier institution in under 90 days.
                             </h6>
                             <p className="p-blue">
-                            Ideal for new schools, universities, or EdTech ventures. We help you look credible and compelling from day one, with clear positioning, a resonant name, and polished brand assets.
+                                Ideal for new schools, universities, or EdTech ventures. We help you look credible and compelling from day one, with clear positioning, a resonant name, and polished brand assets.
                             </p>
                         </div>
                         <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
@@ -54,8 +54,8 @@ const ServiceModules = () => {
                             </h6>
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-bluee">
-                                    90-Day Rebranding<br/>
-                                     Sprint
+                                    90-Day Rebranding<br />
+                                    Sprint
                                 </h4>
                                 <div className="border-linee"></div>
                             </div>
@@ -63,7 +63,7 @@ const ServiceModules = () => {
                                 Reignite your brand before another admissions season passes.
                             </h6>
                             <p className="p-blue">
-                               For established institutions losing relevance, this sprint delivers a modern identity, sharper messaging, and renewed trust
+                                For established institutions losing relevance, this sprint delivers a modern identity, sharper messaging, and renewed trust
                             </p>
                         </div>
                         <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
@@ -88,10 +88,10 @@ const ServiceModules = () => {
                                 <div className="border-linee"></div>
                             </div>
                             <h6 className="title">
-                             Reignite your brand before another admissions season passes.
+                                Reignite your brand before another admissions season passes.
                             </h6>
                             <p className="p-blue">
-                               For established institutions losing relevance, this sprint delivers a modern identity, sharper messaging, and renewed trust.
+                                For established institutions losing relevance, this sprint delivers a modern identity, sharper messaging, and renewed trust.
                             </p>
                         </div>
                         <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
@@ -115,7 +115,7 @@ const ServiceModules = () => {
                                 <div className="border-linee"></div>
                             </div>
                             <h6 className="title">
-                               Turn alumni into lifelong ambassadors and donors.
+                                Turn alumni into lifelong ambassadors and donors.
                             </h6>
                             <p className="p-blue">
                                 We design campaigns, engagement kits, and visual identities to strengthen emotional ties and drive giving.
@@ -142,7 +142,7 @@ const ServiceModules = () => {
                                 <div className="border-linee"></div>
                             </div>
                             <h6 className="title">
-                              Measure what truly matters
+                                Measure what truly matters
                             </h6>
                             <p className="p-blue">
                                 For established institutions losing relevance, this sprint delivers a modern identity, sharper messaging, and renewed trust.
@@ -165,7 +165,7 @@ const ServiceModules = () => {
 
                             <div className="mb-3 sm:mb-4 ">
                                 <h4 className="heading-bluee">
-                                    Edunoia Recognition Index (ERI™)
+                                    Edunoia Recognition<br /> Index (ERI™)
                                 </h4>
                                 <div className="border-line "></div>
                             </div>
@@ -222,7 +222,7 @@ const ServiceModules = () => {
 
                             <div className="mb-3 sm:mb-4">
                                 <h4 className="heading-bluee">
-                                    Merchandise & Pride Program
+                                    Merchandise <br />& Pride<br /> Program
                                 </h4>
                                 <div className="border-linee"></div>
                             </div>
@@ -230,7 +230,7 @@ const ServiceModules = () => {
                                 Turn every student into a walking brand ambassador.
                             </h6>
                             <p className="p-blue">
-                               We design merchandise systems - everyday, premium, and seasonal, that make your brand wearable and collectible.
+                                We design merchandise systems - everyday, premium, and seasonal, that make your brand wearable and collectible.
                             </p>
                         </div>
                         <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center cursor-pointer  uppercase tracking-wide">
@@ -255,10 +255,10 @@ const ServiceModules = () => {
                                 <div className="border-linee"></div>
                             </div>
                             <h6 className="title">
-                              Create your own intellectual property.
+                                Create your own intellectual property.
                             </h6>
                             <p className="p-blue">
-                              We help you conceptualise and brand annual events that strengthen thought leadership and visibility.
+                                We help you conceptualise and brand annual events that strengthen thought leadership and visibility.
                             </p>
                         </div>
                         <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase cursor-pointer tracking-wide">
@@ -276,7 +276,7 @@ const ServiceModules = () => {
                             </h6>
                             <div className="mb-3 sm:mb-4 ">
                                 <h4 className="heading-bluee">
-                                    Event Experience Branding
+                                    Event <br />Experience<br /> Branding
                                 </h4>
                                 <div className="border-linee"></div>
                             </div>
@@ -296,11 +296,12 @@ const ServiceModules = () => {
                     </div>
 
                     {/* CTA Card */}
-                       <div className=" text-gray-800 p-4 sm:p-25 md:p-25 flex flex-col justify-between min-h-[280px] sm:min-h-[300px] md:min-h-[320px]">
+                    <div className=" text-gray-800 p-4 sm:p-25 md:p-25 flex flex-col justify-between min-h-[280px] sm:min-h-[300px] md:min-h-[320px]">
                         <div>
-                            <h5 className="text-[30px] text-white font-normal mb-4">
-                                Explore all our<br /> Branding services
+                            <h5 className="text-[36px] text-white font-[700] mb-4 leading-tight" >
+                                Explore all our Branding services
                             </h5>
+
                             <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3  font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide">
                                 View Details
                             </button>
@@ -312,4 +313,4 @@ const ServiceModules = () => {
     );
 };
 
-export default ServiceModules;
+export default TailoredModules;
