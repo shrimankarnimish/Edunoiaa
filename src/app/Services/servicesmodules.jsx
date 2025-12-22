@@ -298,9 +298,10 @@ const TailoredModules = () => {
                     {/* CTA Card */}
                        <div className=" text-gray-800 p-4 sm:p-25 md:p-25 flex flex-col justify-between min-h-[280px] sm:min-h-[300px] md:min-h-[320px]">
                         <div>
-                            <h5 className="text-[30px] text-white font-normal mb-4">
-                                Explore all our<br /> Branding services
+                            <h5 className="text-[36px] text-white font-[700] mb-4 leading-tight" >
+                                Explore all our Branding services
                             </h5>
+
                             <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3  font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide">
                                 View Details
                             </button>

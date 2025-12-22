@@ -110,15 +110,8 @@ h6 {
   }
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
 
-  100% {
-    transform: translateX(-50%);
-  }
-}
+
 
 .animate-slide {
   animation: slide 20s linear infinite;
@@ -141,7 +134,7 @@ h6 {
 } */
 
 .cust-padding-left {
-  padding-left: 21%;
+  padding-left: 10%;
   padding-right: 100px;
 }
 
@@ -154,7 +147,7 @@ h6 {
 /* Base / Desktop */
 .what-we-do-container .cust-padding-left,
 .contact-us-form-container .cust-left-padding {
-  padding-left: 20%;
+  padding-left: 10%;
   padding-right: 40px;
 }
 
@@ -271,15 +264,17 @@ h6 {
   color: #002855;
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 2.5rem;
 }
 
 .title {
   margin-bottom: 0.5rem;
   /* mb-2 */
   font-style: italic;
-  font-size: 20px;
+  font-size: 24px;
   color: #002855;
   font-weight: 600;
+  line-height: 1.3;
 }
 .titlee{
     margin-bottom: 0.5rem;
@@ -297,11 +292,24 @@ h6 {
   line-height: 1.6;
   /* optional, matches leading-relaxed */
 }
+.p-white {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.6;
+  /* optional, matches leading-relaxed */
+}
+.blueh4{ 
+  font-size: 24px;
+  color: white;
+
+
+}
+
 
 .heading-bluee {
   font-size:2rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.015em;
   color: #1B51FF;
 
@@ -325,7 +333,7 @@ h6 {
 }
 
 h3.p-italic {
-  font-size: 30px ; 
+  font-size: 28px ; 
   font-style: italic;
   color: #1B51FF;
   font-weight: 800;
@@ -415,7 +423,7 @@ h3.p-italic {
 }
 /* Desktop / Default */
 h3.p-italic {
-  font-size: 30px;
+  font-size: 24px;
   font-style: italic;
   color: #1B51FF;
   font-weight: 800;

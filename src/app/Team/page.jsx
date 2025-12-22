@@ -91,7 +91,7 @@ const TeamSection = () => {
                         {/* Person 1 - Kunal Vora */}
                         <div className="space-y-6 lg:space-y-8">
                             {/* Image */}
-                            <div className="aspect-square overflow-hidden rounded-lg">
+                            <div className="aspect-square overflow-hidden">
                                 <Image
                                     src={Kunal}
                                     alt="Kunal Vora - Co-founder & Partner"
@@ -116,7 +116,7 @@ const TeamSection = () => {
                         {/* Person 2 - Maghan Varkey */}
                         <div className="space-y-6 lg:space-y-8">
                             {/* Image */}
-                            <div className="aspect-square overflow-hidden rounded-lg">
+                            <div className="aspect-square overflow-hidden ">
                                 <Image
                                     src={Meghan}
                                     alt="Maghan Varkey - Co-founder & Strategy Director"
@@ -141,7 +141,7 @@ const TeamSection = () => {
                         {/* Person 3 - Ekta Banodkar */}
                         <div className="space-y-6 lg:space-y-8">
                             {/* Image */}
-                            <div className="aspect-square overflow-hidden rounded-lg">
+                            <div className="aspect-square overflow-hidden ">
                                 <Image
                                     src={Ekta}
                                     alt="Ekta Banodkar - Creative Director"

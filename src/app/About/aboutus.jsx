@@ -27,10 +27,7 @@ const WhyEdunoia = () => {
                             className="p-grey"
                            
                         >
-                            For 15+ years, ABND has built some of India's most respected educational brands.
-                            Edunoia is the next step, designed to help schools, universities, and EdTech
-                            players find their voice, sharpen their identity, and stand out with clarity
-                            and purpose.
+                            Most institutions focus on infrastructure, curriculum, and faculty. But the truth is, none of that matters unless people believe in your brand. That’s where we come in.
                         </p>
                            <p  className="p-grey">
                             For 15+ years, ABND has built some of India's most respected educational brands.
