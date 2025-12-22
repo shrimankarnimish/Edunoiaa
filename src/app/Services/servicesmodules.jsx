@@ -28,7 +28,7 @@ const TailoredModules = () => {
                             </h6>
                             <div className="mb-3 sm:mb-4 ">
 
-                                <h4 className="heading-bluee">Research, Analysis & Insights</h4>
+                                <h4 className="heading-bluee">Research, Analysis &<br/> Insights</h4>
                                 <div className="border-linee"></div>
                             </div>
                             <h6 className="title">
