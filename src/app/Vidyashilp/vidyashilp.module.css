@@ -1,5 +1,7 @@
+/* vidyashilp.module.css */
+
+/* Banner Section */
 .banner {
-  /* height: calc(100vh - 5rem); */
   height: 75vh;
   display: grid;
   place-content: center;
@@ -15,21 +17,23 @@
   z-index: -1;
 }
 
-.MarketSec {
+/* Market Analysis Section */
+.marketSec {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 3rem;
   align-items: center;
 }
 
-.MarketSec li {
+.marketSec li {
   color: #ba1f34;
-  font-family: var(--font-header);
-  font-weight: bold;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
   font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
+/* Transformation Section */
 .transformationSec {
   position: relative;
 }
@@ -45,6 +49,7 @@
   position: absolute;
   bottom: 20%;
   max-width: 70rem;
+  color: #fff;
 }
 
 .transformationSec .ve {
@@ -53,93 +58,71 @@
   left: 30%;
 }
 
+/* Border Styles */
 .borderRight {
   border-right: 2px solid #dedede;
 }
 
-/* New classes added from global.css that are used in page.jsx */
+/* Text Styles */
+.uppercase {
+  text-transform: uppercase;
+}
 
 .white {
-  color: var(--whitecolor);
+  color: #fff;
 }
 
 .ltdbg {
-  color: var(--whitecolor);
+  color: #fff;
 }
 
 .ltdbg a {
-  color: var(--whitecolor);
+  color: #fff;
 }
 
 .center {
   text-align: center;
 }
 
-.container700 {
-  width: 100%;
-  max-width: var(--max-width700);
-  margin: 0 auto;
-  padding-inline: var(--container-padding);
+.block {
+  display: block;
 }
 
+/* Container Styles */
 .container {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 90%;
   margin: 0 auto;
-  padding-inline: var(--container-padding);
+  padding-inline: 3rem;
+}
+
+.container700 {
+  width: 100%;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding-inline: 3rem;
 }
 
 .container1200 {
   width: 100%;
-  max-width: var(--max-width1200);
+  max-width: 120rem;
   margin: 0 auto;
-  padding-inline: var(--container-padding);
+  padding-inline: 3rem;
 }
 
 .containerRight {
   width: 100%;
-  max-width: var(--container-right);
+  max-width: 93%;
   margin: 0 0 0 auto;
   padding: 0;
 }
 
-.bold {
-  font-weight: 700;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.mb5 {
-  margin-bottom: 0.5rem;
-}
-
-.mb0 {
-  margin-bottom: 0px;
-}
-
-.ptb8 {
-  padding-block: 8rem;
-}
-
-.pt4 {
-  padding-top: 4rem;
-}
-
-.pb8 {
-  padding-bottom: 8rem;
-}
-
-.p4 {
-  padding: 4rem;
-}
-
-.g {
+/* Grid Styles */
+.grid {
   display: grid;
 }
 
-.g2 {
+.grid2 {
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -155,122 +138,189 @@
   align-items: center;
 }
 
-.h2 {
-  font-family: var(--font-header);
-  font-weight: 400;
-  font-size: 4.2rem;
-  line-height: 1.4;
-  margin-bottom: 1.5rem;
+/* Spacing Utilities */
+.ptb8 {
+  padding-block: 8rem;
 }
 
-.h5 {
-  font-family: var(--font-header);
-  font-weight: 400;
-  font-size: 2.4rem;
-  line-height: 1.7em;
-  margin-bottom: 1.5rem;
+.ptb4 {
+  padding-block: 4rem;
 }
 
-.h6 {
-  font-family: var(--font-header);
+.pt4 {
+  padding-top: 4rem;
+}
+
+.pb8 {
+  padding-bottom: 8rem;
+}
+
+.p4 {
+  padding: 4rem;
+}
+
+.mb5 {
+  margin-bottom: 0.5rem;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+/* Typography Classes - Add these as classes to elements */
+.heading2 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  
+}
+
+.heading5 {
+  font-family: "Merriweather", serif;
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.7em;
   margin-bottom: 1.5rem;
 }
 
-.fontMerriSans {
-  font-family: var(--font-body);
+.heading6 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.7em;
+  margin-bottom: 1.5rem;
 }
 
+.paragraph {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.bigText {
+  font-size: 1.5rem;
+  line-height: 1.2em;
+}
+
+/* Font Styles */
 .fontMerri {
-  font-family: var(--font-header);
+  font-family: "Merriweather", serif;
+}
+
+.fontMerriSans {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .sbold {
   font-weight: 600;
 }
 
-.springboard {
-  aspect-ratio: 100/22;
-  background-color: var(--blackcolor);
-  margin-block: 1.5rem;
+.italic {
+  font-style: italic;
 }
 
-.springboard.white {
-  background-color: var(--whitecolor);
-}
-
+/* Divider/Spacer */
 .d80 {
   height: 8rem;
-}
-
-.d30 {
-  height: 3rem;
+  border: none;
 }
 
 .d60 {
   height: 6rem;
+  border: none;
 }
 
-.d100 {
-  height: 10rem;
+.d30 {
+  height: 3rem;
+  border: none;
 }
 
 .d10 {
   height: 1rem;
+  border: none;
 }
 
+.d100 {
+  height: 10rem;
+  border: none;
+}
+
+.springboard {
+  aspect-ratio: 100/22;
+  background-color: #000;
+  margin-block: 1.5rem;
+  border: none;
+}
+
+.springboard.white {
+  background-color: #fff;
+}
+
+/* Image Styles */
 .img {
   max-width: 100%;
   height: auto;
 }
-
+ 
 .img100p {
   width: 100%;
 }
 
-.block {
-  display: block;
+/* Background Colors */
+.otherProjectBG {
+  background: #f2f2f2;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
-.big {
-  font-size: 1.8rem;
-  line-height: 1.5em;
-}
-
-.displayNoneMob {
-  display: none;
-}
-
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .transformationSec .ve {
     display: none;
   }
-  .MarketSec {
+  
+  .marketSec {
     grid-template-columns: 1fr;
   }
+  
   .borderRight {
     border-right: 2px solid transparent;
   }
+  
   .transformationSec .bgimg {
     aspect-ratio: 16/9;
     height: auto;
   }
+  
   .transformationSec .desc {
     bottom: 5%;
   }
   
-  /* Mobile overrides for grid classes */
-  .g2 {
+  .displayNoneMob {
+    display: none;
+  }
+  
+  .grid2 {
     grid-template-columns: 1fr;
   }
   
-  .displayNoneMob {
-    display: none;
+  .mgap3 {
+    gap: 3rem;
+  }
+  
+  .container,
+  .container700,
+  .container1200 {
+    padding-inline: 0;
+  }
+  
+  .containerRight {
+    padding-right: 4rem;
   }
 }

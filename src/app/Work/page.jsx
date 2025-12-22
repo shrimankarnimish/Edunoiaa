@@ -18,7 +18,7 @@ export default function WorkPage() {
       Title: "Emversity",
       image: emversity,
       imageHover: emversityhover,
-      link: "/growgether",
+      link: "/Emversity",
     },
 
     {
@@ -40,7 +40,7 @@ export default function WorkPage() {
       link: "/work/growgether",
     },
     {
-      Title: "Emversity",
+      Title: "Atoot",
       image: emversity,
       imageHover: atoothover,
       link: "/work/growgether",
