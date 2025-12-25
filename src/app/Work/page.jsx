@@ -31,20 +31,20 @@ export default function WorkPage() {
       Title: "Flame University",
       image: flame,
       imageHover: flamehover,
-      link: "/work/growgether",
+      link: "Flame-University",
     },
     {
       Title: "Atoot",
       image: atoot,
-      imageHover: emversityhover,
-      link: "/work/growgether",
-    },
-    {
-      Title: "Atoot",
-      image: emversity,
       imageHover: atoothover,
-      link: "/work/growgether",
+      link: "/atoot",
     },
+    // {
+    //   Title: "Atoot",
+    //   image: emversity,
+    //   imageHover: atoothover,
+    //   link: "/work/growgether",
+    // },
   ];
 
   return (

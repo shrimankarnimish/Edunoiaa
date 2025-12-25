@@ -13,11 +13,11 @@ const Emversity = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="bg-black text-white py-40">
+      <div className=" bg-[#002855] text-white py-40">
         <div className="container mx-auto ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <div>
-              <hr className="w-8 h-1 bg-white mb-6" />
+                 <div className="aspect-[100/22] w-12 bg-white mb-6"></div>
               <h2 className="font-merriweather text-4xl md:text-5xl font-normal mb-8">Emversity</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">

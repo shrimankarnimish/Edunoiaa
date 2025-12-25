@@ -147,7 +147,7 @@ h6 {
 /* Base / Desktop */
 .what-we-do-container .cust-padding-left,
 .contact-us-form-container .cust-left-padding {
-  padding-left: 10%;
+  padding-left: 20% !important;
   padding-right: 40px;
 }
 
@@ -302,6 +302,15 @@ h6 {
   font-size: 24px;
   color: white;
 
+}
+
+
+.border-line-grey {
+  width: 100%;
+  height: 1px;
+  background-color: #B7B3B3;
+  margin-bottom: 1rem;
+  margin-top: 50px;
 
 }
 
@@ -347,12 +356,13 @@ h3.p-italic {
   margin-bottom: 35px;
 }
 
+
 .p-italic-dblue {
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 24px;
   color: #002855;
   font-weight: 600;
   font-style: italic;
-  ;
 }
 
 .v-border {
@@ -549,3 +559,42 @@ h3.p-italic {
   }
 }
 
+/* ATOOT SLIDER CSS START */
+/* Add these Swiper styles to your global.css or a separate swiper.css */
+
+/* Swiper Navigation Arrows */
+/* Responsive Swiper Styles */
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .swiper-button-next {
+    right: 15px;
+  }
+  
+  .swiper-button-prev {
+    left: 15px;
+  }
+  
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 2.5rem;
+  }
+  
+  /* Adjust container padding on mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+/* ATOOT SLIDER END */
