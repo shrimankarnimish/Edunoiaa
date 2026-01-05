@@ -190,13 +190,13 @@ h6 {
 }
 
 @media (min-width: 640px) {
-  .responsive-hblue {
+  .responsive-hblue.whiteh4 {
     font-size: 34px;
   }
 }
 
 @media (min-width: 1024px) {
-  .responsive-hblue {
+  .responsive-hblue .whiteh4{
     font-size: 40px;
   }
 }
@@ -208,8 +208,9 @@ h6 {
 }
 
 @media (min-width: 640px) {
-  .responsive-pgrey {
+  .responsive-pgrey .whiteh4{
     font-size: 20px;
+    
   }
 }
 
@@ -301,7 +302,11 @@ h6 {
 .blueh4{ 
   font-size: 24px;
   color: white;
-
+}
+.whiteh4{
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
 }
 
 
@@ -387,6 +392,9 @@ h3.p-italic {
   left: 50%;
   bottom: 0px;
 }
+.service-section{
+  height: 70vh;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -455,6 +463,9 @@ h3.p-italic {
   h3.p-italic {
     font-size: 24px;
   }
+  .service-section{
+    height: 50vh;
+  }
 }
 
 /* Mobile Landscape & Small Tablets (≤600px) */
@@ -509,6 +520,7 @@ h3.p-italic {
   .p-italic-dblue {
     font-size: 20px;
   }
+  
 }
 
 
@@ -598,3 +610,4 @@ h3.p-italic {
   }
 }
 /* ATOOT SLIDER END */
+/* Button css start */

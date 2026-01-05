@@ -4,10 +4,12 @@ import { Menu, X } from "lucide-react";
 import Logo from "../../../public/Assets/images/LogoNew.webp";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +19,24 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Helper function to check if a link is active
+  const isActive = (path) => {
+    if (path === "/") {
+      return pathname === path;
+    }
+    return pathname.startsWith(path);
+  };
+
+  // Navigation items for better maintainability
+  const navItems = [
+    { path: "/About", label: "ABOUT" },
+    { path: "/Services", label: "SERVICES" },
+    { path: "/Work", label: "WORK" },
+    { path: "/Team", label: "TEAM" },
+    { path: "/ThoughtLeadership", label: "THOUGHT LEADERSHIP" },
+    { path: "/Contact", label: "CONTACT" },
+  ];
 
   return (
     <header
@@ -42,44 +62,21 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center gap-10">
-            <li>
-              <Link
-                href="/About"
-                className="text-white text-[20px] tracking-wide hover:opacity-70 cursor-pointer"
-              >
-                ABOUT
-              </Link>
-            </li>
-            <Link
-              href="/Services"
-              className="text-white text-[20px] tracking-wide hover:opacity-70 cursor-pointer"
-            >
-              SERVICES
-            </Link>
-            <Link
-              href="/Work"
-              className="text-white text-[20px] tracking-wide hover:opacity-70 cursor-pointer"
-            >
-              WORK
-            </Link>
-
-            <Link
-              href="/Team"
-              className="text-white text-[20px] tracking-wide hover:opacity-70 cursor-pointer"
-            >
-              TEAM
-            </Link>
-
-            <li className="text-white text-[20px] tracking-wide hover:opacity-70 cursor-pointer">
-              THOUGHT LEADERSHIP
-            </li>
-
-            <Link
-              href="/Contact"
-              className="text-white text-[20px] tracking-wide hover:opacity-70 cursor-pointer"
-            >
-              CONTACT
-            </Link>
+            {navItems.map((item) => (
+              <li key={item.path}>
+                <Link
+                  href={item.path}
+                  className={`relative text-white text-[20px] tracking-wide hover:opacity-70 cursor-pointer transition-all duration-300
+                    ${isActive(item.path) ? "font-medium" : ""}`}
+                >
+                  {item.label}
+                  {/* Active underline indicator */}
+                  {isActive(item.path) && (
+                    <span className="absolute bottom-[-8px] left-0 w-full h-[2px] bg-white rounded-full"></span>
+                  )}
+                </Link>
+              </li>
+            ))}
           </ul>
 
           {/* Mobile Hamburger */}
@@ -104,16 +101,22 @@ export default function Navbar() {
             </button>
 
             <ul className="flex flex-col mt-20 gap-6 pl-10">
-              <li className="text-white text-base tracking-wide">ABOUT</li>
-              <li className="text-white text-base tracking-wide">
-                WHY EDUNOIA
-              </li>
-              <li className="text-white text-base tracking-wide">SERVICES</li>
-              <li className="text-white text-base tracking-wide">WORK</li>
-              <li className="text-white text-base tracking-wide">
-                THOUGHT LEADERSHIP
-              </li>
-              <li className="text-white text-base tracking-wide">CONTACT</li>
+              {navItems.map((item) => (
+                <li key={item.path}>
+                  <Link
+                    href={item.path}
+                    onClick={() => setOpen(false)}
+                    className={`relative text-white text-base tracking-wide block py-2 transition-all duration-300
+                      ${isActive(item.path) ? "font-medium" : ""}`}
+                  >
+                    {item.label}
+                    {/* Active indicator for mobile */}
+                    {isActive(item.path) && (
+                      <span className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 w-2 h-2 bg-white rounded-full"></span>
+                    )}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </nav>

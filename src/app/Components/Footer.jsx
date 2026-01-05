@@ -9,7 +9,7 @@ function Footer() {
         <div className="container mx-auto  py-14">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* LEFT HEADING */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-snug">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-snug mt-10">
               Find out why leading <br />
               institutions trust Edunoia.
             </h2>
