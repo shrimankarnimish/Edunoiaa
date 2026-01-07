@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import backgroundImage from "../../../public/Assets/images/image 1.jpg";
-import counter2 from "../../../public/Assets/images/counter2.jpg";
+import counter2 from "../../../public/Assets/images/counter.png";
 import WhyEdunoia from "./whyEdunoia";
 import Modules from "./modules";
 import CaseStudy from "../Components/Casestudy";
 import Slider from "./slider";
 import { Fadeinleft,Fadeinright } from "../Components/Animations";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -35,13 +36,17 @@ const HeroSection = () => {
 
             {/* CTA Buttons - Exact styling from first image */}
             <div className="flex flex-col sm:flex-row gap-4 mt-12">
+              <Link href="/Services">
              <button class="font-body bg-white text-[#1B51FF] hover:bg-gray-50 font-semibold py-3 px-8 transition duration-200 ease-in-out tracking-wide uppercase cursor-pointer text-sm sm:text-base hover:scale-105">
                 START YOUR INSTITUTIONS JOURNEY
               </button>
+              </Link>
 
+              <Link href="/Contact">
               <button class="font-body bg-white text-[#1B51FF] hover:bg-gray-50 font-semibold py-3 px-8 transition duration-200 ease-in-out tracking-wide uppercase cursor-pointer text-sm sm:text-base hover:scale-105">
                 BOOK A DISCOVERY CALL
               </button>
+              </Link>
             </div>
           </div>
           </Fadeinright>
@@ -85,9 +90,11 @@ const HeroSection = () => {
                 sector.
               </p>
 
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-4 text-lg">
+               <Link href="/Services"> 
+              <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white font-semibold py-3 px-7 cursor mt-4 text-lg">
                 VIEW DETAILS
               </button>
+              </Link>
             </div>
             </Fadeinright>
             {/* RIGHT CONTENT */}

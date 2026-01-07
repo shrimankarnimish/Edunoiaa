@@ -7,6 +7,7 @@ import ServicesModules2 from "./servicesmodules2";
 import Slider from "./slider";
 import { motion } from "framer-motion";
 import Service2 from "../../../public/Assets/images/service2.jpg";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -65,9 +66,12 @@ const Services = () => {
                   End-to-end branding<br/> solutions, covering everything<br/> from
                   research and brand<br/> strategy to verbal and visual<br/>   identity.
                 </h6>
+                <Link href="/BespokeModules">
                 <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-8 text-lg transition duration-200 cursor-pointer">
                   VIEW DETAILS
                 </button>
+                </Link>
+                
               </div>
               {/* Right Column */}
               <div

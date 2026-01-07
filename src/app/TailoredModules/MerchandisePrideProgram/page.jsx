@@ -112,51 +112,54 @@ const inside_service1 = () => {
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
                   Merchandise Strategy 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                  Themes, Purpose, Audience Tiersm{" "}
+                </p> */}
+                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                   Themes, Purpose, Audience Tiersm{" "}
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   3 Distinct Collections 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                  Everyday Pride, Premium Legacy, Seasonal Drops{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
                   3–5 researched, conflict-free options
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Vendor-ready Designs 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   10–15 SKUs{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  Tone, tagline, admissions messaging
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                     10–15 SKUs{" "}
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                 Merchandise Catalogue 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Print + Web{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  Tone, tagline, admissions messaging
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                   Print + Web
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Online Store Wireframe & Launch Kit
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Certificate, Media Template, Social Toolkit{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Logo, design system, color palette, typography
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                {/* <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Listing on Edunoia’s public recognition portal
                 </h6>
                 <p className="p-blue mt-5">
@@ -177,7 +180,7 @@ const inside_service1 = () => {
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Stationery, brochure, social templates, website wireframe
                 </p>
-                <div className="border-line-grey"></div>
+                <div className="border-line-grey"></div> */}
               </div>
             </div>
           </div>
