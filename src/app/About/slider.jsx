@@ -68,12 +68,12 @@ export default function CaseStudyCarousel() {
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all"></div>
 
                             {/* TITLE */}
-                            <p className="absolute bottom-5 left-5 right-5 
+                            <h4 className="absolute bottom-5 left-5 right-5 
                                 text-white font-semibold
                                 text-xl sm:text-2xl md:text-2xl
-                                leading-snug drop-shadow-lg">
+                                leading-snug drop-shadow-lg italic">
                                 {card.title}
-                            </p>
+                            </h4>
                         </div>
                     </SwiperSlide>
                 ))}

@@ -83,7 +83,7 @@ const inside_service1 = () => {
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
                   visibility and industry <br className="hidden sm:block" />{" "}
-                  credibility. Institutions wanting to elevate flagship events.
+                  credibility. Institutions wanting <br className="hidden sm:block" />{" "} to elevate flagship events.
                 </h6>
               </div>
 
@@ -94,7 +94,7 @@ const inside_service1 = () => {
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
                   Important occasions <br className="hidden sm:block" /> that
-                  lack <br className="hidden sm:block" /> consistency and
+                  lack  consistency<br className="hidden sm:block" /> and
                   emotion.
                 </h6>
               </div>
@@ -122,45 +122,45 @@ const inside_service1 = () => {
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Event Naming & Identity System
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Visual + Verbal Design{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  3–5 researched, conflict-free options
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                   Visual + Verbal Design{" "}
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Event Theme & Narrative Framework
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Invite, Social Media, Event Website Wireframe{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Tone, tagline, admissions messaging
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Communication & Application Kit 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Stage, Invites, Digital Screens, Décor Templates{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  Tone, tagline, admissions messaging
-                </p>
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Stage, Invites, Digital Screens, Décor Templates
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Event Experience Playbook
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
                   venenatis pretium risus euismod dictum{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Logo, design system, color palette, typography
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                {/* <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Launch Collateral Kit
                 </h6>
                 <p className="p-blue mt-5">
@@ -181,7 +181,7 @@ const inside_service1 = () => {
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Stationery, brochure, social templates, website wireframe
                 </p>
-                <div className="border-line-grey"></div>
+                <div className="border-line-grey"></div> */}
               </div>
             </div>
           </div>

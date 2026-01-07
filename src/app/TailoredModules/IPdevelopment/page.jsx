@@ -83,7 +83,8 @@ const inside_service1 = () => {
                   IDEAL FOR
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                Institutions ready <br className="hidden sm:block" /> to build visibility and industry credibility.
+                  Institutions ready <br className="hidden sm:block" /> to build
+                  visibility and industry credibility.
                 </h6>
               </div>
 
@@ -93,7 +94,9 @@ const inside_service1 = () => {
                   PROBLEM SOLVED
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                    One-off events<br className="hidden sm:block" /> that fail to<br className="hidden sm:block" /> build long-term equity.                
+                  One-off events
+                  <br className="hidden sm:block" /> that fail to
+                  <br className="hidden sm:block" /> build long-term equity.
                 </h6>
               </div>
 
@@ -103,7 +106,7 @@ const inside_service1 = () => {
                   TIMELINE
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855]">
-                 7 weeks
+                  7 weeks
                 </h6>
               </div>
 
@@ -113,56 +116,59 @@ const inside_service1 = () => {
                   DELIVERABLES
                 </p>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
-                 Event IP Strategy 
+                  Event IP Strategy
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Theme, Audience, Positioning{" "}
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Theme, Audience, Positioning
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Event Naming & Identity System
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
                   venenatis pretium risus euismod dictum{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   3–5 researched, conflict-free options
+                </p> */}
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Communication Kit
+                </h6>
+                {/* <p className="p-blue mt-5">
+                  Invite, Social Media, Event Website Wireframe{" "}
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Invite, Social Media, Event Website Wireframe
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Communication Kit 
+                  Sponsorship Deck Template
                 </h6>
-                <p className="p-blue mt-5">
-                Invite, Social Media, Event Website Wireframe{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  Tone, tagline, admissions messaging
-                </p>
-                <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Sponsorship Deck Template
-                </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
                   venenatis pretium risus euismod dictum{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Tone, tagline, admissions messaging
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Annual Continuity Playbook
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
                   venenatis pretium risus euismod dictum{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Logo, design system, color palette, typography
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                {/* <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Launch Collateral Kit
                 </h6>
                 <p className="p-blue mt-5">
@@ -183,7 +189,7 @@ const inside_service1 = () => {
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Stationery, brochure, social templates, website wireframe
                 </p>
-                <div className="border-line-grey"></div>
+                <div className="border-line-grey"></div> */}
               </div>
             </div>
           </div>
@@ -212,7 +218,8 @@ const inside_service1 = () => {
                 OUTCOME
               </p>
               <h3 className="text-[28px] sm:text-[32px] lg:text-[40px] text-white font-medium leading-tight">
-            An ownable event property<br/> that builds brand authority and recognition.
+                An ownable event property
+                <br /> that builds brand authority and recognition.
               </h3>
             </div>
           </div>

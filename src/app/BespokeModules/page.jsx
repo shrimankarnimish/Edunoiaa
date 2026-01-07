@@ -1,9 +1,8 @@
 import React from "react";
-import backgroundImage from "../../../public/Assets/images/bespoke_banner.jpg"
+import backgroundImage from "../../../public/Assets/images/bespoke_banner.jpg";
 import Image from "next/image";
 import Service1 from "../../../public/Assets/images/Teammeeting.jpg";
-import Slider from "../Home/slider"
-
+import Slider from "../Home/slider";
 
 const inside_service1 = () => {
   return (
@@ -19,7 +18,6 @@ const inside_service1 = () => {
             priority
           />
           {/* Darker overlay for better text readability */}
-      
         </div>
         <div className="relative z-5 container mx-auto">
           <div className="max-w-6xl">
@@ -50,9 +48,8 @@ const inside_service1 = () => {
             <div className="space-y-6 lg:space-y-8">
               {/* Description Text */}
               <h6 className="p-grey italic font-semibold">
-                Ideal for new schools, universities, or EdTech ventures. We help
-                you look credible and compelling from day one, with clear
-                positioning, a resonant name, and polished brand assets.
+                End-to-end branding solutions, covering everything from research
+                and brand strategy to verbal and visual identity.
               </h6>
             </div>
           </div>
@@ -119,56 +116,73 @@ const inside_service1 = () => {
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
                   Research, Analysis & Insights
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
+                <p className="p-blue mt-5">
+                  We start with understanding, your market, stakeholders,  and
+                  aspirations. From surveys and workshops to competitive audits,
+                  we decode what makes your institution different.
+                </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Brand Positioning & Value Proposition
+                  Brand Purpose, Positioning & Strategy
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                 3–5 researched, conflict-free options
+                <p className="p-blue mt-5">
+                  We define your reason to exist. What you stand for, how you’re
+                  perceived, and what makes you irreplaceable in the education
+                  landscape.
                 </p>
-                 <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Brand Naming
-                </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                 Tone, tagline, admissions messaging
+                  3–5 researched, conflict-free options
                 </p>
                 <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Verbal Identity
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Brand & Portfolio Architecture
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-               Tone, tagline, admissions messaging
+                <p className="p-blue mt-5">
+                  For groups managing multiple institutions, clarity of
+                  structure is critical. We organize your portfolio to maximize
+                  equity and minimize confusion.{" "}
                 </p>
-                  <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Naming & Verbal Identity
+                </h6>
+                <p className="p-blue mt-5">
+                  We craft names, narratives, and tones that reflect your ethos
+                  and stand the test of time. Because a great name doesn’t just
+                  sound good, it means something.{" "}
+                </p>
+
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Visual Identity
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                Logo, design system, color palette, typography
+                <p className="p-blue mt-5">
+                  Design that feels as inspiring as your mission. Logos, colour
+                  systems, typography, and applications that make your
+                  institution instantly recognizable.{" "}
                 </p>
-                 <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Launch Collateral Kit 
+
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Brand Communication
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                Stationery, brochure, social templates, website wireframe
+                <p className="p-blue mt-5">
+                  We develop messaging frameworks and campaign systems that
+                  align your voice, across admissions, alumni relations, and
+                  internal culture.{" "}
                 </p>
-                  <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Launch Collateral Kit 
+
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Branded Experiences
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                Stationery, brochure, social templates, website wireframe
+                <p className="p-blue mt-5">
+                  We bring your brand to life in physical spaces, signage,
+                  wayfinding, event branding, and spatial storytelling that
+                  shape campus experiences.
                 </p>
-                 <div className="border-line-grey"></div>
+                <div className="border-line-grey"></div>
               </div>
             </div>
           </div>
@@ -176,7 +190,6 @@ const inside_service1 = () => {
       </div>
       {/* STICKY SECTION END */}
 
- 
       <Slider />
     </div>
   );

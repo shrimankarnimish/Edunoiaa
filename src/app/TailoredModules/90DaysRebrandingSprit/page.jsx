@@ -120,54 +120,54 @@ const inside_service1 = () => {
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
                   Edunoia Brand Health Assessment
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
                   venenatis pretium risus euismod dictum{" "}
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                  Refined Brand Positioning & Differentiation
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
                   venenatis pretium risus euismod dictum{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   3–5 researched, conflict-free options
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Updated Verbal & Visual Identity Systems
+                Refined Brand Positioning & Differentiation
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
                   venenatis pretium risus euismod dictum{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Tone, tagline, admissions messaging
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Internal Rollout Kit
+                Internal Rollout Kit 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Staff Launch, Signage, Presentations{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  Tone, tagline, admissions messaging
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                   Staff Launch, Signage, Presentations
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                 External Communication Kit 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Press Templates, Campaign Starter Pack{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  Logo, design system, color palette, typography
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                   Press Templates, Campaign Starter Pack
                 </p>
                 <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                {/* <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Launch Collateral Kit
                 </h6>
                 <p className="p-blue mt-5">
@@ -188,7 +188,7 @@ const inside_service1 = () => {
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Stationery, brochure, social templates, website wireframe
                 </p>
-                <div className="border-line-grey"></div>
+                <div className="border-line-grey"></div> */}
               </div>
             </div>
           </div>

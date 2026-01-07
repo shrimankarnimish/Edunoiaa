@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 import Image from 'next/image';
 import backgroundImage from "../../../public/Assets/images/About_banner.jpg";
 import Aboutus from "./aboutus"
-import counter2 from "../../../public/Assets/images/counter2.jpg"
+import counter2 from "../../../public/Assets/images/counter.png"
 import Slider from './slider'
+import Link from 'next/link';
 
 
 const About = () => {
@@ -33,12 +34,16 @@ const About = () => {
                             </h1>
                             {/* CTA Buttons - Exact styling from first image */}
                             <div className="flex flex-col sm:flex-row gap-4 mt-12">
+                                <Link href='/Services'>
                                 <button className="font-body bg-white text-[#1B51FF] hover:bg-gray-50 font-semibold py-3 px-8 transition duration-200 ease-in-out text-base tracking-wide uppercase cursor-pointer">
                                     KNOW MORE ABOUT OUR SERVICES
                                 </button>
+                                </Link>
+                                <Link href='/Contact'>
                                 <button className="font-body bg-white text-[#1B51FF] hover:bg-gray-50 font-semibold py-3 px-8 transition duration-200 ease-in-out text-base tracking-wide uppercase cursor-pointer">
                                     BOOK A DISCOVERY CALL
                                 </button>
+                                </Link>
 
                             </div>
                         </div>
@@ -79,9 +84,11 @@ const About = () => {
                                     Whether you’re building a new university, repositioning a school, or scaling an EdTech brand, Edunoia brings focus, consistency, and credibility to every step.
                                 </p>
                             </div>
+                            <Link href='/Services'>
                             <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-8 text-lg transition duration-200 cursor-pointer ">
                                 OUR SERVICES
                             </button>
+                            </Link>
                         </div>
                         {/* Right Column - Image/Visual Content */}
                         <div className="space-y-8 second-padding-right pb-25 pt-25">
@@ -147,13 +154,17 @@ const About = () => {
                             </h2>
 
                             <div className="flex flex-wrap gap-4 pt-4">
-                                <button className="bg-white text-blue-700 font-semibold px-6 py-3 text-sm sm:text-base hover:bg-gray-200 transition">
+                                <Link href="/Team" >
+                                <button className="bg-white text-blue-700 cursor-pointer font-semibold px-6 py-3 text-sm sm:text-base hover:bg-gray-200 transition">
                                     MEET OUR TEAM
                                 </button>
+                                </Link>
 
-                                <button className="bg-white text-blue-700 font-semibold px-6 py-3 text-sm sm:text-base hover:bg-gray-200 transition">
+                                <Link href="/Contact">
+                                <button className="bg-white text-blue-700 cursor-pointer font-semibold px-6 py-3 text-sm sm:text-base hover:bg-gray-200 transition">
                                     JOIN OUR TEAM
                                 </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

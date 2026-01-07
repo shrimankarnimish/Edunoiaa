@@ -1,9 +1,9 @@
 import React from "react";
-import backgroundImage from "../../../../public/Assets/images/About_banner.jpg"
+import backgroundImage from "../../../../public/Assets/images/About_banner.jpg";
 import Image from "next/image";
-import Service1 from "../../../../public/Assets/images/Teammeeting.jpg"
-import bluegradient from "../../../../public/Assets/images/bluegradient1.jpg"
-import Slider from "../../Home/slider"
+import Service1 from "../../../../public/Assets/images/Teammeeting.jpg";
+import bluegradient from "../../../../public/Assets/images/bluegradient1.jpg";
+import Slider from "../../Home/slider";
 
 const inside_service1 = () => {
   return (
@@ -28,7 +28,7 @@ const inside_service1 = () => {
             </h6>
 
             <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-              90-Day Institution
+              90-Day Institution,
               <br /> Launch Kit
             </h1>
           </div>
@@ -50,9 +50,10 @@ const inside_service1 = () => {
             <div className="space-y-6 lg:space-y-8">
               {/* Description Text */}
               <h6 className="p-grey italic font-semibold">
-                Ideal for new schools, universities, or EdTech ventures. We help
-                you look credible and compelling from day one, with clear
-                positioning, a resonant name, and polished brand assets.
+                For new schools, colleges, universities, or edtech ventures that
+                need to look credible from day one. LaunchPad gives you the
+                clarity, confidence, and identity to enter the market like
+                you’ve been here for decades.
               </h6>
             </div>
           </div>
@@ -119,56 +120,56 @@ const inside_service1 = () => {
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
                   Brand Positioning & Value Proposition
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
+
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Brand Positioning & Value Proposition
+                  Brand Naming 
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                 3–5 researched, conflict-free options
-                </p>
-                 <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Brand Naming
-                </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                 Tone, tagline, admissions messaging
+
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  3–5 researched, conflict-free options
                 </p>
                 <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Verbal Identity
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Verbal Identity 
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-               Tone, tagline, admissions messaging
+
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Tone, Tagline, Admissions Messaging
                 </p>
-                  <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Visual Identity 
+                </h6>
+
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Tone, tagline, admissions messaging
+                </p>
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Visual Identity
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                Logo, design system, color palette, typography
+
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Logo, design system, color palette, typography
                 </p>
-                 <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Launch Collateral Kit 
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Launch Collateral Kit
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                Stationery, brochure, social templates, website wireframe
+
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Stationery, brochure, social templates, website wireframe
                 </p>
-                  <div className="border-line-grey"></div>
-                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Launch Collateral Kit 
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Brand Guidelines Manual
                 </h6>
-                <p className="p-blue mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                Stationery, brochure, social templates, website wireframe
-                </p>
-                 <div className="border-line-grey"></div>
+
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                  Stationery, brochure, social templates, website wireframe
+                </p> */}
+                <div className="border-line-grey"></div>
               </div>
             </div>
           </div>

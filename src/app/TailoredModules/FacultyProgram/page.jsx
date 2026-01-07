@@ -25,11 +25,11 @@ const inside_service1 = () => {
         <div className="relative z-5 container mx-auto">
           <div className="max-w-6xl">
             <h6 className="text-base sm:text-lg md:text-xl italic font-bold mb-2 text-white">
-              Edunoia Compass™
+              Edunoia FacultyFirst™
             </h6>
 
             <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-              Edunoia Recognition Index (ERI™)
+              Faculty Engagement Program
             </h1>
           </div>
         </div>
@@ -113,52 +113,52 @@ const inside_service1 = () => {
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
                   Faculty Value Proposition (FVP) Framework
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
                   venenatis pretium risus euismod dictum{" "}
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Internal Communication Campaign 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                  10 creative templates{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  3–5 researched, conflict-free options
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                 10 creative templates
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Faculty Recognition Toolkit 
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Events, Social Kits, Templates{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  Tone, tagline, admissions messaging
+                </p> */}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                 Events, Social Kits, Templates
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                 Faculty Brand Handbook
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Staff Launch, Signage, Presentations{" "}
                 </p>
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Tone, tagline, admissions messaging
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Recruitment Communication Kit
                 </h6>
-                <p className="p-blue mt-5">
+                {/* <p className="p-blue mt-5">
                   Certificate, Media Template, Social Toolkit{" "}
-                </p>
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                </p> */}
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Logo, design system, color palette, typography
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                {/* <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Listing on Edunoia’s public recognition portal
                 </h6>
                 <p className="p-blue mt-5">
@@ -179,7 +179,7 @@ const inside_service1 = () => {
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Stationery, brochure, social templates, website wireframe
                 </p>
-                <div className="border-line-grey"></div>
+                <div className="border-line-grey"></div> */}
               </div>
             </div>
           </div>

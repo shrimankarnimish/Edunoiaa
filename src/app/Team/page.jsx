@@ -5,6 +5,7 @@ import Team from "../../../public/Assets/images/team.jpg"
 import Ekta from "../../../public/Assets/images/Ekta.jpg"
 import Meghan from "../../../public/Assets/images/Meghan.jpg"
 import Kunal from "../../../public/Assets/images/Kunal.jpg"
+import Link from 'next/link';
 
 const TeamSection = () => {
     return (
@@ -24,19 +25,22 @@ const TeamSection = () => {
                 <div className="relative z-5 container mx-auto">
                     <div className="max-w-6xl">
                         <h1 className="text-4xl sm:text-4xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light">
-                            <span className="font-bold block">India's first and only brand</span>
-                            <span className="font-bold block">consultancy dedicated exclusively</span>
-                            <span className="font-bold block">to education</span>
+                            <span className="font-bold block">Meet the people shaping the </span>
+                            <span className="font-bold block">future of education branding</span>
                         </h1>
 
                         {/* CTA Buttons - Exact styling from first image */}
                         <div className="flex flex-col sm:flex-row gap-4 mt-12">
+                            <Link href='/Services'>
                             <button className="font-body bg-white text-[#1B51FF] hover:bg-gray-50 font-semibold py-3 px-8 transition duration-200 ease-in-out text-base tracking-wide uppercase cursor-pointer">
                                 START YOUR INSTITUTIONS JOURNEY
                             </button>
+                            </Link>
+                            <Link href='/Contact'>
                             <button className="font-body bg-white text-[#1B51FF] hover:bg-gray-50 font-semibold py-3 px-8 transition duration-200 ease-in-out text-base tracking-wide uppercase cursor-pointer">
                                 BOOK A DISCOVERY CALL
                             </button>
+                            </Link>
 
                         </div>
                     </div>

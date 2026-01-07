@@ -1,9 +1,9 @@
 import React from "react";
-import backgroundImage from "../../../../public/Assets/images/About_banner.jpg";
+import backgroundImage from "../../../../public/Assets/images/About_banner.jpg"
 import Image from "next/image";
 import Service1 from "../../../../public/Assets/images/Teammeeting.jpg";
 import bluegradient from "../../../../public/Assets/images/bluegradient1.jpg"
-import Slider from "../../Home/slider";
+import Slider from "../../Home/slider"
 
 
 const inside_service1 = () => {
@@ -25,11 +25,11 @@ const inside_service1 = () => {
         <div className="relative z-5 container mx-auto">
           <div className="max-w-6xl">
             <h6 className="text-base sm:text-lg md:text-xl italic font-bold mb-2 text-white">
-              Edunoia Connect™
+              Edunoia Wear™
             </h6>
 
             <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-              Edunoia Connect™ <br />| Alumni & Donor Branding
+          TEST FONT
             </h1>
           </div>
         </div>
@@ -41,7 +41,7 @@ const inside_service1 = () => {
             {/* Left Column */}
             <div className="space-y-4 lg:space-y-6">
               <h2 className="h-blue">
-                Turn alumni into lifelong brand ambassadors
+                Turn every student and alumni into a walking brand.
               </h2>
             </div>
 
@@ -49,10 +49,7 @@ const inside_service1 = () => {
             <div className="space-y-6 lg:space-y-8">
               {/* Description Text */}
               <h6 className="p-grey italic font-semibold">
-                Most institutions underuse their alumni networks. Edunoia
-                Connect™ helps you build loyalty, increase engagement, and
-                attract donor support through authentic storytelling and
-                identity.
+             Edunoia Wear™ builds a merchandise line that actually means something, rooted in your brand story, not just your logo.
               </h6>
             </div>
           </div>
@@ -83,8 +80,7 @@ const inside_service1 = () => {
                   IDEAL FOR
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                  Universities and legacy
-                  <br /> institutions seeking engagement or funding
+                  Institutions looking to<br/> increase belonging and visibility.
                 </h6>
               </div>
 
@@ -94,9 +90,7 @@ const inside_service1 = () => {
                   PROBLEM SOLVED
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                  Fragmented alumni networks
-                  <br className="hidden sm:block" />
-                  and uninspired donor communication.
+                     Generic, uninspired merchandise<br className="hidden sm:block" /> that fails to create pride.
                 </h6>
               </div>
 
@@ -116,55 +110,54 @@ const inside_service1 = () => {
                   DELIVERABLES
                 </p>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
-                  Alumni Visual & Verbal Identity System
-                </h6>
-                {/* <p className="p-blue mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit id
-                  venenatis pretium risus euismod dictum{" "}
-                </p> */}
-                <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Engagement Toolkit
-                </h6>
-                {/* <p className="p-blue mt-5">
-                  Newsletter, Event, Magazine Design Templates{" "}
-                </p> */}
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                    Newsletter, Event, Magazine Design Templates
-                </p>
-                <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Donor Campaign Kit
-                </h6>
-                {/* <p className="p-blue mt-5">
-                  Impact Report, Pitch Deck, Digital Templates{" "}
-                </p> */}
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                   Impact Report, Pitch Deck, Digital Templates
-                </p>
-                <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  “Give Back” Campaign Concept
-                </h6>
-                {/* <p className="p-blue mt-5">
-                  Staff Launch, Signage, Presentations{" "}
-                </p> */}
-                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
-                  Tone, tagline, admissions messaging
-                </p> */}
-                <div className="border-line-grey"></div>
-                {/* <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  External Communication Kit
+                  Merchandise Strategy 
                 </h6>
                 <p className="p-blue mt-5">
-                  Press Templates, Campaign Starter Pack{" "}
+                 Themes, Purpose, Audience Tiersm{" "}
+                </p>
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  3 Distinct Collections 
+                </h6>
+                <p className="p-blue mt-5">
+                 Everyday Pride, Premium Legacy, Seasonal Drops{" "}
+                </p>
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                  3–5 researched, conflict-free options
+                </p>
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Vendor-ready Designs 
+                </h6>
+                <p className="p-blue mt-5">
+                  10–15 SKUs{" "}
+                </p>
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                  Tone, tagline, admissions messaging
+                </p>
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                Merchandise Catalogue 
+                </h6>
+                <p className="p-blue mt-5">
+                  Print + Web{" "}
+                </p>
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
+                  Tone, tagline, admissions messaging
+                </p>
+                <div className="border-line-grey"></div>
+                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                  Online Store Wireframe & Launch Kit
+                </h6>
+                <p className="p-blue mt-5">
+                  Certificate, Media Template, Social Toolkit{" "}
                 </p>
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Logo, design system, color palette, typography
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Launch Collateral Kit
+                  Listing on Edunoia’s public recognition portal
                 </h6>
                 <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
@@ -184,7 +177,7 @@ const inside_service1 = () => {
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest">
                   Stationery, brochure, social templates, website wireframe
                 </p>
-                <div className="border-line-grey"></div> */}
+                <div className="border-line-grey"></div>
               </div>
             </div>
           </div>
@@ -213,8 +206,7 @@ const inside_service1 = () => {
                 OUTCOME
               </p>
               <h3 className="text-[28px] sm:text-[32px] lg:text-[40px] text-white font-medium leading-tight">
-                A re-energized alumni
-                <br /> network and a donor-ready brand narrative.
+                Merch that feels<br/> desirable, drives pride, and turns community into culture.
               </h3>
             </div>
           </div>
