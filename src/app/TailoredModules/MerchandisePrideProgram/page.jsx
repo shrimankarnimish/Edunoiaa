@@ -29,7 +29,7 @@ const inside_service1 = () => {
             </h6>
 
             <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-              Merchandise & Pride Program
+              Merchandise &<br/> Pride Program
             </h1>
           </div>
         </div>
@@ -116,7 +116,7 @@ const inside_service1 = () => {
                  Themes, Purpose, Audience Tiersm{" "}
                 </p> */}
                  <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                   Themes, Purpose, Audience Tiersm{" "}
+                   Themes, Purpose, Audience Tiers{" "}
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
@@ -126,7 +126,7 @@ const inside_service1 = () => {
                  Everyday Pride, Premium Legacy, Seasonal Drops{" "}
                 </p> */}
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                  3–5 researched, conflict-free options
+                  Everyday Pride, Premium Legacy, Seasonal Drops
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">

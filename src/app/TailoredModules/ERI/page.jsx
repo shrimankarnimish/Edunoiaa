@@ -28,7 +28,7 @@ const inside_service1 = () => {
             </h6>
 
             <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-              Edunoia Recognition Index (ERI™)
+              Edunoia Recognition<br/> Index (ERI™)
             </h1>
           </div>
         </div>
@@ -48,7 +48,7 @@ const inside_service1 = () => {
             <div className="space-y-6 lg:space-y-8">
               {/* Description Text */}
               <h6 className="p-grey italic font-semibold">
-              ERI™ is a proprietary certification framework by Edunoia that validates institutions as inspiring places to learn, teach, and grow. It’s credibility earned through insight, not just perceptiony.
+              ERI™ is a proprietary certification framework by Edunoia that validates institutions as inspiring places to learn, teach, and grow. It’s credibility earned through insight, not just perception.
               </h6>
             </div>
           </div>
