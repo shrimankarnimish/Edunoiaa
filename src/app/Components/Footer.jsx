@@ -90,19 +90,31 @@ function Footer() {
                 </div>
               </div>
             </div>
-            
+
             {/* SOCIAL MEDIA ICONS - Below both columns */}
-            <div className="flex flex-wrap gap-6 mt-8">
-              <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm font-medium">
+            <div className="md:col-span-3 flex flex-wrap gap-6 mt-8 md:justify-end">
+              <a
+                href="#"
+                className="text-white hover:text-gray-200 transition-colors text-sm font-medium"
+              >
                 FACEBOOK
               </a>
-              <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm font-medium">
+              <a
+                href="#"
+                className="text-white hover:text-gray-200 transition-colors text-sm font-medium"
+              >
                 LINKEDIN
               </a>
-              <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm font-medium">
+              <a
+                href="#"
+                className="text-white hover:text-gray-200 transition-colors text-sm font-medium"
+              >
                 INSTAGRAM
               </a>
-              <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm font-medium">
+              <a
+                href="#"
+                className="text-white hover:text-gray-200 transition-colors text-sm font-medium"
+              >
                 X
               </a>
             </div>

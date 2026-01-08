@@ -137,14 +137,14 @@ const inside_service1 = () => {
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
                   Tone, Tagline, Admissions Messaging
                 </p>
-                <div className="border-line-grey"></div>
-                <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
+                {/* <div className="border-line-grey"></div> */}
+                {/* <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Visual Identity 
                 </h6>
 
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
                   Tone, tagline, admissions messaging
-                </p>
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Visual Identity

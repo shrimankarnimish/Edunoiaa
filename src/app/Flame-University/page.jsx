@@ -201,23 +201,27 @@ const Flame = () => {
         </div>
       </div>
 
-      {/* Purpose Summit */}
+      {/* Purpose Summit - Sticky Section */}
       <Fadeinup>
-        <div className="container mx-auto  max-w-[90%] py-8 md:py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-            <div className="lg:sticky lg:top-32">
-              <h4 className="font-serif text-xl md:text-2xl font-normal leading-tight mb-4">Purpose Summit</h4>
-              <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-4">
-                The FLAME University Purpose Summit emerged as a vital conduit for fostering dialogue among a broad spectrum of influencers, including policymakers, business leaders, academics, politicians, journalists, activists, artists, and entrepreneurs.
-              </p>
-              <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-4">
-                ABND undertook the strategic branding of the Purpose Summit, positioning it to reflect its ethos of purpose-driven leadership and transformative dialogue. Emphasising the intrinsic link between purpose and impactful action, the summit's overarching goal was to inspire attendees to translate their aspirations into tangible contributions, especially in the face of the unique challenges presented by the year 2021. Through curated discussions and insights shared by esteemed leaders, the summit aimed to empower individuals within the FLAME community to chart meaningful paths forward, grounded in purposeful endeavours and real-world examples of success.
-              </p>
-              <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-0">
-                ABND's approach emphasised creating a visual identity that encapsulated the summit's core themes. Through a harmonious blend of typography, colour schemes, and imagery, the branding captured the essence of FLAME's multidimensional learning culture and the summit's mission to empower individuals to effect meaningful change.
-              </p>
+        <div className="container mx-auto max-w-[90%] py-8 md:py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 relative">
+            {/* Left Side - Sticky */}
+            <div className="lg:sticky lg:top-32 h-fit self-start">
+              <div className="sticky-content">
+                <h4 className="font-serif text-xl md:text-2xl font-normal leading-tight mb-4">Purpose Summit</h4>
+                <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-4">
+                  The FLAME University Purpose Summit emerged as a vital conduit for fostering dialogue among a broad spectrum of influencers, including policymakers, business leaders, academics, politicians, journalists, activists, artists, and entrepreneurs.
+                </p>
+                <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-4">
+                  ABND undertook the strategic branding of the Purpose Summit, positioning it to reflect its ethos of purpose-driven leadership and transformative dialogue. Emphasising the intrinsic link between purpose and impactful action, the summit's overarching goal was to inspire attendees to translate their aspirations into tangible contributions, especially in the face of the unique challenges presented by the year 2021. Through curated discussions and insights shared by esteemed leaders, the summit aimed to empower individuals within the FLAME community to chart meaningful paths forward, grounded in purposeful endeavours and real-world examples of success.
+                </p>
+                <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-0">
+                  ABND's approach emphasised creating a visual identity that encapsulated the summit's core themes. Through a harmonious blend of typography, colour schemes, and imagery, the branding captured the essence of FLAME's multidimensional learning culture and the summit's mission to empower individuals to effect meaningful change.
+                </p>
+              </div>
             </div>
 
+            {/* Right Side - Scrollable Images */}
             <div className="lg:col-span-2">
               <Image src={imgp1} className="w-full h-auto mb-6" alt="" />
               <Image src={imgp2} className="w-full h-auto my-12" alt="" />
@@ -237,21 +241,25 @@ const Flame = () => {
         </div>
       </Fadeinup>
 
-      {/* Spatial Branding */}
+      {/* Spatial Branding - Sticky Section */}
       <Fadeinup>
         <div className="container mx-auto px-4 md:px-8 max-w-[90%] py-8 md:py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-            <div className="lg:sticky lg:top-32">
-              <h4 className="font-serif text-xl md:text-2xl font-normal leading-tight mb-4">Spatial Branding</h4>
-              <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-4">
-                The Brand Essence of FLAME University permeates every aspect of campus life, translating into a rich learning experience. From the renowned 'Vivekananda Library' to the dynamic 'Arjuna Centre for Sports,' each corner of FLAME is meticulously designed to offer an enriching environment.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 relative">
+            {/* Left Side - Sticky */}
+            <div className="lg:sticky lg:top-32 h-fit self-start">
+              <div className="sticky-content">
+                <h4 className="font-serif text-xl md:text-2xl font-normal leading-tight mb-4">Spatial Branding</h4>
+                <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-4">
+                  The Brand Essence of FLAME University permeates every aspect of campus life, translating into a rich learning experience. From the renowned 'Vivekananda Library' to the dynamic 'Arjuna Centre for Sports,' each corner of FLAME is meticulously designed to offer an enriching environment.
+                </p>
 
-              <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-0">
-                ABND's role in shaping the FLAME University campus encompassed a comprehensive approach to wayfinding, signage, and overall experiential design. Across the sprawling 90-acre campus, ABND ensured a seamless and immersive experience for students, faculty, and visitors alike.
-              </p>
+                <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-0">
+                  ABND's role in shaping the FLAME University campus encompassed a comprehensive approach to wayfinding, signage, and overall experiential design. Across the sprawling 90-acre campus, ABND ensured a seamless and immersive experience for students, faculty, and visitors alike.
+                </p>
+              </div>
             </div>
 
+            {/* Right Side - Scrollable Images */}
             <div className="lg:col-span-2">
               <Image src={imgs1} className="w-full h-auto block" alt="" />
               <div className="h-4 my-4"></div>
@@ -266,16 +274,21 @@ const Flame = () => {
         </div>
       </Fadeinup>
 
-      {/* Library */}
+      {/* Library - Sticky Section */}
       <Fadeinup>
         <div className="container mx-auto max-w-[90%] py-8 md:py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-            <div className="lg:sticky lg:top-32">
-              <h4 className="font-serif text-xl md:text-2xl font-normal leading-tight mb-4">FLAME Vivekananda Library</h4>
-              <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-0">
-                The FLAME Vivekananda Library stands as a testament to excellence, boasting a state-of-the-art facility and an extensive collection of books, academic journals, and digital resources. ABND's design approach prioritised both functionality and aesthetic harmony. Strategic foresight guided the design process, ensuring that the library's layout and systems could accommodate future growth and evolving needs without compromising efficiency or coherence. Within its walls, the library offers more than just books; it serves as a dynamic hub for intellectual exchange and collaboration. Discussion rooms facilitate group work sessions, a computer lab provides access to a wealth of online resources, and a diverse media section offers a glimpse into both foreign and Indian cinema. The Reprographics section further enhances accessibility, while the inviting Library Café and Lounge provide spaces for relaxation and rejuvenation. In paying homage to the architectural legacy of B.V. Doshi, ABND ensured that every aspect of the library experience, from browsing shelves to engaging with staff, evokes a sense of wonder and inspiration.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 relative">
+            {/* Left Side - Sticky */}
+            <div className="lg:sticky lg:top-32 h-fit self-start">
+              <div className="sticky-content">
+                <h4 className="font-serif text-xl md:text-2xl font-normal leading-tight mb-4">FLAME Vivekananda Library</h4>
+                <p className="text-sm md:text-base leading-relaxed font-sans font-normal mb-0">
+                  The FLAME Vivekananda Library stands as a testament to excellence, boasting a state-of-the-art facility and an extensive collection of books, academic journals, and digital resources. ABND's design approach prioritised both functionality and aesthetic harmony. Strategic foresight guided the design process, ensuring that the library's layout and systems could accommodate future growth and evolving needs without compromising efficiency or coherence. Within its walls, the library offers more than just books; it serves as a dynamic hub for intellectual exchange and collaboration. Discussion rooms facilitate group work sessions, a computer lab provides access to a wealth of online resources, and a diverse media section offers a glimpse into both foreign and Indian cinema. The Reprographics section further enhances accessibility, while the inviting Library Café and Lounge provide spaces for relaxation and rejuvenation. In paying homage to the architectural legacy of B.V. Doshi, ABND ensured that every aspect of the library experience, from browsing shelves to engaging with staff, evokes a sense of wonder and inspiration.
+                </p>
+              </div>
             </div>
+            
+            {/* Right Side - Scrollable Images */}
             <div className="lg:col-span-2">
               <Image src={imgl1} className="w-full h-auto block" alt="" />
               <div className="h-4 my-4"></div>

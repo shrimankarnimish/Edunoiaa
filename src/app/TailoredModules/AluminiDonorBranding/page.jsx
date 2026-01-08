@@ -29,7 +29,7 @@ const inside_service1 = () => {
             </h6>
 
             <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-              Edunoia Connect™ <br />| Alumni & Donor Branding
+               Alumni & Donor Branding
             </h1>
           </div>
         </div>

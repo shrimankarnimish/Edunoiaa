@@ -30,24 +30,22 @@ export default function BirlaCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-semibold tracking-wide">
           BIRLA INTERNATIONAL SCHOOL
         </h2>
+        <h4 className="text-xl font-semibold mt-10">Brand Concept, Brand Identity</h4>
         <p className="mt-6 text-gray-600 leading-relaxed">
-          We needed to create a brand for two Birla Group schools – Ashok Birla
-          International School and Sunanda Birla International School. Although
-          both schools were independent, the objective was to create a visual
-          identity that connected them to each other.
+          We needed to create a brand for two Birla Group schools – Ashok Birla International School and Sunanda Birla International School. Although both these schools were independent, the objective was to create a visual identity that connected them to each other, as they belonged to the same parent brand
         </p>
       </section>
 
       {/* BLACK STRIP TITLE */}
       <section className="bg-black py-10">
-   <h2 className="text-center text-white italic text-[31px] tracking-wide">
-  Connecting the Identities of Two Schools
-</h2>
-
+        <h2 className="text-center text-white italic text-[31px] tracking-wide">
+          Connecting the Identities of Two Schools
+        </h2>
       </section>
 
+
       {/* TWO IMAGE BLOCKS */}
-      <section className="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+      <section className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
         <div>
           <Image
             src={birla1}
@@ -74,9 +72,7 @@ export default function BirlaCaseStudy() {
       <section className="max-w-4xl mx-auto px-4 py-12 text-center">
         <h4 className="text-xl font-semibold mb-4">The Visual Identity</h4>
         <p className="text-gray-600 leading-relaxed">
-          Using the concept of “Organic Education”, the visual identity of the
-          schools is composed of elements that stem from a triangle-shaped
-          building block showcasing agility and stability.
+          Using this concept of “Organic Education”, the visual identity of the Schools is composed of elements that stem from a triangle-shaped building block showcasing the dynamic dichotomy of agility amid stability. The logo has fluid leaf graphics within this triangle forming an ‘S’ and ‘A’ for both schools respectively, the plant form contributing to the organic quality of the brand.
         </p>
       </section>
 
@@ -94,13 +90,13 @@ export default function BirlaCaseStudy() {
       </section>
 
       {/* LOGO COMPARISON */}
-      <section className="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
+      <section className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
         <div className="flex items-center justify-center">
           <Image
             src={birlas}
             alt="Sunanda Birla Logo"
-            width={birlas.width}
-            height={birlas.height}
+            width={500}
+            height={500}
             className="max-w-full h-auto"
             priority
           />
@@ -110,9 +106,9 @@ export default function BirlaCaseStudy() {
           <Image
             src={birlaa}
             alt="Ashok Birla Logo"
-            width={birlaa.width}
-            height={birlaa.height}
-            className="max-w-full h-auto"
+            width={500}
+            height={500}
+            className=" h-auto"
           />
         </div>
       </section>
@@ -123,14 +119,12 @@ export default function BirlaCaseStudy() {
           Binding the Schools: Holistic Organic Education
         </h4>
         <p className="text-gray-600 leading-relaxed">
-          The Birla schools not only emphasize on student freedom but also
-          provide avenues to educate themselves by empowering holistic
-          education.
+          The Birla schools not only emphasize on student freedom but also provide avenues to enable students to educate themselves by empowering holistic education. The Schools are integrated with natural surroundings allowing the students to be harmonious with nature despite the hustle and bustle of city life. Providing a natural environment for true and holistic growth, the organic education that is provided grows with the student no matter where they go.
         </p>
       </section>
 
       {/* FULL WIDTH IMAGE WITH TEXT */}
-      <section className="relative h-[70vh] w-full">
+      <section className="relative h-[90vh] container" >
         <Image
           src={birlabanner}
           alt="Organic Education"

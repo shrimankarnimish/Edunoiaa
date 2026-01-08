@@ -1,7 +1,7 @@
 import React from "react";
-import backgroundImage from "../../../../public/Assets/images/About_banner.jpg"
+import backgroundImage from "../../../../public/Assets/images/About_banner.jpg";
 import Image from "next/image";
-import Service1 from "../../../../public/Assets/images/Teammeeting.jpg/"
+import Service1 from "../../../../public/Assets/images/Teammeeting.jpg/";
 import bluegradient from "../../../../public/Assets/images/bluegradient1.jpg";
 import Slider from "../../Home/slider";
 
@@ -29,7 +29,7 @@ const inside_service1 = () => {
 
             <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
               90-Day Rebranding
-              <br /> Sprit
+              <br /> Sprint
             </h1>
           </div>
         </div>
@@ -96,9 +96,8 @@ const inside_service1 = () => {
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
                   Outdated positioning <br className="hidden sm:block" />
-                  and poor
-                  resonance with <br className="hidden sm:block" />
-                  or parents.
+                  and poor resonance with <br className="hidden sm:block" />
+                  students or parents.
                 </h6>
               </div>
 
@@ -126,7 +125,7 @@ const inside_service1 = () => {
                 </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Refined Brand Positioning & Differentiation
+                  Refined Brand Positioning & Differentiation
                 </h6>
                 {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
@@ -137,7 +136,7 @@ const inside_service1 = () => {
                 </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                Refined Brand Positioning & Differentiation
+                 Updated Verbal & Visual Identity Systems
                 </h6>
                 {/* <p className="p-blue mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit id
@@ -148,23 +147,23 @@ const inside_service1 = () => {
                 </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                Internal Rollout Kit 
+                  Internal Rollout Kit
                 </h6>
                 {/* <p className="p-blue mt-5">
                   Staff Launch, Signage, Presentations{" "}
                 </p> */}
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                   Staff Launch, Signage, Presentations
+                  Staff Launch, Signage, Presentations
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                External Communication Kit 
+                  External Communication Kit
                 </h6>
                 {/* <p className="p-blue mt-5">
                   Press Templates, Campaign Starter Pack{" "}
                 </p> */}
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                   Press Templates, Campaign Starter Pack
+                  Press Templates, Campaign Starter Pack
                 </p>
                 <div className="border-line-grey"></div>
                 {/* <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
@@ -217,7 +216,8 @@ const inside_service1 = () => {
                 OUTCOME
               </p>
               <h3 className="text-[28px] sm:text-[32px] lg:text-[40px] text-white font-medium leading-tight">
-              A rejuvenated brand that commands<br/> relevance and pride, internally and externally.
+                A rejuvenated brand that commands
+                <br /> relevance and pride, internally and externally.
               </h3>
             </div>
           </div>
