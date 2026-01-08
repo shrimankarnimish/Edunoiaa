@@ -82,8 +82,8 @@ const inside_service1 = () => {
                   IDEAL FOR
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                  visibility and industry <br className="hidden sm:block" />{" "}
-                  credibility. Institutions wanting <br className="hidden sm:block" />{" "} to elevate flagship events.
+                  Institutions wanting <br className="hidden sm:block" />{" "}
+                  to elevate flagship events .
                 </h6>
               </div>
 
@@ -115,9 +115,11 @@ const inside_service1 = () => {
                   DELIVERABLES
                 </p>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
-                 Event Identity System 
+                  Event Identity System
                 </h6>
-                <p className="p-blue mt-5">Theme, Audience, Positioning </p>
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Visual + Verbal Design{" "}
+                </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Event Naming & Identity System
@@ -125,9 +127,9 @@ const inside_service1 = () => {
                 {/* <p className="p-blue mt-5">
                   Visual + Verbal Design{" "}
                 </p> */}
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                   Visual + Verbal Design{" "}
-                </p>
+                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Visual + Verbal Design{" "}
+                </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Event Theme & Narrative Framework
@@ -140,14 +142,14 @@ const inside_service1 = () => {
                 </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Communication & Application Kit 
+                  Communication & Application Kit
                 </h6>
                 {/* <p className="p-blue mt-5">
                   Stage, Invites, Digital Screens, Décor Templates{" "}
                 </p> */}
-                {/* <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
                   Stage, Invites, Digital Screens, Décor Templates
-                </p> */}
+                </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
                   Event Experience Playbook
@@ -210,7 +212,7 @@ const inside_service1 = () => {
                 OUTCOME
               </p>
               <h3 className="text-[28px] sm:text-[32px] lg:text-[40px] text-white font-medium leading-tight">
-            Events that move people<br/> and build lifelong affinity with your brand.
+                Events that move people<br /> and build lifelong affinity with your brand.
               </h3>
             </div>
           </div>
