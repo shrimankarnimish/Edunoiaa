@@ -304,6 +304,9 @@ h3.p-italic {
 .mobile-item {
   @apply text-white text-lg tracking-wide hover:opacity-70;
 }
+.contact-us-form-container .footer-form-section{
+  display: none;
+}
 
 /* ===== RESPONSIVE ADJUSTMENTS FOR .p3-italic ===== */
 
@@ -401,7 +404,7 @@ h3.p-italic {
 /* Tablets: 1024px ↓ */
 @media (max-width: 1024px) {
   .what-we-do-container .cust-padding-left,
-  .contact-us-form-container .cust-left-padding .second-padding-right {
+  .contact-us-form-container .cust-left-padding .second-padding-right, .contact-us-form-container .cust-left-padding {
     padding-left: 8% !important;
   }
 }
