@@ -37,7 +37,7 @@ const About = () => {
                 </h1>
                 {/* CTA Buttons - Exact styling from first image */}
                 <div className="flex flex-col sm:flex-row gap-4 mt-12 w-full sm:w-auto">
-                  <Link href="/services" className="w-full sm:w-auto">
+                  <Link href="/Services" className="w-full sm:w-auto">
                     <button
                       className="font-body w-full sm:w-auto bg-white text-[#1B51FF] hover:bg-gray-50
                  font-semibold py-3 px-8 transition duration-200 ease-in-out
@@ -48,7 +48,7 @@ const About = () => {
                     </button>
                   </Link>
 
-                  <Link href="/contact" className="w-full sm:w-auto">
+                  <Link href="/Contact" className="w-full sm:w-auto">
                     <button
                       className="font-body w-full sm:w-auto bg-white text-[#1B51FF] hover:bg-gray-50
                  font-semibold py-3 px-8 transition duration-200 ease-in-out
@@ -110,7 +110,7 @@ const About = () => {
                   </p>
                 </Fadeinleft>
               </div>
-              <Link href="/services">
+              <Link href="/Services">
                 <FadeUpCard>
                   <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-8 text-lg transition duration-200 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out">
                     OUR SERVICES
@@ -189,13 +189,13 @@ const About = () => {
                 </h2>
 
                 <div className="flex flex-wrap gap-4 pt-4">
-                  <Link href="/team">
+                  <Link href="/Team">
                     <button className="bg-white text-blue-700 cursor-pointer font-semibold px-6 py-3 text-sm sm:text-base hover:bg-gray-100 hover:scale-105 transition-transform duration-300 ease-in-out">
                       MEET OUR TEAM
                     </button>
                   </Link>
 
-                  <Link href="/contact">
+                  <Link href="/Contact">
                     <button className="bg-white text-blue-700 cursor-pointer font-semibold px-6 py-3 text-sm sm:text-base hover:bg-gray-100 hover:scale-105 transition-transform duration-300 ease-in-out">
                       JOIN OUR TEAM
                     </button>

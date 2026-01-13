@@ -20,20 +20,20 @@ export default function WorkPage() {
       Title: "Emversity",
       image: emversity,
       imageHover: emversityhover,
-      link: "/emversity",
+      link: "/Emversity",
     },
 
     {
       Title: "Vidyashilp",
       image: vidyashilp,
       imageHover: vidyashilphover,
-      link: "/vidyashilp",
+      link: "/Vidyashilp",
     },
     {
       Title: "Flame University",
       image: flame,
       imageHover: flamehover,
-      link: "/flame-university",
+      link: "/Flame-University",
     },
     {
       Title: "Atoot",
@@ -45,7 +45,7 @@ export default function WorkPage() {
       Title: "Birla International School",
       image: birla,
       imageHover: birla,
-      link: "/birla ",
+      link: "/Birla",
     },
     {
       Title: "Shloka",

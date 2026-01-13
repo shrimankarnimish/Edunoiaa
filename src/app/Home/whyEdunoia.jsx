@@ -73,7 +73,7 @@ const WhyEdunoia = () => {
                         </div>
                         {/* Know More Button */}
                         <div className="pt-2 lg:pt-4">
-                            <Link href="/about">
+                            <Link href="/About">
                             <button className="py-2 text-lg lg:text-xl font-bold cursor-pointer hover:opacity-80 transition-opacity text-[#1B51FF]">
                                 KNOW MORE
                             </button>
