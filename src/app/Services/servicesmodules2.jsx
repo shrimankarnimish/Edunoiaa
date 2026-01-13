@@ -437,8 +437,8 @@ const TailoredModules = () => {
               <h5 className="text-[36px] text-white font-[700] mb-4 leading-tight">
                 Explore all our Branding services
               </h5>
-              <Link href="/Services">
-                <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3  font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide">
+              <Link href="/services">
+                <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3  font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide hover:bg-gray-100 hover:scale-105 transition-transform duration-300 ease-in-out">
                   View Details
                 </button>
               </Link>

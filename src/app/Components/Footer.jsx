@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { toast } from "react-toastify";
+import Image from "next/image";
+import Logo from "../../../public/Assets/images/LogoNew.webp";
 
 function Footer() {
   const [formData, setFormData] = useState({
@@ -117,7 +119,17 @@ function Footer() {
         <div className="container mx-auto py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="md:col-span-2 max-w-full sm:max-w-[25rem]">
-              <h6 className="p-italic-white">Edunoia is a part of ABND</h6>
+               <div className="flex items-start gap-4">
+                <Image
+                  src={Logo}
+                  alt="Edunoia Logo"
+                  width={140}
+                  height={40}
+                  priority
+                />
+                </div>
+              <h6 className="p-italic-white mt-5">Edunoia is a part of ABND</h6>
+            
               <p className="text-white mt-4">
                 ABND is a Consulting firm that offers Brand Strategy, Design, and
                 Culture-building. We have 5 clearly defined practice areas.
@@ -128,20 +140,20 @@ function Footer() {
               <div>
                 <p className="font-semibold mb-4 text-white">QUICK LINKS</p>
                 <ul className="space-y-2 text-white">
-                  <li><Link href="/About">About</Link></li>
-                  <li><Link href="/Services">Services</Link></li>
-                  <li><Link href="/Work">Work</Link></li>
+                  <li><Link href="/about">About</Link></li>
+                  <li><Link href="/services">Services</Link></li>
+                  <li><Link href="/work">Work</Link></li>
                 </ul>
               </div>
 
               <div>
                 <p className="font-semibold mb-4 text-white">CONTACT</p>
-                <p>+91 9029024455</p>
-                <p>info@edunoia.in</p>
+                <p className="text-white">+91 9029024455</p>
+                <p className="text-white">info@edunoia.in</p>
               </div>
             </div>
 
-            <div className="md:col-span-3 flex flex-wrap gap-6 mt-8 md:justify-end">
+            <div className="mb-4 text-white md:col-span-3 flex flex-wrap gap-6 mt-8 md:justify-end">
               <a href="https://www.facebook.com/TeamABND/">FACEBOOK</a>
               <a href="https://www.linkedin.com/company/teamabnd/">LINKEDIN</a>
               <a href="https://www.instagram.com/teamabnd/">INSTAGRAM</a>

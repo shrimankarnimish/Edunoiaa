@@ -73,8 +73,8 @@ const Services = () => {
                     <br /> strategy to verbal and visual
                     <br /> identity.
                   </h6>
-                  <Link href="/BespokeModules">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-8 text-lg transition duration-200 cursor-pointer">
+                  <Link href="/bespokemodules">
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-8 text-lg transition duration-200 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out">
                       VIEW DETAILS
                     </button>
                   </Link>

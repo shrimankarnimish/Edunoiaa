@@ -36,7 +36,7 @@ const HeroSection = () => {
 
               {/* CTA Buttons - Exact styling from first image */}
               <div className="flex flex-col sm:flex-row gap-4 mt-12 w-full sm:w-auto">
-                <Link href="/Services" className="w-full sm:w-auto">
+                <Link href="/services" className="w-full sm:w-auto">
                   <button
                     className="font-body w-full sm:w-auto bg-white text-[#1B51FF] hover:bg-gray-50
                  font-semibold py-3 px-8 transition duration-200 ease-in-out
@@ -47,7 +47,7 @@ const HeroSection = () => {
                   </button>
                 </Link>
 
-                <Link href="/Contact" className="w-full sm:w-auto">
+                <Link href="/contact" className="w-full sm:w-auto">
                   <button
                     className="font-body w-full sm:w-auto bg-white text-[#1B51FF] hover:bg-gray-50
                  font-semibold py-3 px-8 transition duration-200 ease-in-out
@@ -110,8 +110,8 @@ const HeroSection = () => {
                   sector.
                 </p>
 
-                <Link href="/Services">
-                  <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white font-semibold py-3 px-7 cursor mt-4 text-lg">
+                <Link href="/services">
+                  <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white font-semibold py-3 px-7 cursor mt-4 text-lg hover:scale-105 transition-transform duration-300 ease-in-out">
                     VIEW DETAILS
                   </button>
                 </Link>
