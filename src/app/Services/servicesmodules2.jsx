@@ -399,8 +399,9 @@ const TailoredModules = () => {
               </h6>
               <div className="mb-3 sm:mb-4 ">
                 <h4 className="heading-bluee">
-                  Event Experience
-                  <br /> Branding
+                  Event Experience   <br /> Branding
+                  <span style={{ visibility: 'hidden' }}> Events
+                    & Summits</span>
                 </h4>
                 <div className="border-linee"></div>
               </div>
@@ -438,7 +439,7 @@ const TailoredModules = () => {
                 Explore all our Branding services
               </h5>
               <Link href="/Services">
-                <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3  font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide hover:bg-gray-100 hover:scale-105 transition-transform duration-300 ease-in-out">
+                <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3  font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide hover:scale-105 text-center">
                   View Details
                 </button>
               </Link>

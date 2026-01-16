@@ -399,8 +399,9 @@ const TailoredModules = () => {
               </h6>
               <div className="mb-3 sm:mb-4 ">
                 <h4 className="heading-bluee">
-                  Event Experience
-                  <br /> Branding
+                  Event Experience   <br /> Branding
+                  <span style={{ visibility: 'hidden' }}> Events
+                    & Summits</span>
                 </h4>
                 <div className="border-linee"></div>
               </div>

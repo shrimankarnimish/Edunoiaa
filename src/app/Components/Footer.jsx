@@ -118,24 +118,28 @@ function Footer() {
       <div className="w-full bg-[#1B51FF]">
         <div className="container mx-auto py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            {/* LEFT CONTENT */}
             <div className="md:col-span-2 max-w-full sm:max-w-[25rem]">
-               <div className="flex items-start gap-4">
-                <Image
-                  src={Logo}
-                  alt="Edunoia Logo"
-                  width={140}
-                  height={40}
-                  priority
-                />
-                </div>
-              <h6 className="p-italic-white mt-5">Edunoia is a part of ABND</h6>
-            
+              <Image
+                src={Logo}
+                alt="Edunoia Logo"
+                width={140}
+                height={40}
+                priority
+              />
+
+              <h6 className="p-italic-white mt-5">
+                Edunoia is a part of ABND
+              </h6>
+
               <p className="text-white mt-4">
                 ABND is a Consulting firm that offers Brand Strategy, Design, and
                 Culture-building. We have 5 clearly defined practice areas.
               </p>
             </div>
 
+            {/* QUICK LINKS + CONTACT */}
             <div className="grid grid-cols-2 gap-8 md:gap-12">
               <div>
                 <p className="font-semibold mb-4 text-white">QUICK LINKS</p>
@@ -153,15 +157,28 @@ function Footer() {
               </div>
             </div>
 
-            <div className="mb-4 text-white md:col-span-3 flex flex-wrap gap-6 mt-8 md:justify-end">
-              <a href="https://www.facebook.com/TeamABND/">FACEBOOK</a>
-              <a href="https://www.linkedin.com/company/teamabnd/">LINKEDIN</a>
-              <a href="https://www.instagram.com/teamabnd/">INSTAGRAM</a>
-              <a href="https://x.com/teamabnd">X</a>
+            {/* BOTTOM ROW */}
+            <div className="md:col-span-3 mt-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-white">
+
+              {/* LEFT BOTTOM */}
+              <p className="font-semibold">
+                © {new Date().getFullYear()} ABND. All Rights Reserved.
+              </p>
+
+
+              {/* RIGHT BOTTOM */}
+              <div className="flex gap-6">
+                <a href="https://www.facebook.com/TeamABND/">FACEBOOK</a>
+                <a href="https://www.linkedin.com/company/teamabnd/">LINKEDIN</a>
+                <a href="https://www.instagram.com/teamabnd/">INSTAGRAM</a>
+                <a href="https://x.com/teamabnd">X</a>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
+
     </div>
   );
 }
