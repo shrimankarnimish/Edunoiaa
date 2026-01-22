@@ -433,7 +433,7 @@ const TailoredModules = () => {
           </div>
 
           {/* CTA Card */}
-          <div className=" text-gray-800 p-4 sm:p-25 md:p-25 flex flex-col justify-between min-h-[280px] sm:min-h-[300px] md:min-h-[320px]">
+          {/* <div className=" text-gray-800 p-4 sm:p-25 md:p-25 flex flex-col justify-between min-h-[280px] sm:min-h-[300px] md:min-h-[320px]">
             <div>
               <h5 className="text-[36px] text-white font-[700] mb-4 leading-tight">
                 Explore all our Branding services
@@ -444,7 +444,7 @@ const TailoredModules = () => {
                 </button>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

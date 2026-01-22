@@ -144,9 +144,11 @@ function Footer() {
               <div>
                 <p className="font-semibold mb-4 text-white">QUICK LINKS</p>
                 <ul className="space-y-2 text-white">
-                  <li><Link href="/About">About</Link></li>
-                  <li><Link href="/Services">Services</Link></li>
-                  <li><Link href="/Work">Work</Link></li>
+                  <li><Link href="/about">About</Link></li>
+                  <li><Link href="/services">Services</Link></li>
+                  <li><Link href="/work">Work</Link></li>
+                  <li><Link href="/team">Team</Link></li>
+                  <li><Link href="/thinking">Thought Leadership</Link></li>
                 </ul>
               </div>
 
