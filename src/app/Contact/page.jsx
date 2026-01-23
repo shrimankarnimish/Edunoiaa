@@ -25,7 +25,7 @@ const contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+    console.log("Submitting form data:", formData);
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -34,7 +34,7 @@ const contact = () => {
       });
 
       const result = await response.json();
-
+      console.log("result:", result);
       if (!response.ok) {
         throw new Error(result.message);
       }

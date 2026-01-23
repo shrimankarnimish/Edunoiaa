@@ -38,7 +38,7 @@ const TeamSection = () => {
 
               {/* CTA Buttons - Exact styling from first image */}
               <div className="flex flex-col sm:flex-row gap-4 mt-12 w-full sm:w-auto">
-                <Link href="/services" className="w-full sm:w-auto">
+                <Link href="/Services" className="w-full sm:w-auto">
                   <button
                     className="font-body w-full sm:w-auto bg-white text-[#1B51FF] hover:bg-gray-50
                  font-semibold py-3 px-8 transition duration-200 ease-in-out
@@ -49,7 +49,7 @@ const TeamSection = () => {
                   </button>
                 </Link>
 
-                <Link href="/contact" className="w-full sm:w-auto">
+                <Link href="/Contact" className="w-full sm:w-auto">
                   <button
                     className="font-body w-full sm:w-auto bg-white text-[#1B51FF] hover:bg-gray-50
                  font-semibold py-3 px-8 transition duration-200 ease-in-out

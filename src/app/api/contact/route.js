@@ -32,7 +32,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("Email error:", error);
     return NextResponse.json(
-      { message: "Message not sent." },
+      { message: "Message not sent.", error: error.message },
       { status: 500 }
     );
   }
