@@ -35,7 +35,7 @@ export default function Navbar() {
     { path: "/Work", label: "WORK" },
     { path: "/Team", label: "TEAM" },
     { path: "/Thinking", label: "THOUGHT LEADERSHIP" },
-    { path: "/contact", label: "CONTACT" },
+    { path: "/contact", label: "CONTACT123" },
   ];
 
   return (
@@ -48,7 +48,7 @@ export default function Navbar() {
           <nav className="flex items-center justify-between py-4 mt-1">
             {/* LOGO */}
             <div className="flex items-center">
-              <Link href="/">
+              <a href="/">
                 <Image
                   src={Logo}
                   style={{ height: "4rem" }}
@@ -56,7 +56,7 @@ export default function Navbar() {
                   priority
                   className="h-10 w-auto md:h-10 object-contain cursor-pointer"
                 />
-              </Link>
+              </a>
             </div>
 
             {/* Desktop Menu */}
