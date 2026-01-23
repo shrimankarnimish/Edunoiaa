@@ -5,7 +5,7 @@ import Image from "next/image";
 import { toast } from "react-toastify";
 import Contactbanner from "../../../public/Assets/images/contactBanner.webp";
 
-const Contact = () => {
+const contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -157,4 +157,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default contact;
