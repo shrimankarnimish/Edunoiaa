@@ -30,12 +30,12 @@ export default function Navbar() {
 
   // Navigation items
   const navItems = [
-    { path: "/About", label: "ABOUT" },
-    { path: "/Services", label: "SERVICES" },
-    { path: "/Work", label: "WORK" },
-    { path: "/Team", label: "TEAM" },
-    { path: "/Thinking", label: "THOUGHT LEADERSHIP" },
-    { path: "/contact", label: "CONTACT123" },
+    { path: "/about", label: "ABOUT" },
+    { path: "/services", label: "SERVICES" },
+    { path: "/work", label: "WORK" },
+    { path: "/team", label: "TEAM" },
+    { path: "/thinking", label: "THOUGHT LEADERSHIP" },
+    { path: "/contact", label: "CONTACT" },
   ];
 
   return (
