@@ -17,7 +17,7 @@ export async function POST(request) {
 
     await transporter.sendMail({
       from: `"Edunoia Enquiry" <${process.env.GMAIL_USER}>`,
-      to: ["info@test.in", "info@test.com"],
+      to: ["info@abnd.in", "info@riseit.com"],
       subject: `Contact form Enquiry from ${email}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
       html: `
