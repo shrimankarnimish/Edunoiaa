@@ -7,11 +7,24 @@ export async function POST(request) {
   try {
     const { name, email, phone, message } = await request.json();
 
+    // const transporter = nodemailer.createTransport({
+    //   host: "smtp.gmail.com",
+    //   port: 587,
+    //   secure: false,
+    //   auth: {
+    //     user: process.env.GMAIL_USER,
+    //     pass: process.env.GMAIL_PASS, // APP PASSWORD
+    //   },
+    // });
+
+
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: false, // TLS via STARTTLS
       auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS,
+        user: process.env.SMTP_USER, // "apikey"
+        pass: process.env.SMTP_PASS, // Brevo API key
       },
     });
 
