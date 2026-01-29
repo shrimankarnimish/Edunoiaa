@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@fontsource/merriweather-sans": "^5.2.7",
-    "@netlify/plugin-nextjs": "^5.15.7",
     "framer-motion": "^12.23.26",
     "lucide-react": "^0.554.0",
     "next": "^16.0.8",
