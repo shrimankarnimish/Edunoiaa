@@ -7,18 +7,31 @@ export async function POST(request) {
   try {
     const { name, email, phone, message } = await request.json();
 
+    // const transporter = nodemailer.createTransport({
+    //   host: "smtp.gmail.com",
+    //   port: 587,
+    //   secure: false,
+    //   auth: {
+    //     user: process.env.GMAIL_USER,
+    //     pass: process.env.GMAIL_PASS, // APP PASSWORD
+    //   },
+    // });
+
+
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: false, // TLS via STARTTLS
       auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS, // APP PASSWORD
+        user: process.env.SMTP_USER, // "apikey"
+        pass: process.env.SMTP_PASS, // Brevo API key
       },
     });
 
     await transporter.sendMail({
-      from: `"Edunoia Enquiry" <${process.env.GMAIL_USER}>`,
+      // from: `"Edunoia Enquiry" <${process.env.GMAIL_USER}>`,
+      from: `"Edunoia Enquiry" <${process.env.FROM_EMAIL}>`,
+      
       to: ["nimish.shrimankar@riseit.in", "rahul.gupta@riseit.in"],
       subject: `Contact form Enquiry from ${email}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
