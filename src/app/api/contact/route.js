@@ -7,19 +7,19 @@ export async function POST(request) {
   try {
     const { name, email, phone, message } = await request.json();
 
-   const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_PASS,
-  },
-});
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS, // APP PASSWORD
+      },
+    });
 
     await transporter.sendMail({
       from: `"Edunoia Enquiry" <${process.env.GMAIL_USER}>`,
-       to: ["nimish.shrimankar@riseit.in", "rahul.gupta@riseit.in"],
+      to: ["nimish.shrimankar@riseit.in", "rahul.gupta@riseit.in"],
       subject: `Contact form Enquiry from ${email}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
       html: `
