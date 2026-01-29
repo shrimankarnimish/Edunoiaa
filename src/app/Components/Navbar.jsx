@@ -35,7 +35,7 @@ export default function Navbar() {
     { path: "/Work", label: "WORK" },
     { path: "/Team", label: "TEAM" },
     { path: "/Thinking", label: "THOUGHT LEADERSHIP" },
-    { path: "/Contact", label: "CONTACT" },
+    { path: "/Contact", label: "CONTACT123" },
   ];
 
   return (
