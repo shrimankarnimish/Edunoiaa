@@ -1,6 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { StaggerContainer, StaggerItem, SlideFadeLeft, } from "../Components/Animations";
+import {
+  StaggerContainer,
+  StaggerItem,
+  SlideFadeLeft,
+} from "../Components/Animations";
 
 const TailoredModules = () => {
   return (
@@ -48,7 +52,7 @@ const TailoredModules = () => {
                 positioning, a resonant name, and polished brand assets.
               </p>
             </div>
-            <Link href="TailoredModules/90DaysInstitutionLaunch">
+            <Link href="/tailoredmodules/90-days-institution-launch">
               <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                 View Details
                 <svg
@@ -90,7 +94,7 @@ const TailoredModules = () => {
                 delivers a modern identity, sharper messaging, and renewed trust
               </p>
             </div>
-            <Link href="TailoredModules/90DaysRebrandingSprit">
+            <Link href="tailoredmodules/90-days-rebranding-sprit">
               <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                 View Details
                 <svg
@@ -127,10 +131,11 @@ const TailoredModules = () => {
                 Boost enrolments with a clear, compelling brand story.
               </h6>
               <p className="p-blue">
-                We align your messaging and campaigns with what truly motivates students and parents
+                We align your messaging and campaigns with what truly motivates
+                students and parents
               </p>
             </div>
-            <Link href="TailoredModules/AdmissionTeamTraning">
+            <Link href="tailoredmodules/admission-team-traning">
               <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                 View Details
                 <svg
@@ -171,7 +176,7 @@ const TailoredModules = () => {
                 strengthen emotional ties and drive giving.
               </p>
             </div>
-            <Link href="TailoredModules/AluminiDonorBranding">
+            <Link href="tailoredmodules/alumini-donor-branding">
               <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                 View Details
                 <svg
@@ -206,10 +211,12 @@ const TailoredModules = () => {
               </div>
               <h6 className="title">Measure what truly matters</h6>
               <p className="p-blue">
-                Our proprietary tracking tool benchmarks your institution across awareness, reputation, loyalty, and satisfaction, year after year.
+                Our proprietary tracking tool benchmarks your institution across
+                awareness, reputation, loyalty, and satisfaction, year after
+                year.
               </p>
             </div>
-            <Link href="TailoredModules/BrandHealthTracker">
+            <Link href="tailoredmodules/brand-health-tracker">
               <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 cursor-pointer  text-left flex items-center uppercase tracking-wide">
                 View Details
                 <svg
@@ -250,7 +257,7 @@ const TailoredModules = () => {
                 community satisfaction, backed by real stakeholder data.
               </p>
             </div>
-            <Link href="TailoredModules/ERI">
+            <Link href="tailoredmodules/eri">
               <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 cursor-pointer  text-left flex items-center uppercase tracking-wide">
                 View Details
                 <svg
@@ -292,7 +299,7 @@ const TailoredModules = () => {
                 campaigns that inspire pride and retention.
               </p>
             </div>
-            <Link href="TailoredModules/FacultyProgram">
+            <Link href="tailoredmodules/faculty-program">
               <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left cursor-pointer  flex items-center uppercase tracking-wide ">
                 View Details
                 <svg
@@ -332,7 +339,7 @@ const TailoredModules = () => {
                 that make your brand wearable and collectible.
               </p>
             </div>
-            <Link href="TailoredModules/MerchandisePrideProgram">
+            <Link href="tailoredmodules/merchandise-pride-program">
               <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center cursor-pointer  uppercase tracking-wide">
                 View Details
                 <svg
@@ -371,7 +378,7 @@ const TailoredModules = () => {
                 strengthen thought leadership and visibility.
               </p>
             </div>
-            <Link href="/TailoredModules/IPdevelopment">
+            <Link href="/TailoredModules/ip-development">
               <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase cursor-pointer tracking-wide">
                 View Details
                 <svg
@@ -399,9 +406,11 @@ const TailoredModules = () => {
               </h6>
               <div className="mb-3 sm:mb-4 ">
                 <h4 className="heading-bluee">
-                  Event Experience   <br /> Branding
-                  <span style={{ visibility: 'hidden' }}> Events
-                    & Summits</span>
+                  Event Experience <br /> Branding
+                  <span style={{ visibility: "hidden" }}>
+                    {" "}
+                    Events & Summits
+                  </span>
                 </h4>
                 <div className="border-linee"></div>
               </div>
@@ -412,7 +421,7 @@ const TailoredModules = () => {
                 brand story.
               </p>
             </div>
-            <Link href="/TailoredModules/EventExperienceBranding">
+            <Link href="/TailoredModules/event-experience-branding">
               <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase cursor-pointer tracking-wide">
                 View Details
                 <svg
@@ -438,7 +447,7 @@ const TailoredModules = () => {
               <h5 className="text-[36px] text-white font-[700] mb-4 leading-tight">
                 Explore all our Branding services
               </h5>
-              <Link href="/Services">
+              <Link href="/services">
                 <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3  font-semibold hover:bg-gray-100 transition-colors uppercase text-xs sm:text-sm tracking-wide hover:scale-105 text-center">
                   View Details
                 </button>
