@@ -5,7 +5,7 @@ import Image from "next/image";
 import { toast } from "react-toastify";
 import Contactbanner from "../../../public/Assets/images/contactBanner.webp";
 
-const contact = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,7 +26,9 @@ const contact = () => {
     e.preventDefault();
     setLoading(true);
     console.log("Submitting form data:", formData);
+
     try {
+      // CORRECTED: Changed from "/contact/action" to "/api/contact"
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -34,9 +36,10 @@ const contact = () => {
       });
 
       const result = await response.json();
-      console.log("result:", result);
+      console.log("API Response:", result);
+
       if (!response.ok) {
-        throw new Error(result.message);
+        throw new Error(result.message || "Failed to send message");
       }
 
       toast.success("Message sent successfully! We'll get back to you soon.", {
@@ -44,9 +47,11 @@ const contact = () => {
         autoClose: 4000,
       });
 
+      // Reset form
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (err) {
-      toast.error("Something went wrong. Please try again.", {
+      console.error("Submission error:", err);
+      toast.error(err.message || "Something went wrong. Please try again.", {
         position: "top-right",
         autoClose: 4000,
       });
@@ -72,12 +77,13 @@ const contact = () => {
       {/* Contact Form Section */}
       <section className="w-full bg-[#002855] text-white contact-us-form-container">
         <div className="mx-auto grid grid-cols-1 lg:grid-cols-2">
-
           {/* LEFT — FORM */}
           <div className="p-10 lg:p-20 flex cust-left-padding">
             <div className="w-full max-w-xl">
               <h2 className="text-4xl font-semibold">
-                We’d love to<br />hear from you!
+                We&apos;d love to
+                <br />
+                hear from you!
               </h2>
 
               <form className="mt-10 space-y-1" onSubmit={handleSubmit}>
@@ -139,7 +145,7 @@ const contact = () => {
             </div>
           </div>
 
-          {/* RIGHT — MAP (UNCHANGED) */}
+          {/* RIGHT — MAP */}
           <div className="h-[350px] lg:h-auto">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15079.234511535598!2d72.8569272!3d19.1160496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b62291442fb9%3A0x821a17fcf7de925f!2sABND%20-%20Branding%20Agency!5e0!3m2!1sen!2sin!4v1691127616974!5m2!1sen!2sin"
@@ -150,11 +156,10 @@ const contact = () => {
               style={{ minHeight: "40rem" }}
             ></iframe>
           </div>
-
         </div>
       </section>
     </>
   );
 };
 
-export default contact;
+export default Contact;

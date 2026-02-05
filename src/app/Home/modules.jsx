@@ -1,6 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { StaggerContainer, StaggerItem, SlideFadeLeft, } from "../Components/Animations";
+import {
+  StaggerContainer,
+  StaggerItem,
+  SlideFadeLeft,
+} from "../Components/Animations";
 
 const TailoredModules = () => {
   return (
@@ -48,7 +52,7 @@ const TailoredModules = () => {
                 positioning, a resonant name, and polished brand assets.
               </p>
             </div>
-            <Link href="tailoredmodules/90-days-institution-launch">
+            <Link href="/tailoredmodules/90-days-institution-launch">
               <button className="cursor-pointer mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase tracking-wide">
                 View Details
                 <svg
@@ -127,7 +131,8 @@ const TailoredModules = () => {
                 Boost enrolments with a clear, compelling brand story.
               </h6>
               <p className="p-blue">
-                We align your messaging and campaigns with what truly motivates students and parents
+                We align your messaging and campaigns with what truly motivates
+                students and parents
               </p>
             </div>
             <Link href="tailoredmodules/admission-team-traning">
@@ -206,7 +211,9 @@ const TailoredModules = () => {
               </div>
               <h6 className="title">Measure what truly matters</h6>
               <p className="p-blue">
-                Our proprietary tracking tool benchmarks your institution across awareness, reputation, loyalty, and satisfaction, year after year.
+                Our proprietary tracking tool benchmarks your institution across
+                awareness, reputation, loyalty, and satisfaction, year after
+                year.
               </p>
             </div>
             <Link href="tailoredmodules/brand-health-tracker">
@@ -284,8 +291,8 @@ const TailoredModules = () => {
                 <div className="border-line"></div>
               </div>
               <h6 className="title">
-                Build a faculty that believes, belongs, and becomes your brand's
-                voice.
+                Build a faculty that believes, belongs, and becomes your
+                brand&apos;s voice.
               </h6>
               <p className="p-blue">
                 We help you articulate your faculty value proposition and craft
@@ -399,9 +406,11 @@ const TailoredModules = () => {
               </h6>
               <div className="mb-3 sm:mb-4 ">
                 <h4 className="heading-bluee">
-                  Event Experience   <br /> Branding
-                  <span style={{ visibility: 'hidden' }}> Events
-                    & Summits</span>
+                  Event Experience <br /> Branding
+                  <span style={{ visibility: "hidden" }}>
+                    {" "}
+                    Events & Summits
+                  </span>
                 </h4>
                 <div className="border-linee"></div>
               </div>
