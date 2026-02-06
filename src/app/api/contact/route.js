@@ -50,24 +50,24 @@ export async function POST(request) {
 
     // Receiver emails - ADD YOUR EMAILS HERE
     const receiverEmails = [
-      "nimish.shrimankar@riseit.in",
-      "info@test.com",
+      "info@abnd.in",
+      "info@riseit.com",
       // Add more emails as needed
     ];
 
     const mailOptions = {
       from: `"Edunoia Contact Form" <${process.env.GMAIL_USER}>`,
       to: receiverEmails,
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `Edunoia Enquiry from ${name}`,
       text: `
-Name: ${name}
-Email: ${email}
-Phone: ${phone || "Not provided"}
-Message: ${message}
+      Name: ${name}
+      Email: ${email}
+      Phone: ${phone || "Not provided"}
+      Message: ${message}
       `,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
-          <h2 style="color: #333;">New Contact Form Submission - Edunoia</h2>
+          <h2 style="color: #333;">Edunoia Enquiry</h2>
           <div style="background: #f5f5f5; padding: 15px; border-radius: 5px;">
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>

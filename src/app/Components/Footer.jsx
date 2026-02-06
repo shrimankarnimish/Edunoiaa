@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Import usePathname
+import { usePathname } from "next/navigation";
 import { toast } from "react-toastify";
 import Image from "next/image";
+import ReCAPTCHA from "react-google-recaptcha";
 import Logo from "../../../public/Assets/images/LogoNew.webp";
 
 function Footer() {
@@ -14,11 +15,12 @@ function Footer() {
     message: "",
   });
 
+  const [captchaToken, setCaptchaToken] = useState(null);
   const [loading, setLoading] = useState(false);
-  const pathname = usePathname(); // Get current route
+  const pathname = usePathname();
 
   // Check if current page is Contact page
-  const isContactPage = pathname === "/contact"; // Adjust this path based on your actual contact page route
+  const isContactPage = pathname === "/contact";
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -27,25 +29,65 @@ function Footer() {
     }));
   };
 
+  const handleCaptchaChange = (token) => {
+    setCaptchaToken(token);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate CAPTCHA
+    if (!captchaToken) {
+      toast.error("Please verify that you are not a robot.", {
+        position: "top-right",
+        autoClose: 4000,
+      });
+      return;
+    }
+
     setLoading(true);
 
     try {
-      const res = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          subject: "Edunoia Enquiry - Footer Form",
+          captcha: captchaToken,
+        }),
       });
 
-      const data = await res.json();
+      const result = await response.json();
 
-      if (!res.ok) throw new Error(data.message);
+      if (!result.success) {
+        throw new Error(result.message || "Submission failed");
+      }
 
-      toast.success("Enquiry sent successfully!");
+      toast.success("Message sent successfully! We'll get back to you soon.", {
+        position: "bottom-left",
+        autoClose: 4000,
+      });
+
+      // Reset form
       setFormData({ name: "", email: "", phone: "", message: "" });
+      setCaptchaToken(null);
+
+      // Reset CAPTCHA
+      if (window.grecaptcha) {
+        window.grecaptcha.reset();
+      }
     } catch (err) {
-      toast.error("Failed to send enquiry. Please try again.");
+      toast.error("Something went wrong. Please try again.", {
+        position: "top-right",
+        autoClose: 4000,
+      });
     } finally {
       setLoading(false);
     }
@@ -55,7 +97,7 @@ function Footer() {
     <div className="w-full footer">
       {/* TOP BLUE SECTION - Hide on Contact page */}
       {!isContactPage && (
-        <div className="w-full bg-[#002855] text-white footer-form-section ">
+        <div className="w-full bg-[#002855] text-white footer-form-section">
           <div className="container mx-auto py-14">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
               {/* LEFT HEADING */}
@@ -65,57 +107,66 @@ function Footer() {
               </h2>
 
               {/* RIGHT FORM */}
-              <form
-                onSubmit={handleSubmit}
-                className="w-full max-w-sm ml-auto space-y-4"
-              >
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-transparent border-b border-[#5c76ff] text-white outline-none pb-1"
-                />
+              <div className="w-full max-w-sm ml-auto">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full bg-transparent border-b border-[#5c76ff] text-white outline-none pb-1"
+                  />
 
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-transparent border-b border-[#5c76ff] text-white outline-none pb-1"
-                />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full bg-transparent border-b border-[#5c76ff] text-white outline-none pb-1"
+                  />
 
-                <input
-                  type="text"
-                  name="phone"
-                  placeholder="Number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full bg-transparent border-b border-[#7a8be2] text-white outline-none pb-1"
-                />
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Number"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full bg-transparent border-b border-[#7a8be2] text-white outline-none pb-1"
+                  />
 
-                <input
-                  type="text"
-                  name="message"
-                  placeholder="Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-transparent border-b border-[#5c76ff] text-white outline-none pb-1"
-                />
+                  <input
+                    type="text"
+                    name="message"
+                    placeholder="Message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    className="w-full bg-transparent border-b border-[#5c76ff] text-white outline-none pb-1"
+                  />
 
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 font-semibold hover:bg-gray-100 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 uppercase text-xs sm:text-sm tracking-wide disabled:opacity-50"
-                >
-                  {loading ? "Sending..." : "SEND"}
-                </button>
-              </form>
+                  {/* CAPTCHA Component */}
+                  <div className="my-4">
+                    <ReCAPTCHA
+                      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                      onChange={handleCaptchaChange}
+                      theme="dark"
+                      size="normal"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={loading || !captchaToken}
+                    className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 font-semibold hover:bg-gray-100 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 uppercase text-xs sm:text-sm tracking-wide disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {loading ? "Sending..." : "SEND"}
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
