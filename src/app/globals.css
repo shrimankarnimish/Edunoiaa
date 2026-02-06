@@ -52,6 +52,7 @@ h6 {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -61,6 +62,7 @@ h6 {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -181,7 +183,7 @@ h6 {
   color: #fff;
 }
 
-.blueh4 { 
+.blueh4 {
   font-size: 24px;
   color: white;
 }
@@ -304,8 +306,22 @@ h3.p-italic {
 .mobile-item {
   @apply text-white text-lg tracking-wide hover:opacity-70;
 }
-.contact-us-form-container .footer-form-section{
+
+.contact-us-form-container .footer-form-section {
   display: none;
+}
+
+.bg-contact {
+  background: url('./../../Public/Assets/images/image\ 1.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.bg-contact:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #00000026;
+  position: absolute;
 }
 
 /* ===== RESPONSIVE ADJUSTMENTS FOR .p3-italic ===== */
@@ -384,9 +400,11 @@ h3.p-italic {
   nav ul.md\:flex {
     display: none;
   }
+
   nav button.md\:hidden {
     display: block;
   }
+
   .container {
     max-width: 90%;
   }
@@ -395,6 +413,7 @@ h3.p-italic {
 /* Screen size adjustments for padding */
 /* 1400 - 1280px */
 @media (max-width: 1399px) and (min-width: 1280px) {
+
   .what-we-do-container .cust-padding-left,
   .contact-us-form-container .cust-left-padding .second-padding-right {
     padding-left: 8%;
@@ -403,14 +422,17 @@ h3.p-italic {
 
 /* Tablets: 1024px ↓ */
 @media (max-width: 1024px) {
+
   .what-we-do-container .cust-padding-left,
-  .contact-us-form-container .cust-left-padding .second-padding-right, .contact-us-form-container .cust-left-padding {
+  .contact-us-form-container .cust-left-padding .second-padding-right,
+  .contact-us-form-container .cust-left-padding {
     padding-left: 8% !important;
   }
 }
 
 /* Mobile: 768px ↓ */
 @media (max-width: 768px) {
+
   .what-we-do-container .cust-padding-left,
   .contact-us-form-container .cust-left-padding .second-padding-right,
   .second-padding-right {
@@ -424,6 +446,7 @@ h3.p-italic {
   .responsive-hblue.whiteh4 {
     font-size: 34px;
   }
+
   .responsive-pgrey .whiteh4 {
     font-size: 20px;
   }
@@ -433,6 +456,7 @@ h3.p-italic {
   .responsive-hblue .whiteh4 {
     font-size: 40px;
   }
+
   .responsive-pgrey {
     font-size: 24px;
   }
@@ -443,9 +467,11 @@ h3.p-italic {
   .text-4xl {
     font-size: var(--text-3xl);
   }
+
   .br-hide {
     display: none;
   }
+
   .cust-padding-left {
     padding-left: 6%;
     padding-right: 30px;
@@ -456,23 +482,29 @@ h3.p-italic {
   .heading-blue {
     font-size: 18px;
   }
+
   .p-blue {
     font-size: 14px;
   }
+
   .p-italic-white {
     font-size: 18px;
   }
+
   .title {
     font-size: 18px;
   }
+
   .p-grey {
     font-size: 18px;
     line-height: 1.5;
   }
+
   .h-blue {
     font-size: 28px;
     line-height: 1.25;
   }
+
   .p-italic,
   .p-italic-dblue {
     font-size: 18px;
@@ -485,15 +517,19 @@ h3.p-italic {
   .heading-blue {
     font-size: 22px;
   }
+
   .p-blue {
     font-size: 15px;
   }
+
   .title {
     font-size: 20px;
   }
+
   .p-grey {
     font-size: 20px;
   }
+
   .h-blue {
     font-size: 34px;
   }
@@ -509,18 +545,23 @@ h3.p-italic {
   .heading-blue {
     font-size: 24px;
   }
+
   .p-blue {
     font-size: 16px;
   }
+
   .title {
     font-size: 25px;
   }
+
   .p-grey {
     font-size: 24px;
   }
+
   .h-blue {
     font-size: 40px;
   }
+
   .p-italic,
   .p-italic-dblue {
     font-size: 24px;
@@ -540,6 +581,7 @@ h3.p-italic {
   h3.p-italic {
     font-size: 24px;
   }
+
   .service-section {
     height: 50vh;
   }
@@ -568,6 +610,7 @@ h3.p-italic {
 
 /* Vertical border adjustments */
 @media screen and (max-width: 1024px) {
+
   .v-border:before,
   .v-border:after {
     display: none;
@@ -590,21 +633,26 @@ h3.p-italic {
 
 /* Swiper responsive styles */
 @media (max-width: 768px) {
+
   .swiper-button-prev,
   .swiper-button-next {
     width: 3rem;
     height: 3rem;
   }
+
   .swiper-button-next {
     right: 15px;
   }
+
   .swiper-button-prev {
     left: 15px;
   }
+
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 2.5rem;
   }
+
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -612,6 +660,7 @@ h3.p-italic {
 }
 
 @media (max-width: 640px) {
+
   .swiper-button-prev,
   .swiper-button-next {
     display: none;

@@ -9,8 +9,8 @@ import flame from "../../../public/Assets/images/flame.jpg";
 import flamehover from "../../../public/Assets/images/flamet.jpg";
 import atoot from "../../../public/Assets/images/atoot.jpg";
 import atoothover from "../../../public/Assets/images/atoott.jpg";
-import birla from "../../../public/Assets/images/birla/birla_logo.webp"
-import shloka from "../../../public/Assets/images/shloka/shloka4.webp"
+import birla from "../../../public/Assets/images/birla/birla_logo.webp";
+import shloka from "../../../public/Assets/images/shloka/shloka4.webp";
 
 // Add more imports...
 
@@ -20,20 +20,20 @@ export default function WorkPage() {
       Title: "Emversity",
       image: emversity,
       imageHover: emversityhover,
-      link: "/Emversity",
+      link: "/emversity",
     },
 
     {
       Title: "Vidyashilp",
       image: vidyashilp,
       imageHover: vidyashilphover,
-      link: "/Vidyashilp",
+      link: "/vidyashilp",
     },
     {
       Title: "Flame University",
       image: flame,
       imageHover: flamehover,
-      link: "/Flame-University",
+      link: "flame-university",
     },
     {
       Title: "Atoot",
@@ -45,7 +45,7 @@ export default function WorkPage() {
       Title: "Birla International School",
       image: birla,
       imageHover: birla,
-      link: "/Birla",
+      link: "/birla",
     },
     {
       Title: "Shloka",
@@ -53,7 +53,6 @@ export default function WorkPage() {
       imageHover: shloka,
       link: "/shloka ",
     },
-  
   ];
 
   return (

@@ -1,11 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { toast } from "react-toastify";
-import Contactbanner from "../../../public/Assets/images/contactBanner.webp";
+import ReCAPTCHA from "react-google-recaptcha";
 
-const contact = () => {
+const Contact = () => {
+  const router = useRouter();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,6 +16,7 @@ const contact = () => {
     message: "",
   });
 
+  const [captchaToken, setCaptchaToken] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -22,21 +26,42 @@ const contact = () => {
     }));
   };
 
+  const handleCaptchaChange = (token) => {
+    setCaptchaToken(token);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!captchaToken) {
+      toast.error("Please verify that you are not a robot.", {
+        position: "top-right",
+        autoClose: 4000,
+      });
+      return;
+    }
+
     setLoading(true);
-    console.log("Submitting form data:", formData);
+
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          subject: "Edunoia Enquiry",
+          captcha: captchaToken,
+        }),
       });
 
       const result = await response.json();
-      console.log("result:", result);
-      if (!response.ok) {
-        throw new Error(result.message);
+
+      if (!result.success) {
+        throw new Error(result.message || "Submission failed");
       }
 
       toast.success("Message sent successfully! We'll get back to you soon.", {
@@ -44,7 +69,19 @@ const contact = () => {
         autoClose: 4000,
       });
 
-      setFormData({ name: "", email: "", phone: "", message: "" });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+
+      setCaptchaToken(null);
+
+      // ✅ Redirect after success
+      setTimeout(() => {
+        router.push("/thank-you");
+      }, 800);
     } catch (err) {
       toast.error("Something went wrong. Please try again.", {
         position: "top-right",
@@ -56,105 +93,122 @@ const contact = () => {
   };
 
   return (
-    <>
-      {/* Banner */}
-      <section className="relative h-[30vh] w-full">
-        <Image
-          src={Contactbanner}
-          alt="Background"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/40"></div>
-      </section>
-
-      {/* Contact Form Section */}
-      <section className="w-full bg-[#002855] text-white contact-us-form-container">
-        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2">
-
-          {/* LEFT — FORM */}
-          <div className="p-10 lg:p-20 flex cust-left-padding">
-            <div className="w-full max-w-xl">
-              <h2 className="text-4xl font-semibold">
-                We’d love to<br />hear from you!
-              </h2>
-
-              <form className="mt-10 space-y-1" onSubmit={handleSubmit}>
-                <div>
-                  <label className="text-sm">Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b bg-transparent border-gray-600 py-2 outline-none focus:border-white"
-                  />
-                </div>
-
-                <div>
-                  <label className="text-sm">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b bg-transparent border-gray-600 py-2 outline-none focus:border-white"
-                  />
-                </div>
-
-                <div>
-                  <label className="text-sm">Phone</label>
-                  <input
-                    type="text"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full border-b bg-transparent border-gray-600 py-2 outline-none focus:border-white"
-                  />
-                </div>
-
-                <div>
-                  <label className="text-sm">Message</label>
-                  <textarea
-                    rows="4"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b bg-transparent border-gray-600 py-2 outline-none focus:border-white resize-none"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="font-body w-full sm:w-auto bg-white text-[#1B51FF] hover:bg-gray-50 font-semibold py-3 px-8 transition duration-200 ease-in-out tracking-wide uppercase cursor-pointer text-sm sm:text-base hover:scale-105 text-center disabled:opacity-50"
-                >
-                  {loading ? "Sending..." : "Send"}
-                </button>
-              </form>
-            </div>
+    <div className="w-full bg-contact mt-20 text-white">
+      <div className="container mx-auto py-18 grid grid-cols-1 lg:grid-cols-2 items-start">
+        {/* Left Content */}
+        <div className="w-full mt-10 text-white max-w-2xl">
+          <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl leading-[1.2]">
+            India&apos;s First and Only Brand Consultancy for the Education
+            Sector
+          </h1>
+          <div className="text-lg lg:text-xl mb-8 text-gray-200">
+            <p className="mb-4">
+              With over a decade of experience in creating and working with
+              numerous prolific educational brands, we established Edunoia in
+              2020.
+            </p>
+            <p>
+              Edunoia offers advisory services, brand thinking and communication
+              strategies to a broad cross-section of education institutions,
+              EdTech companies, and other learning and development units in
+              businesses.
+            </p>
           </div>
-
-          {/* RIGHT — MAP (UNCHANGED) */}
-          <div className="h-[350px] lg:h-auto">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15079.234511535598!2d72.8569272!3d19.1160496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b62291442fb9%3A0x821a17fcf7de925f!2sABND%20-%20Branding%20Agency!5e0!3m2!1sen!2sin!4v1691127616974!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              style={{ minHeight: "40rem" }}
-            ></iframe>
-          </div>
-
         </div>
-      </section>
-    </>
+
+        {/* Right Form */}
+        <div className="lg:flex mt-5 justify-end">
+          <div className="bg-black/70 backdrop-blur-md p-8 lg:p-12 rounded-md w-full max-w-lg">
+            <h2 className="text-3xl font-bold mb-8">Let&apos;s Talk</h2>
+
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              <div>
+                <label className="block text-sm mb-2 text-gray-300">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full border-b border-gray-400 bg-transparent py-2 outline-none focus:border-white"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm mb-2 text-gray-300">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full border-b border-gray-400 bg-transparent py-2 outline-none focus:border-white"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm mb-2 text-gray-300">
+                  Phone
+                </label>
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Your Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full border-b border-gray-400 bg-transparent py-2 outline-none focus:border-white"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm mb-2 text-gray-300">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  rows="2"
+                  placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  className="w-full border-b border-gray-400 bg-transparent py-2 outline-none focus:border-white resize-none"
+                />
+              </div>
+
+              <ReCAPTCHA
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                onChange={handleCaptchaChange}
+                theme="dark"
+              />
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full bg-white text-[#1B51FF] font-semibold py-4 px-8 uppercase tracking-wide hover:bg-gray-50 transition disabled:opacity-50"
+              >
+                {loading ? "Sending..." : "Send Message"}
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/* Map */}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15079.234511535598!2d72.8569272!3d19.1160496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b62291442fb9%3A0x821a17fcf7de925f!2sABND%20-%20Branding%20Agency!5e0!3m2!1sen!2sin!4v1691127616974!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
   );
 };
 
-export default contact;
+export default Contact;
