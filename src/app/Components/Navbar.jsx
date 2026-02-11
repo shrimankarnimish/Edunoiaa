@@ -34,7 +34,7 @@ export default function Navbar() {
     { path: "/services", label: "SERVICES" },
     { path: "/work", label: "WORK" },
     { path: "/team", label: "TEAM" },
-    { path: "/thinking", label: "THOUGHT LEADRSHIP" },
+    { path: "/thinking", label: "THOUGHT LEADERSHIP" },
     { path: "/contact", label: "CONTACT" },
   ];
 
@@ -131,38 +131,45 @@ export default function Navbar() {
                 className="transform transition-all duration-700 ease-out"
                 style={{
                   opacity: open ? 1 : 0,
-                  transform: open ? 'translateX(0) scale(1)' : 'translateX(50px) scale(0.9)',
-                  transitionDelay: open ? `${index * 80 + 100}ms` : '0ms'
+                  transform: open
+                    ? "translateX(0) scale(1)"
+                    : "translateX(50px) scale(0.9)",
+                  transitionDelay: open ? `${index * 80 + 100}ms` : "0ms",
                 }}
               >
                 <Link
                   href={item.path}
                   onClick={() => setOpen(false)}
                   className={`relative block px-6 py-4 rounded-xl transition-all duration-300 group
-                    ${isActive(item.path) 
-                      ? "bg-white/10 text-white shadow-lg shadow-white/5" 
-                      : "text-gray-300 hover:bg-white/5 hover:text-white"
+                    ${
+                      isActive(item.path)
+                        ? "bg-white/10 text-white shadow-lg shadow-white/5"
+                        : "text-gray-300 hover:bg-white/5 hover:text-white"
                     }`}
                 >
                   {/* Active Indicator Bar */}
-                  <span className={`absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-10 bg-white rounded-r-full transition-all duration-300
+                  <span
+                    className={`absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-10 bg-white rounded-r-full transition-all duration-300
                     ${isActive(item.path) ? "opacity-100 scale-100" : "opacity-0 scale-0"}`}
                   />
-                  
+
                   {/* Text */}
-                  <span className={`block text-base tracking-widest transition-all duration-300
+                  <span
+                    className={`block text-base tracking-widest transition-all duration-300
                     ${isActive(item.path) ? "font-semibold translate-x-0" : "font-normal group-hover:translate-x-2"}`}
                   >
                     {item.label}
                   </span>
 
                   {/* Animated Underline on Hover */}
-                  <span className={`absolute bottom-2 left-6 h-[2px] bg-white/50 rounded-full transition-all duration-300
+                  <span
+                    className={`absolute bottom-2 left-6 h-[2px] bg-white/50 rounded-full transition-all duration-300
                     ${isActive(item.path) ? "w-12" : "w-0 group-hover:w-8"}`}
                   />
 
                   {/* Hover Arrow */}
-                  <span className={`absolute right-6 top-1/2 transform -translate-y-1/2 transition-all duration-300
+                  <span
+                    className={`absolute right-6 top-1/2 transform -translate-y-1/2 transition-all duration-300
                     ${isActive(item.path) ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"}`}
                   >
                     →
