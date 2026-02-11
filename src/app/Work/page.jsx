@@ -33,7 +33,7 @@ export default function WorkPage() {
       Title: "Flame University",
       image: flame,
       imageHover: flamehover,
-      link: "flame-university",
+      link: "flame-university#purpose-summit",
     },
     {
       Title: "Atoot",

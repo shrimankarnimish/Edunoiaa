@@ -46,7 +46,6 @@ const HeroSection = () => {
                     START YOUR INSTITUTIONS JOURNEY
                   </button>
                 </Link>
-
                 <Link href="/contact" className="w-full sm:w-auto">
                   <button
                     className="font-body w-full sm:w-auto bg-white text-[#1B51FF] hover:bg-gray-50
@@ -58,7 +57,6 @@ const HeroSection = () => {
                   </button>
                 </Link>
               </div>
-
             </div>
           </Fadeinright>
         </div>
@@ -72,15 +70,14 @@ const HeroSection = () => {
       <section style={{ background: "#66AEF1" }} className="py-10">
         <div className="container mx-auto w-full py-12 md:py-16 lg:py-20">
           {/* Video with controls */}
-          <video className="w-full rounded-lg shadow-lg"
+          <video
+            className="w-full rounded-lg shadow-lg"
             autoPlay
             muted
             loop
             playsInline
           >
             <source src="/Assets/images/video1.mp4" />
-
-
           </video>
         </div>
       </section>
