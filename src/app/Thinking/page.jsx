@@ -42,7 +42,7 @@ async function getEdunoiaBlogs() {
         }
       `,
     }),
-    cache: "no-store",
+    cache: "force-cache", // ✅ STATIC BUILD SAFE
   });
 
   const json = await res.json();
@@ -78,7 +78,7 @@ export default async function Page() {
 
       {/* INTRO SECTION - Updated to match first image styling */}
       <div className="w-full bg-white py-20">
-        <div className="mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 container">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 container">
           {/* Left Content */}
           <div className="text-gray-300 space-y-10">
             <Fadeinleft>
@@ -132,7 +132,7 @@ export default async function Page() {
         {/* BLOG GRID SECTION */}
         <div className="mt-20">
           <FadeUpCard>
-            <div className="mx-auto px-6 container">
+            <div className="mx-auto container">
               {/* BlogGrid will handle the 3-column layout internally */}
               <BlogGrid posts={posts} />
             </div>

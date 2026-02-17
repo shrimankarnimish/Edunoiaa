@@ -16,7 +16,7 @@ const Contact = () => {
     message: "",
   });
 
-  const [captchaToken, setCaptchaToken] = useState(null);
+  // const [captchaToken, setCaptchaToken] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -26,35 +26,34 @@ const Contact = () => {
     }));
   };
 
-  const handleCaptchaChange = (token) => {
-    setCaptchaToken(token);
-  };
+  // const handleCaptchaChange = (token) => {
+  //   setCaptchaToken(token);
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!captchaToken) {
-      toast.error("Please verify that you are not a robot.", {
-        position: "top-right",
-        autoClose: 4000,
-      });
-      return;
-    }
+    // if (!captchaToken) {
+    //   toast.error("Please verify that you are not a robot.", {
+    //     position: "top-right",
+    //     autoClose: 4000,
+    //   });
+    //   return;
+    // }
 
     setLoading(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          subject: "Edunoia Enquiry",
-          captcha: captchaToken,
         }),
       });
 
@@ -76,7 +75,7 @@ const Contact = () => {
         message: "",
       });
 
-      setCaptchaToken(null);
+      // setCaptchaToken(null);
 
       // ✅ Redirect after success
       setTimeout(() => {
@@ -179,11 +178,11 @@ const Contact = () => {
                 />
               </div>
 
-              <ReCAPTCHA
+              {/* <ReCAPTCHA
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                 onChange={handleCaptchaChange}
                 theme="dark"
-              />
+              /> */}
 
               <button
                 type="submit"

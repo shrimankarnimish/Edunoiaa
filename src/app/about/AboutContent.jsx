@@ -64,21 +64,20 @@ const About = () => {
           </div>
         </section>
         <Aboutus />
-     <section style={{ background: "#66AEF1" }} className="py-10">
-        <div className="container mx-auto w-full py-12 md:py-16 lg:py-20">
-          {/* Video with controls */}
-          <video className="w-full h-auto rounded-lg shadow-lg"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="/Assets/images/video1.mp4" />
-
-
-          </video>
-        </div>
-      </section>
+        <section style={{ background: "#66AEF1" }} className="py-10">
+          <div className="container mx-auto w-full py-12 md:py-16 lg:py-20">
+            {/* Video with controls */}
+            <video
+              className="w-full h-auto rounded-lg shadow-lg"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/Assets/images/video1.mp4" />
+            </video>
+          </div>
+        </section>
       </div>
       {/* What we do */}
       <section className="what-we-do-conatiner">
@@ -94,8 +93,7 @@ const About = () => {
                     WHAT WE DO
                   </p>
                   <h2 className="h-blue">
-                    Branding for every stage of
-                    an institution’s journey.
+                    Branding for every stage of an institution’s journey.
                   </h2>
                 </Fadeinleft>
               </div>
