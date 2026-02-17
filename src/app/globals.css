@@ -194,6 +194,27 @@ h6 {
   font-weight: 500;
 }
 
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .whiteh4 {
+    font-size: 26px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .whiteh4 {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .whiteh4 {
+    font-size: 18px;
+  }
+}
+
 .border-line-grey {
   width: 100%;
   height: 1px;
@@ -312,7 +333,7 @@ h3.p-italic {
 }
 
 .bg-contact {
-  background: url('./../../Public/Assets/images/image\ 1.jpg') no-repeat center center;
+  background: url('/Assets/images/contact_img.jpg') no-repeat center center;
   background-size: cover;
 }
 
@@ -323,6 +344,8 @@ h3.p-italic {
   background: #00000026;
   position: absolute;
 }
+
+
 
 /* ===== RESPONSIVE ADJUSTMENTS FOR .p3-italic ===== */
 
@@ -417,6 +440,10 @@ h3.p-italic {
   .what-we-do-container .cust-padding-left,
   .contact-us-form-container .cust-left-padding .second-padding-right {
     padding-left: 8%;
+  }
+
+  .cust-padding-left {
+    padding-left: 6%;
   }
 }
 

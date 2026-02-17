@@ -11,6 +11,9 @@ import atoot from "../../../public/Assets/images/atoot.jpg";
 import atoothover from "../../../public/Assets/images/atoott.jpg";
 import birla from "../../../public/Assets/images/birla/birla_logo.webp";
 import shloka from "../../../public/Assets/images/shloka/shloka4.webp";
+import art from "../../../public/Assets/images/artvillage/art_village.webp";
+import drpolaris from "../../../public/Assets/images/drpolaris/drpolaris.jpg";
+import drpolarishover from "../../../public/Assets/images/drpolaris/drpolarist.jpg";
 
 // Add more imports...
 
@@ -53,6 +56,18 @@ export default function WorkPage() {
       imageHover: shloka,
       link: "/shloka ",
     },
+    // {
+    //   Title: "Art Village",
+    //   image: art,
+    //   imageHover: art,
+    //   link: "/shloka ",
+    // },
+    // {
+    //   Title: "Dr Polaris",
+    //   image: drpolaris,
+    //   imageHover: drpolarishover,
+    //   link: "/shloka ",
+    // },
   ];
 
   return (
@@ -74,7 +89,7 @@ export default function WorkPage() {
                   <Image
                     src={item.image}
                     alt={item.Title}
-                    className="object-contain w-full h-full transition-opacity duration-100 group-hover:opacity-0"
+                    className="object-contain w-full h-full transition-opacity duration-500 group-hover:opacity-0"
                   />
 
                   {/* Hover Image */}

@@ -1,55 +1,101 @@
 "use client";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Fadeinup } from "../Components/Animations";
+import { useState, useEffect } from "react";
 
 import case1 from "../../../public/Assets/images/thumbnail1.webp";
 import case2 from "../../../public/Assets/images/thumbnail2.webp";
 import case3 from "../../../public/Assets/images/thumbnail3.webp";
 
+async function getEdunoiaBlogs() {
+  const res = await fetch("https://abndgroup.com/abndblog/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `
+        query AllPosts {
+          posts(
+            first: 100
+            where: {
+              categoryName: "Edunoia"
+              orderby: { field: DATE, order: DESC }
+            }
+          ) {
+            nodes {
+              id
+              title
+              excerpt
+              date
+              slug
+              content
+              featuredImage {
+                node {
+                  sourceUrl
+                }
+              }
+              author {
+                node {
+                  name
+                }
+              }
+            }
+          }
+        }
+      `,
+    }),
+    cache: "force-cache",
+  });
+
+  const json = await res.json();
+  return json?.data?.posts?.nodes || [];
+}
+
 export default function CaseStudyCarousel() {
-  const cards = [
-    {
-      title:
-        "Geopolitical Shift at BRICS: How the 2025 Summit Is Revamping India’s Educational Ambitions",
-      img: case1,
-      href: "https://abnd.in/thinking/edunoia/geopolitical-shift-at-brics-how-the-2025-summit-is-revamping-indias-educational-ambitions",
-    },
-    {
-      title:
-        "Meera’s Triumph: Illuminating the Path to Educational Equality in Rural India",
-      img: case2,
-      href: "https://abnd.in/thinking/edunoia/meeras-triumphilluminating-the-path-to-educational-equality-in-rural-india",
-    },
-    {
-      title:
-        "Unleashing Potential: The Transformative Power of Socio-Emotional Learning and Mental Well-being in Indian Education",
-      img: case3,
-      href: "https://abnd.in/thinking/edunoia/unleashing-potential-the-transformative-power-of-socio-emotional-learning-and-mental-well-being-in-indian-education",
-    },
-    {
-      title:
-        "Geopolitical Shift at BRICS: How the 2025 Summit Is Revamping India’s Educational Ambitions",
-      img: case1,
-      href: "https://abnd.in/thinking/edunoia/geopolitical-shift-at-brics-how-the-2025-summit-is-revamping-indias-educational-ambitions",
-    },
-    {
-      title:
-        "Meera’s Triumph: Illuminating the Path to Educational Equality in Rural India",
-      img: case2,
-      href: "https://abnd.in/thinking/edunoia/meeras-triumphilluminating-the-path-to-educational-equality-in-rural-india",
-    },
-    {
-      title:
-        "Unleashing Potential: The Transformative Power of Socio-Emotional Learning and Mental Well-being in Indian Education",
-      img: case3,
-      href: "https://abnd.in/thinking/edunoia/unleashing-potential-the-transformative-power-of-socio-emotional-learning-and-mental-well-being-in-indian-education",
-    },
-  ];
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchBlogs() {
+      try {
+        const fetchedBlogs = await getEdunoiaBlogs();
+        setBlogs(fetchedBlogs);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchBlogs();
+  }, []);
+
+  // Transform API data into carousel card format
+  const cards = blogs.map((blog) => ({
+    title: blog.title,
+    img: blog.featuredImage?.node?.sourceUrl || case1, // Fallback image if no featured image
+    href: `thinking/${blog.slug}`,
+  }));
+
+  // Fallback to static cards if no blogs are loaded yet or if API fails
+  const displayCards = cards.length > 0 ? cards : [];
+
+  if (loading) {
+    return (
+      <Fadeinup>
+        <div className="w-full container mx-auto py-16">
+          <div className="flex justify-center items-center h-[420px]">
+            <p>Loading blogs...</p>
+          </div>
+        </div>
+      </Fadeinup>
+    );
+  }
 
   return (
     <Fadeinup>
@@ -68,11 +114,10 @@ export default function CaseStudyCarousel() {
           }}
           modules={[Navigation]}
         >
-          {cards.map((card, index) => (
+          {displayCards.map((card, index) => (
             <SwiperSlide key={index}>
               <a
                 href={card.href}
-                target="_blank"
                 rel="noopener noreferrer"
                 className="block h-full"
               >

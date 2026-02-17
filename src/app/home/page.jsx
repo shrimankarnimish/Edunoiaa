@@ -53,7 +53,7 @@ const HeroSection = () => {
                  tracking-wide uppercase cursor-pointer text-sm sm:text-base
                  hover:scale-105 text-center"
                   >
-                    BOOK A DISCOVERY CALL
+                    CONTACT US
                   </button>
                 </Link>
               </div>
