@@ -60,6 +60,7 @@ export default async function Page() {
           <Image
             src={backgroundImage}
             alt="Background"
+            placeholder="blur"
             fill
             className="object-cover"
             priority

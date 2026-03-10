@@ -19,6 +19,7 @@ const HeroSection = () => {
             src={backgroundImage}
             alt="Background"
             fill
+            placeholder="blur"
             className="object-cover"
             priority
           />
