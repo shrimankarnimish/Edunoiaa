@@ -14,12 +14,10 @@ const CaseStudy = () => {
         alt="Flame University"
         fill
         priority
+        placeholder="blur"
         className="object-cover"
       />
-
       {/* OVERLAY */}
-
-
       {/* TEXT CENTERED */}
       <div className="absolute inset-0 z-20 flex items-center justify-center px-6">
         <div className="text-center text-white max-w-lg">
@@ -28,12 +26,12 @@ const CaseStudy = () => {
           </p>
 
           <h1 className="text-2xl sm:text-2xl md:text-3xl font-semibold leading-snug mb-5">
-            Building India’s Pioneers in Liberal Education through a Decade of Partnership
+            Building India’s Pioneers in Liberal Education through a Decade of
+            Partnership
           </h1>
 
           <Link href="/Flame-University">
             <button className="cursor-pointer bg-white text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 font-semibold uppercase text-xs sm:text-sm tracking-wide text-center hover:bg-gray-100 hover:scale-105 transition-transform duration-300 ease-in-out">
-
               VIEW CASESTUDY
             </button>
           </Link>
