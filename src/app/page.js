@@ -1,7 +1,7 @@
 "use client"; // ✅ Add this line at the very top
 
 import React from "react";
-import LandingPage from "./Home/page"
+import LandingPage from "./home/page"
 
 
 const Page = () => {

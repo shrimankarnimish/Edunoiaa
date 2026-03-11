@@ -1,9 +1,9 @@
 import React from "react";
 import backgroundImage from "../../../../public/Assets/images/About_banner.jpg";
 import Image from "next/image";
-import Service1 from "../../../../public/Assets/images/Teammeeting.jpg";
+import Service1 from "../../../../public/Assets/images/Teammeeting.jpg/";
 import bluegradient from "../../../../public/Assets/images/bluegradient1.jpg";
-import Slider from "../../Home/Slider";
+import Slider from "../../Home/slider";
 
 const inside_service1 = () => {
   return (
