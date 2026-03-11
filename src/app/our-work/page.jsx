@@ -17,7 +17,7 @@ import drpolarishover from "../../../public/Assets/images/drpolaris/drpolarist.j
 import raisoni from "../../../public/Assets/images/raisoni/raisoni.png";
 import raisonihover from "../../../public/Assets/images/raisoni/raisoni_hover.png";
 import spia from "../../../public/Assets/images/spia/spia.jpg";
-import spiahover from "../../../public/Assets/images/spia/spiahover.jpg";
+import spiahover from "../../../public/Assets/images/spia/spiahover.png";
 import griet from "../../../public/Assets/images/griet/griet.png";
 import griethover from "../../../public/Assets/images/griet/griethover.png";
 import academic from "../../../public/Assets/images/academiccity/academic.png";
@@ -115,7 +115,7 @@ export default function WorkPage() {
           {items.map((item, index) => (
             <div key={index}>
               <Link href={item.link}>
-                <div className="relative w-full aspect-[4/3] overflow-hidden group">
+                <div className="relative w-full aspect-4/3 overflow-hidden group">
                   {/* Normal Image */}
                   <Image
                     src={item.image}
