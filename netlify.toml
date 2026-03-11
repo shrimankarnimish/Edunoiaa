@@ -19,7 +19,7 @@
   force = false
 
 # Required for Next.js API routes to work
-[[functions]]
+[functions]
   external_node_modules = ["nodemailer"]
 
 # Security headers
