@@ -96,7 +96,7 @@ export default function WorkPage() {
     // {
     //   Title: "Dr Polaris",
     //   image: drpolaris,
-    //   imageHover: drpolarishover,
+    //   imageHover: drpolar-ishover,
     //   link: "/shloka ",
     // },
   ];
