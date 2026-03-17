@@ -4,12 +4,12 @@ import Image from "next/image";
 import Service1 from "../../../../public/Assets/images/Teammeeting.jpg";
 import bluegradient from "../../../../public/Assets/images/bluegradient1.jpg"
 import Slider from "../../Home/slider"
-
+import ContactForm from "@/app/Components/Contactform";
 
 const inside_service1 = () => {
   return (
     <div>
-      <section className="relative flex items-center justify-start md-height-650">
+      <section className="relative service-section contact-main-container w-full flex items-end mt-15_old">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -22,15 +22,20 @@ const inside_service1 = () => {
           {/* Darker overlay for better text readability */}
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        <div className="relative z-5 container mx-auto">
-          <div className="max-w-6xl">
-            <h6 className="text-base sm:text-lg md:text-xl italic font-bold mb-2 text-white">
-              Edunoia Wear™
-            </h6>
+        <div className="relative w-full z-10">
+          <div className="container mx-auto pb-10">
+            <div className="d-flex">
+              <div className="text-lg lg:text-xl mb-8 text-gray-200">
+                <h6 className="text-base sm:text-lg md:text-xl italic font-bold mb-2 text-white">
+                  Edunoia Wear™
+                </h6>
 
-            <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-              Merchandise &<br/> Pride Program
-            </h1>
+                <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
+                  Merchandise &<br /> Pride Program
+                </h1>
+              </div>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
@@ -49,7 +54,7 @@ const inside_service1 = () => {
             <div className="space-y-6 lg:space-y-8">
               {/* Description Text */}
               <h6 className="p-grey italic font-semibold">
-             Edunoia Wear™ builds a merchandise line that actually means something, rooted in your brand story, not just your logo.
+                Edunoia Wear™ builds a merchandise line that actually means something, rooted in your brand story, not just your logo.
               </h6>
             </div>
           </div>
@@ -80,7 +85,7 @@ const inside_service1 = () => {
                   IDEAL FOR
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                  Institutions looking to<br/> increase belonging and visibility.
+                  Institutions looking to<br /> increase belonging and visibility.
                 </h6>
               </div>
 
@@ -90,7 +95,7 @@ const inside_service1 = () => {
                   PROBLEM SOLVED
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                     Generic, uninspired merchandise<br className="hidden sm:block" /> that fails to create pride.
+                  Generic, uninspired merchandise<br className="hidden sm:block" /> that fails to create pride.
                 </h6>
               </div>
 
@@ -110,17 +115,17 @@ const inside_service1 = () => {
                   DELIVERABLES
                 </p>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855]">
-                  Merchandise Strategy 
+                  Merchandise Strategy
                 </h6>
                 {/* <p className="p-blue mt-5">
                  Themes, Purpose, Audience Tiersm{" "}
                 </p> */}
-                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                   Themes, Purpose, Audience Tiers{" "}
+                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
+                  Themes, Purpose, Audience Tiers{" "}
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  3 Distinct Collections 
+                  3 Distinct Collections
                 </h6>
                 {/* <p className="p-blue mt-5">
                  Everyday Pride, Premium Legacy, Seasonal Drops{" "}
@@ -130,23 +135,23 @@ const inside_service1 = () => {
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Vendor-ready Designs 
+                  Vendor-ready Designs
                 </h6>
                 {/* <p className="p-blue mt-5">
                   10–15 SKUs{" "}
                 </p> */}
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                     10–15 SKUs{" "}
+                  10–15 SKUs{" "}
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                Merchandise Catalogue 
+                  Merchandise Catalogue
                 </h6>
                 {/* <p className="p-blue mt-5">
                   Print + Web{" "}
                 </p> */}
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                   Print + Web
+                  Print + Web
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
@@ -209,7 +214,7 @@ const inside_service1 = () => {
                 OUTCOME
               </p>
               <h3 className="text-[28px] sm:text-[32px] lg:text-[40px] text-white font-medium leading-tight">
-                Merch that feels<br/> desirable, drives pride, and turns community into culture.
+                Merch that feels<br /> desirable, drives pride, and turns community into culture.
               </h3>
             </div>
           </div>

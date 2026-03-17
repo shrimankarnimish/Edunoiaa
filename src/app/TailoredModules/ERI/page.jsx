@@ -4,32 +4,37 @@ import Image from "next/image";
 import Service1 from "../../../../public/Assets/images/Teammeeting.jpg";
 import bluegradient from "../../../../public/Assets/images/bluegradient1.jpg"
 import Slider from "../../Home/slider"
+import ContactForm from "@/app/Components/Contactform";
 
 const inside_service1 = () => {
   return (
     <div>
-      <section className="relative flex items-center justify-start md-height-650">
+      <section className="relative service-section contact-main-container w-full flex items-end mt-15_old">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
             src={backgroundImage}
             alt="Background"
-            fill  
+            fill
             className="object-cover"
             priority
           />
           {/* Darker overlay for better text readability */}
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        <div className="relative z-5 container mx-auto">
-          <div className="max-w-6xl">
-            <h6 className="text-base sm:text-lg md:text-xl italic font-bold mb-2 text-white">
-              Edunoia Compass™
-            </h6>
-
-            <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-              Edunoia Recognition<br/> Index (ERI™)
-            </h1>
+        <div className="relative w-full z-10">
+          <div className="container mx-auto pb-10">
+            <div className="d-flex">
+              <div className="text-lg lg:text-xl mb-8 text-gray-200">
+                <h6 className="text-base sm:text-lg md:text-xl italic font-bold mb-2 text-white">
+                 Edunoia Recognition Index (ERI™)
+                </h6>
+                <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
+                  Edunoia Recognition<br /> Index (ERI™)
+                </h1>
+              </div>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
@@ -48,7 +53,7 @@ const inside_service1 = () => {
             <div className="space-y-6 lg:space-y-8">
               {/* Description Text */}
               <h6 className="p-grey italic font-semibold">
-              ERI™ is a proprietary certification framework by Edunoia that validates institutions as inspiring places to learn, teach, and grow. It’s credibility earned through insight, not just perception.
+                ERI™ is a proprietary certification framework by Edunoia that validates institutions as inspiring places to learn, teach, and grow. It’s credibility earned through insight, not just perception.
               </h6>
             </div>
           </div>
@@ -79,7 +84,7 @@ const inside_service1 = () => {
                   IDEAL FOR
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                  Ambitious institutions seeking<br/> trust and visibility.
+                  Ambitious institutions seeking<br /> trust and visibility.
                 </h6>
               </div>
 
@@ -89,7 +94,7 @@ const inside_service1 = () => {
                   PROBLEM SOLVED
                 </p>
                 <h6 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-[#002855] leading-snug">
-                   Lack of third-party<br className="hidden sm:block" /> validation and recognition.
+                  Lack of third-party<br className="hidden sm:block" /> validation and recognition.
                 </h6>
               </div>
 
@@ -117,7 +122,7 @@ const inside_service1 = () => {
                 </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                Score-based Evaluation
+                  Score-based Evaluation
                 </h6>
                 {/* <p className="p-blue mt-5">
                  5-Pillar Performance Overview{" "}
@@ -138,7 +143,7 @@ const inside_service1 = () => {
                 </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Press Kit 
+                  Press Kit
                 </h6>
                 {/* <p className="p-blue mt-5">
                   Staff Launch, Signage, Presentations{" "}
@@ -148,7 +153,7 @@ const inside_service1 = () => {
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                 Listing on Edunoia’s public recognition portal
+                  Listing on Edunoia’s public recognition portal
                 </h6>
                 {/* <p className="p-blue mt-5">
                   Certificate, Media Template, Social Toolkit{" "}
@@ -207,7 +212,7 @@ const inside_service1 = () => {
                 OUTCOME
               </p>
               <h3 className="text-[28px] sm:text-[32px] lg:text-[40px] text-white font-medium leading-tight">
-                 Third-party validation<br/> that enhances credibility, builds trust, and boosts admissions appeal.
+                Third-party validation<br /> that enhances credibility, builds trust, and boosts admissions appeal.
               </h3>
             </div>
           </div>
