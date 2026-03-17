@@ -1,0 +1,326 @@
+/* vidyashilp.module.css */
+
+/* Banner Section */
+.banner {
+  height: 75vh;
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow-x: clip;
+}
+
+.banner video {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Market Analysis Section */
+.marketSec {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.marketSec li {
+  color: #ba1f34;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Transformation Section */
+.transformationSec {
+  position: relative;
+}
+
+.transformationSec .bgimg {
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.transformationSec .desc {
+  position: absolute;
+  bottom: 20%;
+  max-width: 70rem;
+  color: #fff;
+}
+
+.transformationSec .ve {
+  position: absolute;
+  bottom: -25%;
+  left: 30%;
+}
+
+/* Border Styles */
+.borderRight {
+  border-right: 2px solid #dedede;
+}
+
+/* Text Styles */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.white {
+  color: #fff;
+}
+
+.ltdbg {
+  color: #fff;
+}
+
+.ltdbg a {
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+/* Container Styles */
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-inline: 3rem;
+}
+
+.container700 {
+  width: 100%;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding-inline: 3rem;
+}
+
+.container1200 {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-inline: 3rem;
+}
+
+.containerRight {
+  width: 100%;
+  max-width: 93%;
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+
+/* Grid Styles */
+.grid {
+  display: grid;
+}
+
+.grid2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap3 {
+  gap: 3rem;
+}
+
+.gap8 {
+  gap: 8rem;
+}
+
+.vCenter {
+  align-items: center;
+}
+
+/* Spacing Utilities */
+.ptb8 {
+  padding-block: 8rem;
+}
+
+.ptb4 {
+  padding-block: 4rem;
+}
+
+.pt4 {
+  padding-top: 4rem;
+}
+
+.pb8 {
+  padding-bottom: 8rem;
+}
+
+.p4 {
+  padding: 4rem;
+}
+
+.mb5 {
+  margin-bottom: 0.5rem;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+/* Typography Classes - Add these as classes to elements */
+.heading2 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  
+}
+
+.heading5 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.7em;
+  margin-bottom: 1.5rem;
+}
+
+.heading6 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.7em;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.bigText {
+  font-size: 1.5rem;
+  line-height: 1.2em;
+}
+
+/* Font Styles */
+.fontMerri {
+  font-family: "Merriweather", serif;
+}
+
+.fontMerriSans {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.sbold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Divider/Spacer */
+.d80 {
+  height: 8rem;
+  border: none;
+}
+
+.d60 {
+  height: 6rem;
+  border: none;
+}
+
+.d30 {
+  height: 3rem;
+  border: none;
+}
+
+.d10 {
+  height: 1rem;
+  border: none;
+}
+
+.d100 {
+  height: 10rem;
+  border: none;
+}
+
+.springboard {
+  aspect-ratio: 100/22;
+  background-color: #000;
+  margin-block: 1.5rem;
+  border: none;
+}
+
+.springboard.white {
+  background-color: #fff;
+}
+
+/* Image Styles */
+.img {
+  max-width: 100%;
+  height: auto;
+}
+ 
+.img100p {
+  width: 100%;
+}
+
+/* Background Colors */
+.otherProjectBG {
+  background: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .transformationSec .ve {
+    display: none;
+  }
+  
+  .marketSec {
+    grid-template-columns: 1fr;
+  }
+  
+  .borderRight {
+    border-right: 2px solid transparent;
+  }
+  
+  .transformationSec .bgimg {
+    aspect-ratio: 16/9;
+    height: auto;
+  }
+  
+  .transformationSec .desc {
+    bottom: 5%;
+  }
+  
+  .displayNoneMob {
+    display: none;
+  }
+  
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .mgap3 {
+    gap: 3rem;
+  }
+  
+  .container,
+  .container700,
+  .container1200 {
+    padding-inline: 0;
+  }
+  
+  .containerRight {
+    padding-right: 4rem;
+  }
+}
