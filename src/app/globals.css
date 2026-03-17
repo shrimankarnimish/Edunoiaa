@@ -312,9 +312,14 @@ h3.p-italic {
   bottom: 0px;
 }
 
-.service-section {
+.service-section{
   height: 70vh;
 }
+
+.contact-main-container{
+  height: 85vh;
+}
+
 
 .md-height-650 {
   height: 650px;
@@ -337,14 +342,18 @@ h3.p-italic {
   background-size: cover;
 }
 
-.bg-contact:before {
+/* .bg-contact:before {
   content: '';
   width: 100%;
   height: 100%;
   background: #00000026;
   position: absolute;
+} */
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 
 /* ===== RESPONSIVE ADJUSTMENTS FOR .p3-italic ===== */

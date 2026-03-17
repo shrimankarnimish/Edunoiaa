@@ -378,7 +378,7 @@ const TailoredModules = () => {
                 strengthen thought leadership and visibility.
               </p>
             </div>
-            <Link href="/TailoredModules/ip-development">
+            <Link href="/tailoredmodules/ip-development">
               <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase cursor-pointer tracking-wide">
                 View Details
                 <svg
@@ -421,7 +421,7 @@ const TailoredModules = () => {
                 brand story.
               </p>
             </div>
-            <Link href="/TailoredModules/event-experience-branding">
+            <Link href="/tailoredmodules/event-experience-branding">
               <button className="mt-4 sm:mt-6 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 text-left flex items-center uppercase cursor-pointer tracking-wide">
                 View Details
                 <svg

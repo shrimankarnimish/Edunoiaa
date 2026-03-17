@@ -13,7 +13,7 @@ import Link from "next/link";
 const Services = () => {
   return (
     <>
-      <section className="relative service-section w-full flex items-end">
+      <section className="relative service-section w-full flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -27,7 +27,7 @@ const Services = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto pb-40">
+        <div className="relative z-10 container mx-auto pb-0">
           <Fadeinright>
             <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light">
               Bespoke Brand Consulting

@@ -8,6 +8,8 @@ import CaseStudy from "../Components/Casestudy";
 import Slider from "./slider";
 import { Fadeinleft, Fadeinright, Fadeinup } from "../Components/Animations";
 import Link from "next/link";
+import ContactForm from "../Components/Contactform";
+import { Contact } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -27,12 +29,12 @@ const HeroSection = () => {
           {/* <div className="absolute inset-0 bg-black/40"></div> */}
         </div>
         <div className="relative z-5 container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-start d-flex align-items-center">
           <Fadeinright>
-            <div className="max-w-6xl">
+            <div className="max-w-4xl">
               <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light">
                 India's first and only brand <br className="br-hide" />
-                consultancy dedicated exclusively <br className="br-hide" />
-                to education
+                consultancy dedicated exclusively to education
               </h1>
 
               {/* CTA Buttons - Exact styling from first image */}
@@ -60,6 +62,10 @@ const HeroSection = () => {
               </div>
             </div>
           </Fadeinright>
+          
+          
+          <ContactForm />
+          </div>
         </div>
       </section>
       {/* WHY EDUNOIA Start */}
@@ -108,8 +114,9 @@ const HeroSection = () => {
                   sector.
                 </p>
 
-                <Link href="/servics">
-                  <button className="bg-white-600 cursor-pointer hover:bg-blue-700 text-white font-semibold py-3 px-7 cursor mt-4 text-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+
+                <Link href="/services">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 mt-4 text-lg cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out">
                     VIEW DETAILS
                   </button>
                 </Link>

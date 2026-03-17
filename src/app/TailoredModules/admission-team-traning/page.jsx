@@ -4,11 +4,12 @@ import Image from "next/image";
 import Service1 from "../../../../public/Assets/images/Teammeeting.jpg";
 import bluegradient from "../../../../public/Assets/images/bluegradient.jpg";
 import Slider from "../../home/slider";
+import ContactForm from "@/app/Components/Contactform";
 
 const inside_service1 = () => {
   return (
     <div>
-      <section className="relative flex items-center justify-start md-height-650">
+      <section className="relative service-section contact-main-container w-full flex items-end mt-15_old">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -21,15 +22,19 @@ const inside_service1 = () => {
           {/* Darker overlay for better text readability */}
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        <div className="relative z-5 container mx-auto">
-          <div className="max-w-6xl">
-            <h6 className="text-base sm:text-lg md:text-xl italic font-bold mb-2 text-white">
-              Edunoia AdmitEdge™
-            </h6>
-
-            <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
-               Admissions Accelerator
-            </h1>
+        <div className="relative w-full z-10">
+          <div className="container mx-auto pb-10">
+            <div className="d-flex">
+              <div className="text-lg lg:text-xl mb-8 text-gray-200">
+                <h6 className="text-base sm:text-lg md:text-xl italic font-bold mb-2 text-white">
+                  Edunoia AdmitEdge™
+                </h6>
+                <h1 className="text-4xl sm:text-3xl lg:text-6xl xl:text-6xl text-white leading-[1.2] tracking-light font-bold">
+                  Admissions Accelerator
+                </h1>
+              </div>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
@@ -133,13 +138,13 @@ const inside_service1 = () => {
                 </p> */}
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
-                  Campaign Starter Kit 
+                  Campaign Starter Kit
                 </h6>
                 {/* <p className="p-blue mt-5">
                 Ads, Brochure, Social Posts, Landing Page Wireframe, Video Script Outline{" "}
                 </p> */}
                 <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase tracking-widest mt-5">
-                     Ads, Brochure, Social Posts, Landing Page Wireframe, Video Script Outline{" "}
+                  Ads, Brochure, Social Posts, Landing Page Wireframe, Video Script Outline{" "}
                 </p>
                 <div className="border-line-grey"></div>
                 <h6 className="mt-4 text-lg sm:text-xl italic lg:text-2xl font-semibold text-[#002855] mt-9">
@@ -212,7 +217,7 @@ const inside_service1 = () => {
                 OUTCOME
               </p>
               <h3 className="text-[28px] sm:text-[32px] lg:text-[40px] text-white font-medium leading-tight">
-               A brand story that converts,<br/> stronger messaging, higher enrolment, more confident teams.
+                A brand story that converts,<br /> stronger messaging, higher enrolment, more confident teams.
 
               </h3>
             </div>
